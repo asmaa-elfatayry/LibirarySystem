@@ -71,7 +71,6 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\rjsmc
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\scopedcss\bundle\LibrarySystem.styles.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\scopedcss\projectbundle\LibrarySystem.bundle.scp.css
-C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\czotez6djq-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\wzibauvteo-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\5tq4wy5f6c-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\bpr2x05u34-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -231,3 +230,7 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\bin\Debug\net10.0\tr\Mi
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\tl97tl7edn-{0}-lg97zzwdqv-lg97zzwdqv.gz
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\czotez6djq-{0}-gndp1qzzyi-gndp1qzzyi.gz
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\t7dbk2ru07-{0}-ptaj6tg7q3-ptaj6tg7q3.gz
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\obj\Debug\net10.0\compressed\vl0t8iwlpx-{0}-7vk54a51sf-7vk54a51sf.gz

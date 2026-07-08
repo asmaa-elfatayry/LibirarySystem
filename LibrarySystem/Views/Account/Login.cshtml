@@ -1,0 +1,57 @@
+﻿@model LibrarySystem.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "تسجيل الدخول";
+    Layout = null;
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/LibrarySystem.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/auth.css" />
+
+<div class="auth-page">
+    <div class="library-card">
+        <div class="library-stamp">Member Access</div>
+
+        <div class="library-card__eyebrow">Library Card No. — Sign In</div>
+        <h2 class="library-card__title">تسجيل الدخول</h2>
+        <p class="library-card__subtitle">ارجع لحسابك، الكتب مستنياك.</p>
+
+
+
+        <form asp-action="Login" method="post">
+            <div class="library-field">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="library-field">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" />
+                <span asp-validation-for="Password" class="text-danger"> </span>
+            </div>
+
+            <label class="library-check">
+                <input asp-for="RememberMe" style="width:auto;" />
+                <span asp-for="RememberMe">تذكرني</span>
+            </label>
+
+            <button type="submit" class="library-submit">دخول</button>
+        </form>
+
+        <p class="library-card__footer">
+            لسه معملتش حساب؟ <a asp-controller="Account" asp-action="Register">سجّل هنا</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/theme.js"></script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

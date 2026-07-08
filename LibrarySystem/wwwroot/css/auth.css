@@ -1,0 +1,197 @@
+﻿/* ===== Library Card Auth Theme ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+.auth-page {
+    --card-ink: #23281f;
+    --card-ink-soft: #4a5240;
+    --card-paper: #ece4d1;
+    --card-paper-dark: #ded3b8;
+    --card-stamp: #a03a2c;
+    --card-brass: #9c7a3f;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+[data-theme="dark"] .auth-page {
+    --card-ink: #e8e2d0;
+    --card-ink-soft: #b8b39e;
+    --card-paper: #262a20;
+    --card-paper-dark: #1c1f18;
+    --card-stamp: #d9695a;
+    --card-brass: #c7a563;
+}
+
+.library-card {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    background: var(--card-paper);
+    color: var(--card-ink);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 12px 32px rgba(0,0,0,.14);
+    padding: 2.75rem 2.5rem 2.25rem;
+    background-image: repeating-linear-gradient(transparent, transparent 27px, rgba(35,40,34,.05) 28px);
+}
+
+    /* الحافة المبرومة زي شريط التذكرة */
+    .library-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 26px;
+        background-image: radial-gradient(circle, var(--card-paper-dark) 3.5px, transparent 3.6px);
+        background-size: 26px 22px;
+        background-position: center;
+        border-right: 1px dashed var(--card-ink-soft);
+        opacity: .55;
+    }
+
+.library-card__eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .72rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--card-brass);
+    padding-right: 1rem;
+    margin-bottom: .35rem;
+}
+
+.library-card__title {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: .25rem;
+    padding-right: 1rem;
+}
+
+.library-card__subtitle {
+    font-family: 'Source Serif 4', serif;
+    font-style: italic;
+    color: var(--card-ink-soft);
+    font-size: .95rem;
+    margin-bottom: 1.75rem;
+    padding-right: 1rem;
+}
+
+.library-card form {
+    padding-right: 1rem;
+}
+
+.library-field {
+    margin-bottom: 1.25rem;
+}
+
+    .library-field label {
+        display: block;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: .7rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--card-ink-soft);
+        margin-bottom: .4rem;
+    }
+
+    .library-field input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1.5px solid var(--card-ink-soft);
+        padding: .45rem .1rem;
+        font-family: 'Source Serif 4', serif;
+        font-size: 1.05rem;
+        color: var(--card-ink);
+        transition: border-color .2s ease;
+    }
+
+        .library-field input:focus {
+            outline: none;
+            border-bottom-color: var(--card-stamp);
+        }
+
+    .library-field .text-danger {
+        display: block;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: .72rem;
+        color: var(--card-stamp);
+        margin-top: .3rem;
+    }
+
+.library-check {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .78rem;
+    color: var(--card-ink-soft);
+    margin-bottom: 1.5rem;
+}
+
+/* زرار الدخول + الختم */
+.library-submit {
+    position: relative;
+    width: 100%;
+    background: var(--card-ink);
+    color: var(--card-paper);
+    border: none;
+    padding: .85rem 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .82rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+    .library-submit:hover {
+        background: var(--card-ink-soft);
+    }
+
+.library-card__footer {
+    margin-top: 1.75rem;
+    padding-right: 1rem;
+    font-family: 'Source Serif 4', serif;
+    font-size: .88rem;
+    color: var(--card-ink-soft);
+}
+
+    .library-card__footer a {
+        color: var(--card-stamp);
+        text-decoration: none;
+        border-bottom: 1px dotted var(--card-stamp);
+    }
+
+/* الختم الأحمر - العنصر المميز في التصميم */
+.library-stamp {
+    position: absolute;
+    top: 1.6rem;
+    left: 2.4rem;
+    transform: rotate(-9deg);
+    border: 2.5px solid var(--card-stamp);
+    color: var(--card-stamp);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .62rem;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: .3rem .55rem;
+    border-radius: 3px;
+    opacity: .85;
+}
+
+@media (max-width: 480px) {
+    .library-card {
+        padding: 2.25rem 1.5rem 2rem;
+    }
+
+    .library-stamp {
+        display: none;
+    }
+}

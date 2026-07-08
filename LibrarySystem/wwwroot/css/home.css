@@ -1,0 +1,165 @@
+﻿/* ===== Library Home Hero ===== */
+
+.home-hero {
+    padding: 4.5rem 0 3rem;
+    text-align: center;
+}
+
+.home-hero__eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .75rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 1rem;
+}
+
+.home-hero__title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.15;
+    color: var(--text-primary);
+    max-width: 720px;
+    margin: 0 auto .9rem;
+}
+
+.home-hero__subtitle {
+    font-family: 'Source Serif 4', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 520px;
+    margin: 0 auto 2rem;
+}
+
+.home-hero__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-library-primary {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    padding: .75rem 1.6rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .8rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: opacity .2s ease;
+}
+
+    .btn-library-primary:hover {
+        opacity: .85;
+        color: var(--bg-primary);
+    }
+
+.btn-library-ghost {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: .75rem 1.6rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .8rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: border-color .2s ease;
+}
+
+    .btn-library-ghost:hover {
+        border-color: var(--brass);
+        color: var(--brass);
+    }
+
+/* ===== أدراج الفهرسة (Signature Element) ===== */
+.catalog {
+    max-width: 920px;
+    margin: 3.5rem auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.1rem;
+    padding: 0 1rem;
+}
+
+.catalog-drawer {
+    display: block;
+    text-decoration: none;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--brass);
+    padding: 1.4rem 1.2rem 1.2rem;
+    position: relative;
+    transition: transform .18s ease, border-color .18s ease;
+}
+
+    .catalog-drawer:hover {
+        transform: translateY(-3px);
+        border-top-color: var(--stamp);
+    }
+
+.catalog-drawer__label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .68rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: .5rem;
+    display: inline-block;
+    border: 1px solid var(--brass);
+    padding: .15rem .5rem;
+    border-radius: 2px;
+}
+
+.catalog-drawer__title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: .3rem;
+}
+
+.catalog-drawer__desc {
+    font-family: 'Source Serif 4', serif;
+    font-size: .88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* شريط إحصائي بسيط */
+.home-stats {
+    max-width: 720px;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 2rem;
+}
+
+.home-stat {
+    text-align: center;
+}
+
+.home-stat__num {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: var(--text-primary);
+    display: block;
+}
+
+.home-stat__label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}

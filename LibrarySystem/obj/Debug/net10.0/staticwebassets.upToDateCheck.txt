@@ -49,9 +49,12 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\d
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\js\theme.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\auth.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\home.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\favicon.ico
@@ -60,9 +63,12 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\d
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\css\auth.css
+wwwroot\css\home.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
+wwwroot\js\theme.js
 wwwroot\lib\bootstrap\LICENSE
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

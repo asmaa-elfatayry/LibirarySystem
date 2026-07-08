@@ -134,7 +134,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -194,7 +193,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -244,7 +242,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -287,7 +284,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -326,6 +322,9 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("LoanId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid?>("LoanId1")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime?>("PaidDate")
                         .HasColumnType("datetime2");
 
@@ -336,13 +335,16 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("LoanId")
                         .IsUnique();
+
+                    b.HasIndex("LoanId1")
+                        .IsUnique()
+                        .HasFilter("[LoanId1] IS NOT NULL");
 
                     b.ToTable("Fines");
                 });
@@ -351,6 +353,9 @@ namespace Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ApplicationUserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("BookCopyId")
@@ -391,10 +396,11 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.HasIndex("BookCopyId");
 
@@ -439,7 +445,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -451,6 +456,9 @@ namespace Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ApplicationUserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("BookId")
@@ -485,10 +493,11 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedByName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.HasIndex("BookId");
 
@@ -633,19 +642,19 @@ namespace Infrastructure.Migrations
                     b.HasOne("Domain.Entities.Author", "Author")
                         .WithMany("Books")
                         .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.Category", "Category")
                         .WithMany("Books")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.Publisher", "Publisher")
                         .WithMany("Books")
                         .HasForeignKey("PublisherId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Author");
@@ -669,26 +678,34 @@ namespace Infrastructure.Migrations
             modelBuilder.Entity("Domain.Entities.Fine", b =>
                 {
                     b.HasOne("Domain.Entities.Loan", "Loan")
-                        .WithOne("Fine")
+                        .WithOne()
                         .HasForeignKey("Domain.Entities.Fine", "LoanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("Domain.Entities.Loan", null)
+                        .WithOne("Fine")
+                        .HasForeignKey("Domain.Entities.Fine", "LoanId1");
 
                     b.Navigation("Loan");
                 });
 
             modelBuilder.Entity("Domain.Entities.Loan", b =>
                 {
+                    b.HasOne("Domain.Entities.ApplicationUser", null)
+                        .WithMany("Loans")
+                        .HasForeignKey("ApplicationUserId");
+
                     b.HasOne("Domain.Entities.BookCopy", "BookCopy")
                         .WithMany("Loans")
                         .HasForeignKey("BookCopyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.ApplicationUser", "Member")
-                        .WithMany("Loans")
+                        .WithMany()
                         .HasForeignKey("MemberId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("BookCopy");
@@ -698,16 +715,20 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.Reservation", b =>
                 {
+                    b.HasOne("Domain.Entities.ApplicationUser", null)
+                        .WithMany("Reservations")
+                        .HasForeignKey("ApplicationUserId");
+
                     b.HasOne("Domain.Entities.Book", "Book")
                         .WithMany("Reservations")
                         .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.ApplicationUser", "Member")
-                        .WithMany("Reservations")
+                        .WithMany()
                         .HasForeignKey("MemberId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Book");

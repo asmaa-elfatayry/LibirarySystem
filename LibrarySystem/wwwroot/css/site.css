@@ -1,31 +1,118 @@
-html {
-  font-size: 14px;
+/* ===== Library Site Shell ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+    --brass: #9c7a3f;
+    --stamp: #a03a2c;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+[data-theme="dark"] {
+    --brass: #c7a563;
+    --stamp: #d9695a;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* الهيدر */
+.site-header {
+    background-color: var(--navbar-bg);
+    border-bottom: 2px solid var(--brass);
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.site-brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--text-primary) !important;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
-body {
-  margin-bottom: 60px;
+.site-brand__mark {
+    font-size: 1.1rem;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.site-nav .nav-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--text-secondary) !important;
+    position: relative;
+    padding: .5rem .9rem !important;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+    .site-nav .nav-link:hover {
+        color: var(--text-primary) !important;
+    }
+
+    .site-nav .nav-link::after {
+        content: "";
+        position: absolute;
+        left: .9rem;
+        right: .9rem;
+        bottom: .25rem;
+        height: 1px;
+        background: var(--stamp);
+        transform: scaleX(0);
+        transition: transform .2s ease;
+    }
+
+    .site-nav .nav-link:hover::after {
+        transform: scaleX(1);
+    }
+
+.site-user {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .78rem;
+    color: var(--text-secondary);
 }
+
+.site-logout-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--stamp) !important;
+    text-decoration: none;
+    padding: .4rem .6rem;
+}
+
+/* زرار الدارك مود */
+.theme-toggle {
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-primary);
+    border-radius: 20px;
+    padding: .35rem .8rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .72rem;
+    letter-spacing: .04em;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    transition: border-color .2s ease, color .2s ease;
+}
+
+    .theme-toggle:hover {
+        border-color: var(--brass);
+        color: var(--brass);
+    }
+
+/* الفوتر */
+.site-footer {
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .78rem;
+    letter-spacing: .03em;
+    padding: 1.25rem 0;
+    margin-top: 3rem;
+}
+
+    .site-footer a {
+        color: var(--brass);
+        text-decoration: none;
+        border-bottom: 1px dotted var(--brass);
+    }

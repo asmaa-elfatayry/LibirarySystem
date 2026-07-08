@@ -1,8 +1,61 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "الرئيسية";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<link rel="stylesheet" href="~/css/home.css" />
+
+<section class="home-hero">
+    <div class="home-hero__eyebrow">Est. Library Management System</div>
+
+    <h1 class="home-hero__title">كل كتاب له مكان، وكل قارئ له بطاقة</h1>
+    <p class="home-hero__subtitle">
+        نظام بسيط لإدارة الاستعارة والحجز والتصنيفات — من غير ما تفقد أثر أي نسخة.
+    </p>
+
+    <div class="home-hero__actions">
+        @if (User.Identity != null && User.Identity.IsAuthenticated)
+        {
+            <a asp-controller="Category" asp-action="Index" class="btn-library-primary">تصفح التصنيفات</a>
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Register" class="btn-library-primary">اعمل بطاقتك الآن</a>
+            <a asp-controller="Account" asp-action="Login" class="btn-library-ghost">تسجيل دخول</a>
+        }
+    </div>
+</section>
+
+<div class="catalog">
+    <a asp-controller="Category" asp-action="Index" class="catalog-drawer">
+        <span class="catalog-drawer__label">Drawer 01</span>
+        <div class="catalog-drawer__title">التصنيفات</div>
+        <div class="catalog-drawer__desc">تصفح أقسام المكتبة المختلفة وابحث عن اهتمامك.</div>
+    </a>
+
+    <a href="#" class="catalog-drawer">
+        <span class="catalog-drawer__label">Drawer 02</span>
+        <div class="catalog-drawer__title">الكتب</div>
+        <div class="catalog-drawer__desc">كل الكتب المتاحة، بالمؤلف والناشر والنسخ المتوفرة.</div>
+    </a>
+
+    <a href="#" class="catalog-drawer">
+        <span class="catalog-drawer__label">Drawer 03</span>
+        <div class="catalog-drawer__title">استعاراتي</div>
+        <div class="catalog-drawer__desc">تابع الكتب المستعارة، والمواعيد المستحقة.</div>
+    </a>
+</div>
+
+<div class="home-stats">
+    <div class="home-stat">
+        <span class="home-stat__num">—</span>
+        <span class="home-stat__label">كتاب مسجّل</span>
+    </div>
+    <div class="home-stat">
+        <span class="home-stat__num">—</span>
+        <span class="home-stat__label">عضو نشط</span>
+    </div>
+    <div class="home-stat">
+        <span class="home-stat__num">—</span>
+        <span class="home-stat__label">تصنيف</span>
+    </div>
 </div>
