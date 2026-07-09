@@ -1,0 +1,53 @@
+﻿/* ===== Book Cards (extends cat-card) ===== */
+
+.book-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.book-card__cover {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .book-card__cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+.book-card__cover--empty {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .68rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1rem;
+}
+
+.book-card__body {
+    padding: 1rem 1.1rem 1.1rem;
+}
+
+.book-card .cat-card__tab {
+    position: absolute;
+    top: -1px;
+    right: 1.1rem;
+    z-index: 2;
+}
+
+.book-card .cat-card__title {
+    margin-top: 0;
+}
+
+.book-card .cat-card__desc {
+    min-height: unset;
+}

@@ -1,0 +1,75 @@
+﻿@model List<LibrarySystem.Web.ViewModels.Book.BookViewModel>
+
+@{
+    ViewData["Title"] = "الكتب";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="~/css/book-cards.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+@Html.AntiForgeryToken()
+
+<div class="cat-header">
+    <h2 class="cat-header__title">الكتب</h2>
+    <span class="cat-header__count">@Model.Count كتاب مسجّل</span>
+    <a asp-action="Create" class="btn-library-primary">+ إضافة كتاب</a>
+</div>
+
+<div class="cat-grid">
+    @foreach (var book in Model)
+    {
+        <div class="cat-card book-card" id="cat-card-@book.Id">
+            <span class="cat-card__tab">Book</span>
+
+            <div class="book-card__cover">
+                @if (!string.IsNullOrEmpty(book.CoverImageUrl))
+                {
+                    <img src="@book.CoverImageUrl" alt="@book.Title" />
+                }
+                else
+                {
+                    <div class="book-card__cover--empty">لا يوجد غلاف</div>
+                }
+            </div>
+
+            <div class="book-card__body">
+                <div class="cat-card__title">@book.Title</div>
+                <div class="cat-card__desc">
+                    @book.AuthorName — @book.CategoryName<br />
+                    @book.PublisherName
+                </div>
+                <div class="cat-card__actions">
+                    <a asp-action="Edit" asp-route-id="@book.Id" class="cat-action cat-action--edit">تعديل</a>
+                    <button type="button" class="cat-action cat-action--delete"
+                            onclick="confirmDelete('@book.Id', '@book.Title')">
+                        حذف
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function confirmDelete(id, name) {
+        Swal.fire({
+        title: 'متأكد؟', text: `هيتم حذف "${name}"`, icon: 'warning',
+        showCancelButton: true, confirmButtonText: 'أيوه، احذف', cancelButtonText: 'إلغاء',
+        confirmButtonColor: '#a03a2c', cancelButtonColor: '#6c757d'
+        }).then((result) => { if (result.isConfirmed) performDelete(id); });
+        }
+        function performDelete(id) {
+        fetch(`/Book/DeleteAjax/${id}`, {
+        method: 'POST',
+        headers: { 'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value ?? '' }
+        })
+        .then(res => res.json())
+        .then(data => {
+        if (data.success) { document.getElementById(`cat-card-${id}`).remove(); Swal.fire('تم الحذف', '', 'success'); }
+        else Swal.fire('خطأ', data.message, 'error');
+        });
+        }
+    </script>
+}

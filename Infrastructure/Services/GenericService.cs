@@ -2,10 +2,11 @@
 using Domain.Entities;
 using Domain.Interfaces;
 using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
-using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Services;
 
     public class GenericService<T> : IGenericService<T> where T : BaseEntity
@@ -18,6 +19,13 @@ namespace Infrastructure.Services;
         _repository = repository;
         _context = context;
     }
+
+    public async Task<List<T>> GetAllAsync(params Expression<Func<T, object>>[] includes)
+    => await _repository.GetAllQueryable(includes).ToListAsync();
+
+    public async Task<T?> GetByIdAsync(Guid id, params Expression<Func<T, object>>[] includes)
+        => await _repository.GetByIdAsync(id, includes);
+
 
     public async Task<List<T>> GetAllAsync()
         => await _repository.GetAllQueryable().ToListAsync();

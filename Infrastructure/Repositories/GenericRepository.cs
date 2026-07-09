@@ -2,6 +2,7 @@
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 
 namespace Infrastructure.Repositories;
@@ -15,6 +16,26 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         _context = context;
         _dbSet = context.Set<T>();
+    }
+
+    public async Task<T?> GetByIdAsync(Guid id, params Expression<Func<T, object>>[] includes)
+    {
+        IQueryable<T> query = _dbSet;
+
+        foreach (var include in includes)
+            query = query.Include(include);
+
+        return await query.FirstOrDefaultAsync(e => e.Id == id && !e.IsDeleted);
+    }
+
+    public IQueryable<T> GetAllQueryable(params Expression<Func<T, object>>[] includes)
+    {
+        IQueryable<T> query = _dbSet.Where(e => !e.IsDeleted);
+
+        foreach (var include in includes)
+            query = query.Include(include);
+
+        return query;
     }
     public IQueryable<T> GetAllQueryable()
     => _dbSet.Where(e => !e.IsDeleted).AsQueryable();

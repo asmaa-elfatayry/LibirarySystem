@@ -1,12 +1,4 @@
-using Application.Interfaces;
-using Domain.Entities;
-using Domain.Interfaces;
-using Infrastructure.Data;
-using Infrastructure.Repositories;
-using Infrastructure.Seed;
-using Infrastructure.Services;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,8 +17,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
+builder.Services.AddInfrastructureServices();
+builder.Services.AddWebServices();
 
 var app = builder.Build();
 

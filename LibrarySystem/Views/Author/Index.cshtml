@@ -1,0 +1,80 @@
+﻿@model List<LibrarySystem.web.ViewModels.Author.AuthorViewModel>
+
+@{
+    ViewData["Title"] = "المؤلفين";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+@Html.AntiForgeryToken()
+
+<div class="cat-header">
+    <h2 class="cat-header__title">المؤلفين</h2>
+    <span class="cat-header__count">@Model.Count مؤلف مسجّل</span>
+    <a asp-action="Create" class="btn-library-primary">+ إضافة مؤلف</a>
+</div>
+
+@if (!Model.Any())
+{
+    <p class="cat-empty">لسه مفيش مؤلفين مضافين.</p>
+}
+else
+{
+    <div class="cat-grid">
+        @foreach (var author in Model)
+        {
+            <div class="cat-card" id="cat-card-@author.Id">
+                <span class="cat-card__tab">Author</span>
+                <div class="cat-card__title">@author.FullName</div>
+                <div class="cat-card__desc">
+                    @(string.IsNullOrWhiteSpace(author.Nationality) ? "" : author.Nationality + " — ")
+                    @(string.IsNullOrWhiteSpace(author.Bio) ? "بدون نبذة" : author.Bio)
+                </div>
+                <div class="cat-card__actions">
+                    <a asp-action="Edit" asp-route-id="@author.Id" class="cat-action cat-action--edit">تعديل</a>
+                    <button type="button" class="cat-action cat-action--delete"
+                            onclick="confirmDelete('@author.Id', '@author.FullName')">
+                        حذف
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function confirmDelete(id, name) {
+        Swal.fire({
+        title: 'متأكد؟',
+        text: `هيتم حذف المؤلف "${name}" نهائيًا`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'أيوه، احذف',
+        cancelButtonText: 'إلغاء',
+        confirmButtonColor: '#a03a2c',
+        cancelButtonColor: '#6c757d'
+        }).then((result) => {
+        if (result.isConfirmed) performDelete(id);
+        });
+        }
+
+        function performDelete(id) {
+        fetch(`/Author/DeleteAjax/${id}`, {
+        method: 'POST',
+        headers: { 'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value ?? '' }
+        })
+        .then(res => { if (!res.ok) throw new Error(); return res.json(); })
+        .then(data => {
+        if (data.success) {
+        document.getElementById(`cat-card-${id}`).remove();
+        Swal.fire('تم الحذف', '', 'success');
+        } else {
+        Swal.fire('حصل خطأ', data.message ?? 'حاول تاني', 'error');
+        }
+        })
+        .catch(() => Swal.fire('حصل خطأ', 'مقدرش يوصل للسيرفر', 'error'));
+        }
+    </script>
+}

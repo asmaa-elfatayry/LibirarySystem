@@ -1,5 +1,5 @@
 ﻿using Domain.Entities;
-using LibrarySystem.ViewModels;
+using LibrarySystem.web.ViewModels.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 

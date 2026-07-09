@@ -1,0 +1,88 @@
+﻿/* ===== Admin Form (Create/Edit) ===== */
+
+.admin-form-wrap {
+    max-width: 560px;
+    margin: 2rem auto;
+}
+
+.admin-form__crumb {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: .5rem;
+}
+
+    .admin-form__crumb a {
+        color: var(--brass);
+        text-decoration: none;
+    }
+
+.admin-form__title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: var(--text-primary);
+    margin-bottom: 1.6rem;
+}
+
+.admin-form {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1.75rem;
+}
+
+.admin-field {
+    margin-bottom: 1.2rem;
+}
+
+    .admin-field label {
+        display: block;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: .72rem;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        margin-bottom: .4rem;
+    }
+
+    .admin-field input,
+    .admin-field textarea {
+        width: 100%;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 3px;
+        padding: .6rem .75rem;
+        font-family: 'Source Serif 4', serif;
+        font-size: .98rem;
+        color: var(--text-primary);
+        transition: border-color .18s ease;
+        resize: vertical;
+    }
+
+        .admin-field input:focus,
+        .admin-field textarea:focus {
+            outline: none;
+            border-color: var(--brass);
+        }
+
+    .admin-field .text-danger {
+        display: block;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: .72rem;
+        color: var(--stamp);
+        margin-top: .35rem;
+    }
+
+.admin-form__actions {
+    display: flex;
+    gap: .7rem;
+    margin-top: 1.5rem;
+}
+
+    .admin-form__actions .btn-library-primary,
+    .admin-form__actions .btn-library-ghost {
+        padding: .6rem 1.4rem;
+    }

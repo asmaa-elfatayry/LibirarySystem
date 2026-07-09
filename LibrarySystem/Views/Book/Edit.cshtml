@@ -1,0 +1,80 @@
+﻿@model LibrarySystem.Web.ViewModels.Book.BookViewModel
+
+@{
+    ViewData["Title"] = "تعديل كتاب";
+}
+
+<link rel="stylesheet" href="~/css/admin-form.css" />
+
+<div class="admin-form-wrap">
+    <div class="admin-form__crumb"><a asp-action="Index">الكتب</a> / تعديل</div>
+    <h2 class="admin-form__title">تعديل كتاب </h2>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data" class="admin-form">
+        <input type="hidden" asp-for="Id" />
+        <div class="admin-field">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+            <span asp-validation-for="Title"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="ISBN"></label>
+            <input asp-for="ISBN" />
+            <span asp-validation-for="ISBN"></span>
+        </div>
+   
+        <div class="admin-field">
+            <label>صورة الغلاف</label>
+            @if (!string.IsNullOrEmpty(Model.CoverImageUrl))
+            {
+                <div class="admin-field">
+                    <label>الصورة الحالية</label>
+                    <img src="@Model.CoverImageUrl" style="max-width:150px; border-radius:4px; display:block; margin-bottom:.5rem;" />
+                </div>
+            }
+            <input asp-for="CoverImageFile" type="file" accept="image/*" class="form-control" />
+        </div>
+        <div class="admin-field">
+            <label asp-for="AuthorId"></label>
+            <select asp-for="AuthorId" asp-items="Model.Authors" class="form-select">
+                <option value="">-- اختار مؤلف --</option>
+            </select>
+            <span asp-validation-for="AuthorId"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="CategoryId"></label>
+            <select asp-for="CategoryId" asp-items="Model.Categories" class="form-select">
+                <option value="">-- اختار تصنيف --</option>
+            </select>
+            <span asp-validation-for="CategoryId"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="PublisherId"></label>
+            <select asp-for="PublisherId" asp-items="Model.Publishers" class="form-select">
+                <option value="">-- اختار ناشر --</option>
+            </select>
+            <span asp-validation-for="PublisherId"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="PublishedYear"></label>
+            <input asp-for="PublishedYear" type="number" />
+            <span asp-validation-for="PublishedYear"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" rows="3"></textarea>
+        </div>
+
+        <div class="admin-form__actions">
+            <button type="submit" class="btn-library-primary" style="border:none;">حفظ</button>
+            <a asp-action="Index" class="btn-library-ghost">إلغاء</a>
+        </div>
+    </form>
+</div>

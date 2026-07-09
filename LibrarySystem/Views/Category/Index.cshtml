@@ -1,32 +1,45 @@
-﻿@model List<Domain.Entities.Category>
+﻿@model List<LibrarySystem.Web.ViewModels.Category.CategoryViewModel>
 
 @{
     ViewData["Title"] = "التصنيفات";
 }
 
-<h2>التصنيفات</h2>
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
-<a asp-action="Create" class="btn btn-success mb-3">+ إضافة تصنيف</a>
+<div class="cat-header">
+    <h2 class="cat-header__title">التصنيفات</h2>
+    <span class="cat-header__count">@Model.Count تصنيف مسجّل</span>
+    <a asp-action="Create" class="btn-library-primary">+ إضافة تصنيف</a>
+</div>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>الاسم</th>
-            <th>الوصف</th>
-            <th>إجراءات</th>
-        </tr>
-    </thead>
-    <tbody>
+@if (!Model.Any())
+{
+    <p class="cat-empty">لسه مفيش تصنيفات مضافة.</p>
+}
+else
+{
+    <div class="cat-grid">
         @foreach (var category in Model)
         {
-            <tr>
-                <td>@category.Name</td>
-                <td>@category.Description</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@category.Id" class="btn btn-sm btn-primary">تعديل</a>
-                    <a asp-action="Delete" asp-route-id="@category.Id" class="btn btn-sm btn-danger">حذف</a>
-                </td>
-            </tr>
+            <div class="cat-card" id="cat-card-@category.Id">
+                <span class="cat-card__tab">Category</span>
+                <div class="cat-card__title">@category.Name</div>
+                <div class="cat-card__desc">@(string.IsNullOrWhiteSpace(category.Description) ? "بدون وصف" : category.Description)</div>
+                <div class="cat-card__actions">
+                    <a asp-action="Edit" asp-route-id="@category.Id" class="cat-action cat-action--edit">تعديل</a>
+                    <button type="button" class="cat-action cat-action--delete"
+                            onclick="confirmDelete('@category.Id', '@category.Name')">
+                        حذف
+                    </button>
+                </div>
+            </div>
         }
-    </tbody>
-</table>
+    </div>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/modules/category/index.js"></script>
+
+}

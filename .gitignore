@@ -1,0 +1,77 @@
+## ===== Build Results =====
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+## ===== Visual Studio =====
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+
+## ===== Rider / JetBrains =====
+.idea/
+*.sln.iml
+
+## ===== VS Code =====
+.vscode/
+
+## ===== NuGet =====
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+## ===== Test Results =====
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+## ===== ASP.NET Core Specific =====
+appsettings.Development.json
+appsettings.Production.json
+appsettings.*.json
+!appsettings.json
+!appsettings.Example.json
+
+## ===== Secrets =====
+*.pfx
+*.publishsettings
+secrets.json
+**/wwwroot/uploads/**
+
+## ===== EF Core =====
+*.mdf
+*.ldf
+*.ndf
+
+## ===== macOS / Windows junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## ===== Node (لو استخدمت أي أدوات فرونت اند) =====
+node_modules/
+npm-debug.log*
+
+## ===== Misc =====
+*.log
+*.tmp
+*.bak
+*.swp
+*~

@@ -1,0 +1,40 @@
+﻿@model LibrarySystem.web.ViewModels.Author.AuthorViewModel
+
+@{
+    ViewData["Title"] = "تعديل مؤلف";
+}
+
+<link rel="stylesheet" href="~/css/admin-form.css" />
+
+<div class="admin-form-wrap">
+    <div class="admin-form__crumb"><a asp-action="Index">المؤلفين</a> / تعديل</div>
+    <h2 class="admin-form__title">تعديل مؤلف</h2>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <form asp-action="Edit" method="post" class="admin-form">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="admin-field">
+            <label asp-for="FullName"></label>
+            <input asp-for="FullName" />
+            <span asp-validation-for="FullName"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="Nationality"></label>
+            <input asp-for="Nationality" />
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="Bio"></label>
+            <textarea asp-for="Bio" rows="4"></textarea>
+            <span asp-validation-for="Bio"></span>
+        </div>
+
+        <div class="admin-form__actions">
+            <button type="submit" class="btn-library-primary" style="border:none;">حفظ التعديلات</button>
+            <a asp-action="Index" class="btn-library-ghost">إلغاء</a>
+        </div>
+    </form>
+</div>

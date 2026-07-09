@@ -1,25 +1,32 @@
-﻿@model Domain.Entities.Category
+﻿@model LibrarySystem.Web.ViewModels.Category.CategoryViewModel
 
 @{
     ViewData["Title"] = "إضافة تصنيف";
 }
 
-<h2>إضافة تصنيف جديد</h2>
+<link rel="stylesheet" href="~/css/admin-form.css" />
 
-<div asp-validation-summary="All" class="text-danger"></div>
+<div class="admin-form-wrap">
+    <div class="admin-form__crumb"><a asp-action="Index">التصنيفات</a> / إضافة</div>
+    <h2 class="admin-form__title">إضافة تصنيف جديد</h2>
 
-<form asp-action="Create" method="post">
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
 
-    <div class="mb-3">
-        <label asp-for="Description" class="form-label"></label>
-        <textarea asp-for="Description" class="form-control"></textarea>
-    </div>
+    <form asp-action="Create" method="post" class="admin-form">
+        <div class="admin-field">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
 
-    <button type="submit" class="btn btn-success">حفظ</button>
-    <a asp-action="Index" class="btn btn-secondary">إلغاء</a>
-</form>
+        <div class="admin-field">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" rows="3"></textarea>
+        </div>
+
+        <div class="admin-form__actions">
+            <button type="submit" class="btn-library-primary" style="border:none;">حفظ</button>
+            <a asp-action="Index" class="btn-library-ghost">إلغاء</a>
+        </div>
+    </form>
+</div>

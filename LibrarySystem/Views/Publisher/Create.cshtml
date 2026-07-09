@@ -1,0 +1,38 @@
+﻿@model LibrarySystem.web.ViewModels.Publisher.PublisherViewModel
+
+@{
+    ViewData["Title"] = "إضافة ناشر";
+}
+
+<link rel="stylesheet" href="~/css/admin-form.css" />
+
+<div class="admin-form-wrap">
+    <div class="admin-form__crumb"><a asp-action="Index">الناشرين</a> / إضافة</div>
+    <h2 class="admin-form__title">إضافة ناشر جديد</h2>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <form asp-action="Create" method="post" class="admin-form">
+        <div class="admin-field">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" />
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="ContactInfo"></label>
+            <input asp-for="ContactInfo" />
+            <span asp-validation-for="ContactInfo"></span>
+        </div>
+
+        <div class="admin-form__actions">
+            <button type="submit" class="btn-library-primary" style="border:none;">حفظ</button>
+            <a asp-action="Index" class="btn-library-ghost">إلغاء</a>
+        </div>
+    </form>
+</div>
