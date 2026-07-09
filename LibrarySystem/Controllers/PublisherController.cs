@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LibrarySystem.web.Controllers;
 
 [Authorize(Roles = "Admin,Librarian")]
-public class PublisherController(IGenericService<Publisher> _publisherService, IMapper _mapper) : Controller
+public class PublisherController(IPublisherService _publisherService, IMapper _mapper) : Controller
 {
     public async Task<IActionResult> Index()
     {
@@ -25,8 +25,15 @@ public class PublisherController(IGenericService<Publisher> _publisherService, I
     {
         if (!ModelState.IsValid) return View(vm);
 
-        var publisher = _mapper.Map<Publisher>(vm);
-        await _publisherService.CreateAsync(publisher);
+        var dto = _mapper.Map<Application.DTOs.PublisherDto>(vm);
+        var res = await _publisherService.CreateAsync(dto);
+        if (!res.IsSuccess)
+        {
+            ModelState.AddModelError(string.Empty, res.Message);
+            return View(vm);
+        }
+
+        TempData["Success"] = res.Message;
         return RedirectToAction(nameof(Index));
     }
 
@@ -46,19 +53,25 @@ public class PublisherController(IGenericService<Publisher> _publisherService, I
         if (id != vm.Id) return BadRequest();
         if (!ModelState.IsValid) return View(vm);
 
-        var publisher = _mapper.Map<Publisher>(vm);
-        var success = await _publisherService.UpdateAsync(publisher);
-        if (!success) return NotFound();
+        var dto = _mapper.Map<Application.DTOs.PublisherDto>(vm);
+        var res = await _publisherService.UpdateAsync(dto);
+        if (!res.IsSuccess)
+        {
+            if (res.Status == Domain.Enums.eResultStatus.NotFound) return NotFound();
+            ModelState.AddModelError(string.Empty, res.Message);
+            return View(vm);
+        }
 
+        TempData["Success"] = res.Message;
         return RedirectToAction(nameof(Index));
     }
 
     [HttpPost]
     public async Task<IActionResult> DeleteAjax(Guid id)
     {
-        var success = await _publisherService.DeleteAsync(id);
-        if (!success)
-            return Json(new { success = false, message = "الناشر مش موجود" });
+        var res = await _publisherService.DeleteAsync(id);
+        if (!res.IsSuccess)
+            return Json(new { success = false, message = res.Message });
 
         return Json(new { success = true });
     }

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model LibrarySystem.web.ViewModels.Home.HomeVM
+@{
     ViewData["Title"] = "الرئيسية";
 }
 
@@ -47,7 +48,7 @@
 
 <div class="home-stats">
     <div class="home-stat">
-        <span class="home-stat__num">—</span>
+        <span class="home-stat__num">@Model.BookCount</span>
         <span class="home-stat__label">كتاب مسجّل</span>
     </div>
     <div class="home-stat">
@@ -55,7 +56,7 @@
         <span class="home-stat__label">عضو نشط</span>
     </div>
     <div class="home-stat">
-        <span class="home-stat__num">—</span>
+        <span class="home-stat__num">@Model.CategoriesCount</span>
         <span class="home-stat__label">تصنيف</span>
     </div>
 </div>

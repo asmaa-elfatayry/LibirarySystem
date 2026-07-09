@@ -4,56 +4,79 @@
     Layout = null;
     ViewData["Title"] = "إنشاء حساب";
 }
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/LibrarySystem.styles.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/auth.css" />
-
-<div class="auth-page">
-    <div class="library-card">
-        <div class="library-stamp">New Member</div>
-
-        <div class="library-card__eyebrow">Library Card No. — Registration</div>
-        <h2 class="library-card__title">إنشاء حساب جديد</h2>
-        <p class="library-card__subtitle">اعمل بطاقتك، وابدأ تستعير.</p>
-
-     
-
-        <form asp-action="Register" method="post">
-            <div class="library-field">
-                <label asp-for="FullName"></label>
-                <input asp-for="FullName" />
-                <span asp-validation-for="FullName" class="text-danger"></span>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - مكتبة</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/auth.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site-animations.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-wrapper">
+            <!-- Left Side Info -->
+            <div class="auth-info">
+                <h1 class="auth-info__title">انضم إلينا الآن</h1>
+                <p class="auth-info__text">أنشئ حسابك في مكتبتنا الرقمية واستمتع بمزايا عديدة. الوصول السريع إلى آلاف الكتب والموارد التعليمية.</p>
+                <ul class="auth-info__features">
+                    <li class="auth-info__feature">إنشاء حساب مجاني وآمن</li>
+                    <li class="auth-info__feature">وصول فوري إلى المكتبة الكاملة</li>
+                    <li class="auth-info__feature">حفظ الكتب المفضلة والملاحظات</li>
+                    <li class="auth-info__feature">دعم فني وخدمة عملاء متميزة</li>
+                </ul>
             </div>
 
-            <div class="library-field">
-                <label asp-for="Email"></label>
-                <input asp-for="Email" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+            <!-- Right Side Register Form -->
+            <div class="exlibris-frame">
+                <div class="exlibris-card">
+                    <div class="exlibris-mark">📖</div>
+
+                    <div class="exlibris-card__eyebrow">عضوية جديدة</div>
+                    <h2 class="exlibris-card__title">إنشاء حساب</h2>
+                    <p class="exlibris-card__subtitle">انضم إلى المكتبة وابدأ رحلتك مع الكتب.</p>
+
+                    <form asp-action="Register" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="exlibris-field">
+                            <label asp-for="FullName"></label>
+                            <input asp-for="FullName" placeholder="أدخل اسمك الكامل" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="exlibris-field">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" type="email" placeholder="أدخل بريدك الإلكتروني" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="exlibris-field">
+                            <label asp-for="Password"></label>
+                            <input asp-for="Password" type="password" placeholder="أدخل كلمة المرور" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="exlibris-field">
+                            <label asp-for="ConfirmPassword"></label>
+                            <input asp-for="ConfirmPassword" type="password" placeholder="أعد كتابة كلمة المرور" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="exlibris-submit">إنشاء الحساب</button>
+                    </form>
+
+                    <p class="exlibris-card__footer">
+                        لديك حساب بالفعل؟ <a asp-controller="Account" asp-action="Login">تسجيل الدخول</a>
+                    </p>
+                </div>
             </div>
-
-            <div class="library-field">
-                <label asp-for="Password"></label>
-                <input asp-for="Password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-
-            <div class="library-field">
-                <label asp-for="ConfirmPassword"></label>
-                <input asp-for="ConfirmPassword" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-
-            <button type="submit" class="library-submit">تسجيل</button>
-        </form>
-
-        <p class="library-card__footer">
-            عندك حساب بالفعل؟ <a asp-controller="Account" asp-action="Login">سجّل دخول</a>
-        </p>
+        </div>
     </div>
-</div>
 
-@section Scripts {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -61,4 +84,5 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-}
+</body>
+</html>

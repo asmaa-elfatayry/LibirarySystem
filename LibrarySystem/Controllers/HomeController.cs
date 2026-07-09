@@ -1,14 +1,22 @@
 using LibrarySystem.Models;
+using LibrarySystem.web.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace LibrarySystem.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController(IGenericService<Category> _categoryService, IGenericService<Book> _bookService) : Controller
     {
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var books = await _bookService.GetAllAsync();
+            var categories = await _categoryService.GetAllAsync();
+            var vm = new HomeVM()
+            {
+                BookCount=books.Count(),
+                CategoriesCount=categories.Count()
+            };
+            return View(vm);
         }
 
         public IActionResult Privacy()

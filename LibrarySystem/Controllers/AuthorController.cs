@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LibrarySystem.web.Controllers;
 
 [Authorize(Roles = "Admin,Librarian")]
-public class AuthorController(IGenericService<Author> _authorService, IMapper _mapper) : Controller
+public class AuthorController(IAuthorService _authorService, IMapper _mapper) : Controller
 {
     public async Task<IActionResult> Index()
     {
@@ -25,8 +25,15 @@ public class AuthorController(IGenericService<Author> _authorService, IMapper _m
     {
         if (!ModelState.IsValid) return View(vm);
 
-        var author = _mapper.Map<Author>(vm);
-        await _authorService.CreateAsync(author);
+        var dto = _mapper.Map<Application.DTOs.AuthorDto>(vm);
+        var res = await _authorService.CreateAsync(dto);
+        if (!res.IsSuccess)
+        {
+            ModelState.AddModelError(string.Empty, res.Message);
+            return View(vm);
+        }
+
+        TempData["Success"] = res.Message;
         return RedirectToAction(nameof(Index));
     }
 
@@ -46,19 +53,25 @@ public class AuthorController(IGenericService<Author> _authorService, IMapper _m
         if (id != vm.Id) return BadRequest();
         if (!ModelState.IsValid) return View(vm);
 
-        var author = _mapper.Map<Author>(vm);
-        var success = await _authorService.UpdateAsync(author);
-        if (!success) return NotFound();
+        var dto = _mapper.Map<Application.DTOs.AuthorDto>(vm);
+        var res = await _authorService.UpdateAsync(dto);
+        if (!res.IsSuccess)
+        {
+            if (res.Status == Domain.Enums.eResultStatus.NotFound) return NotFound();
+            ModelState.AddModelError(string.Empty, res.Message);
+            return View(vm);
+        }
 
+        TempData["Success"] = res.Message;
         return RedirectToAction(nameof(Index));
     }
 
     [HttpPost]
     public async Task<IActionResult> DeleteAjax(Guid id)
     {
-        var success = await _authorService.DeleteAsync(id);
-        if (!success)
-            return Json(new { success = false, message = "المؤلف مش موجود" });
+        var res = await _authorService.DeleteAsync(id);
+        if (!res.IsSuccess)
+            return Json(new { success = false, message = res.Message });
 
         return Json(new { success = true });
     }

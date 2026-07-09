@@ -10,15 +10,15 @@ namespace LibrarySystem.Web.Controllers
 {
     [Authorize(Roles = "Admin,Librarian")]
     public class BookController(
-      IGenericService<Book> _bookService,
-      IGenericService<Author> _authorService,
-      IGenericService<Category> _categoryService,
-      IGenericService<Publisher> _publisherService,
+      IBookService _bookService,
+      IAuthorService _authorService,
+      ICategoryService _categoryService,
+      IPublisherService _publisherService,
       IMapper _mapper) : Controller
     {
         public async Task<IActionResult> Index()
         {
-            var books = await _bookService.GetAllAsync(b => b.Author, b => b.Category, b => b.Publisher);
+            var books = await _bookService.GetAllAsync();
             var viewModels = _mapper.Map<List<BookViewModel>>(books);
             return View(viewModels);
         }
@@ -40,10 +40,16 @@ namespace LibrarySystem.Web.Controllers
                 return View(vm);
             }
 
-            var book = _mapper.Map<Book>(vm);
-            book.CoverImageUrl = await SaveCoverImageAsync(vm.CoverImageFile);
+            var bookDto = _mapper.Map<Application.DTOs.BookDto>(vm);
+            bookDto.CoverImageUrl = await SaveCoverImageAsync(vm.CoverImageFile);
 
-            await _bookService.CreateAsync(book);
+            var result = await _bookService.CreateAsync(bookDto);
+            if (!result.IsSuccess)
+            {
+                ModelState.AddModelError(string.Empty, result.Message);
+                await PopulateDropdownsAsync(vm);
+                return View(vm);
+            }
             return RedirectToAction(nameof(Index));
         }
 
@@ -73,15 +79,23 @@ namespace LibrarySystem.Web.Controllers
                 return View(vm);
             }
 
-            var book = _mapper.Map<Book>(vm);
+            var dto = _mapper.Map<Application.DTOs.BookDto>(vm);
 
             if (vm.CoverImageFile != null)
-                book.CoverImageUrl = await SaveCoverImageAsync(vm.CoverImageFile);
+                dto.CoverImageUrl = await SaveCoverImageAsync(vm.CoverImageFile);
             else
-                book.CoverImageUrl = vm.CoverImageUrl; // مفيش صورة جديدة اترفعت، خلي القديمة زي ما هي
+                dto.CoverImageUrl = vm.CoverImageUrl;
 
-            var success = await _bookService.UpdateAsync(book);
-            if (!success) return NotFound();
+            var res = await _bookService.UpdateAsync(dto);
+            if (!res.IsSuccess)
+            {
+                if (res.Status == Domain.Enums.eResultStatus.NotFound) return NotFound();
+                ModelState.AddModelError(string.Empty, res.Message);
+                await PopulateDropdownsAsync(vm);
+                return View(vm);
+            }
+
+            TempData["Success"] = res.Message;
 
             return RedirectToAction(nameof(Index));
         }
@@ -89,9 +103,9 @@ namespace LibrarySystem.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteAjax(Guid id)
         {
-            var success = await _bookService.DeleteAsync(id);
-            if (!success)
-                return Json(new { success = false, message = "الكتاب مش موجود" });
+            var res = await _bookService.DeleteAsync(id);
+            if (!res.IsSuccess)
+                return Json(new { success = false, message = res.Message });
 
             return Json(new { success = true });
         }

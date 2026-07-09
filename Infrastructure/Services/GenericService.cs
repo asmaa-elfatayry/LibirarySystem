@@ -1,5 +1,7 @@
-﻿using Application.Interfaces;
+﻿using Application.Common;
+using Application.Interfaces;
 using Domain.Entities;
+using Domain.Enums;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -33,28 +35,50 @@ namespace Infrastructure.Services;
     public async Task<T?> GetByIdAsync(Guid id)
         => await _repository.GetByIdAsync(id);
 
-    public async Task<bool> CreateAsync(T entity)
+    public async Task<Result> CreateAsync(T entity)
     {
         await _repository.AddAsync(entity);
-        return await _context.SaveChangesAsync() > 0;
+
+        var saved = await _context.SaveChangesAsync() > 0;
+
+        if (!saved)
+            return Result.Failure(eResultStatus.Error, "Failed to create.");
+
+        return Result.Success("Created successfully.");
     }
 
-    public async Task<bool> UpdateAsync(T entity)
+    public async Task<Result> UpdateAsync(T entity)
     {
         var exists = await _repository.ExistsAsync(entity.Id);
-        if (!exists) return false;
+
+        if (!exists)
+            return Result.Failure(eResultStatus.NotFound, "Item not found.");
 
         _repository.Update(entity);
-        return await _context.SaveChangesAsync() > 0;
+
+        var saved = await _context.SaveChangesAsync() > 0;
+
+        if (!saved)
+            return Result.Failure(eResultStatus.Error, "Failed to update.");
+
+        return Result.Success("Updated successfully.");
     }
 
-    public async Task<bool> DeleteAsync(Guid id)
+    public async Task<Result> DeleteAsync(Guid id)
     {
         var entity = await _repository.GetByIdAsync(id);
-        if (entity == null) return false;
+
+        if (entity == null)
+            return Result.Failure(eResultStatus.NotFound, "Item not found.");
 
         _repository.Delete(entity);
-        return await _context.SaveChangesAsync() > 0;
+
+        var saved = await _context.SaveChangesAsync() > 0;
+
+        if (!saved)
+            return Result.Failure(eResultStatus.Error, "Failed to delete.");
+
+        return Result.Success("Deleted successfully.");
     }
 }
 

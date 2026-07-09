@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Application.Common;
+using Domain.Entities;
 using System.Linq.Expressions;
 
 
@@ -10,7 +11,7 @@ public interface IGenericService<T> where T : BaseEntity
     Task<T?> GetByIdAsync(Guid id, params Expression<Func<T, object>>[] includes);
     Task<List<T>> GetAllAsync();
     Task<T?> GetByIdAsync(Guid id);
-    Task<bool> CreateAsync(T entity);
-    Task<bool> UpdateAsync(T entity);
-    Task<bool> DeleteAsync(Guid id);
+    Task<Result> CreateAsync(T entity);
+    Task<Result> UpdateAsync(T entity);
+    Task<Result> DeleteAsync(Guid id);
 }

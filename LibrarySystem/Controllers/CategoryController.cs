@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Enums;
 using LibrarySystem.Web.ViewModels;
 using LibrarySystem.Web.ViewModels.Category;
 using Microsoft.AspNetCore.Authorization;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LibrarySystem.Controllers;
 
 [Authorize(Roles = "Admin,Librarian")]
-public class CategoryController(IGenericService<Category> _categoryService, IMapper _mapper) : Controller
+public class CategoryController(ICategoryService _categoryService, IMapper _mapper) : Controller
 {
     // GET: Category
     public async Task<IActionResult> Index()
@@ -33,8 +34,14 @@ public class CategoryController(IGenericService<Category> _categoryService, IMap
         if (!ModelState.IsValid)
             return View(vm);
 
-        var category = _mapper.Map<Category>(vm);
-        await _categoryService.CreateAsync(category);
+        var dto = _mapper.Map<Application.DTOs.CategoryDto>(vm);
+        var result = await _categoryService.CreateAsync(dto);
+
+        if (!result.IsSuccess)
+        {
+            ModelState.AddModelError(string.Empty, result.Message);
+            return View(vm);
+        }
         return RedirectToAction(nameof(Index));
     }
 
@@ -56,9 +63,23 @@ public class CategoryController(IGenericService<Category> _categoryService, IMap
         if (id != vm.Id) return BadRequest();
         if (!ModelState.IsValid) return View(vm);
 
-        var category = _mapper.Map<Category>(vm);
-        var success = await _categoryService.UpdateAsync(category);
-        if (!success) return NotFound();
+        var dto = _mapper.Map<Application.DTOs.CategoryDto>(vm);
+        var result = await _categoryService.UpdateAsync(dto);
+
+        if (!result.IsSuccess)
+        {
+            if (result.Status == eResultStatus.NotFound) return NotFound();
+            if (result.Status == eResultStatus.ValidationError)
+            {
+                ModelState.AddModelError("", result.Message);
+                return View(vm);
+            }
+
+            TempData["Error"] = result.Message;
+            return RedirectToAction(nameof(Index));
+        }
+
+        TempData["Success"] = result.Message;
 
         return RedirectToAction(nameof(Index));
     }
@@ -67,10 +88,10 @@ public class CategoryController(IGenericService<Category> _categoryService, IMap
     [HttpPost]
     public async Task<IActionResult> DeleteAjax(Guid id)
     {
-        var success = await _categoryService.DeleteAsync(id);
+        var res = await _categoryService.DeleteAsync(id);
 
-        if (!success)
-            return Json(new { success = false, message = "التصنيف مش موجود" });
+        if (!res.IsSuccess)
+            return Json(new { success = false, message = res.Message });
 
         return Json(new { success = true });
     }

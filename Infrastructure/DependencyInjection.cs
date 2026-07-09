@@ -2,6 +2,7 @@
 using Domain.Interfaces;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
+using Application.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,13 @@ public static class DependencyInjection
     {
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
+
+        // Application service registrations (implementations live in Infrastructure)
+        services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IPublisherService, PublisherService>();
+        services.AddScoped<IAuthorService, AuthorService>();
+        services.AddScoped<IBookService, BookService>();
+        services.AddScoped<IUserService, UserService>();
 
         return services;
     }

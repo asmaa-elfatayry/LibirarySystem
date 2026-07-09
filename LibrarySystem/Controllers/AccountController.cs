@@ -2,20 +2,24 @@
 using LibrarySystem.web.ViewModels.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace LibrarySystem.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IUserService _userService;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
 
         public AccountController(
-            UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager)
+            IUserService userService,
+            SignInManager<ApplicationUser> signInManager,
+            UserManager<ApplicationUser> userManager)
         {
-            _userManager = userManager;
+            _userService = userService;
             _signInManager = signInManager;
+            _userManager = userManager;
         }
 
         [HttpGet]
@@ -28,26 +32,21 @@ namespace LibrarySystem.Controllers
             if (!ModelState.IsValid)
                 return View(model);
 
-            var user = new ApplicationUser
-            {
-                UserName = model.Email,
-                Email = model.Email,
-                FullName = model.FullName,
-                MembershipDate = DateTime.UtcNow
-            };
+            var result = await _userService.RegisterAsync(model.Email, model.Password, model.FullName);
 
-            var result = await _userManager.CreateAsync(user, model.Password);
-
-            if (result.Succeeded)
+            if (result.IsSuccess)
             {
-                await _userManager.AddToRoleAsync(user, "Member");
-                await _signInManager.SignInAsync(user, isPersistent: false);
-                return RedirectToAction("Index", "Home");
+                // Get the registered user and sign in with FullName claim
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user != null)
+                {
+                    await _userManager.AddClaimAsync(user, new Claim("FullName", user.FullName));
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                }
+                return RedirectToAction("Index", "Category");
             }
 
-            foreach (var error in result.Errors)
-                ModelState.AddModelError(string.Empty, error.Description);
-
+            ModelState.AddModelError(string.Empty, result.Message);
             return View(model);
         }
 
@@ -65,7 +64,23 @@ namespace LibrarySystem.Controllers
                 model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
 
             if (result.Succeeded)
+            {
+                // Add FullName claim to user
+                var user = await _userManager.FindByNameAsync(model.Email);
+                if (user != null)
+                {
+                    var existingClaim = (await _userManager.GetClaimsAsync(user))
+                        .FirstOrDefault(c => c.Type == "FullName");
+
+                    if (existingClaim != null)
+                    {
+                        await _userManager.RemoveClaimAsync(user, existingClaim);
+                    }
+
+                    await _userManager.AddClaimAsync(user, new Claim("FullName", user.FullName));
+                }
                 return RedirectToAction("Index", "Category");
+            }
 
             ModelState.AddModelError(string.Empty, "البريد الإلكتروني أو كلمة المرور غير صحيحة");
             return View(model);
