@@ -19,8 +19,6 @@
     @foreach (var book in Model)
     {
         <div class="cat-card book-card" id="cat-card-@book.Id" onclick="goToBookDetails(event, '@book.Id')" style="cursor:pointer;">
-            <span class="cat-card__tab">Book</span>
-
             <div class="book-card__cover">
                 @if (!string.IsNullOrEmpty(book.CoverImageUrl))
                 {
@@ -30,14 +28,21 @@
                 {
                     <div class="book-card__cover--empty">لا يوجد غلاف</div>
                 }
+                @if (!string.IsNullOrEmpty(book.CategoryName))
+                {
+                    <span class="book-card__category">@book.CategoryName</span>
+                }
             </div>
 
             <div class="book-card__body">
                 <div class="cat-card__title">@book.Title</div>
-                <div class="cat-card__desc">
-                    @book.AuthorName — @book.CategoryName<br />
-                    @book.PublisherName
+                <div class="book-card__author">@book.AuthorName</div>
+
+                <div class="book-card__footer">
+                    <span class="book-card__publisher">@book.PublisherName</span>
+                    <span class="book-card__isbn">@book.ISBN</span>
                 </div>
+
                 <div class="cat-card__actions">
                     <a asp-action="Edit" asp-route-id="@book.Id" class="cat-action cat-action--edit">تعديل</a>
                     <button type="button" class="cat-action cat-action--delete"
