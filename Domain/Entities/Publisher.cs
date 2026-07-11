@@ -10,6 +10,6 @@ namespace Domain.Entities
         public string? Address { get; set; }
         public string? ContactInfo { get; set; }
 
-        public ICollection<Book> Books { get; set; } = new List<Book>();
+        public virtual ICollection<Book> Books { get; set; } = new List<Book>();
     }
 }

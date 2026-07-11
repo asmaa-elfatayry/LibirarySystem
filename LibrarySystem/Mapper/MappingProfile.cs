@@ -1,7 +1,8 @@
-﻿using AutoMapper;
+﻿using Application.DTOs;
+using AutoMapper;
 using Domain.Entities;
-using Application.DTOs;
 using LibrarySystem.web.ViewModels.Author;
+using LibrarySystem.web.ViewModels.Book;
 using LibrarySystem.web.ViewModels.Publisher;
 using LibrarySystem.Web.ViewModels.Book;
 using LibrarySystem.Web.ViewModels.Category;
@@ -35,6 +36,11 @@ namespace LibrarySystem.web.Mapper
             CreateMap<BookViewModel, Book>();
             CreateMap<BookDto, BookViewModel>();
             CreateMap<BookViewModel, BookDto>();
+
+            CreateMap<Domain.Entities.BookCopy, BookCopyViewModel>();
+            CreateMap<BookCopyViewModel, Domain.Entities.BookCopy>();
+
+
         }
     }
 }

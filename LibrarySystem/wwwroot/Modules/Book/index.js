@@ -16,3 +16,8 @@ function performDelete(id) {
             else Swal.fire('خطأ', data.message, 'error');
         });
 }
+
+function goToBookDetails(e, id) {
+    if (e.target.closest('.cat-card__actions')) return;
+    window.location.href = `/Book/Details/${id}`;
+}

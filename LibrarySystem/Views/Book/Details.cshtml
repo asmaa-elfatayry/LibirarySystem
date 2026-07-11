@@ -1,0 +1,101 @@
+﻿@model LibrarySystem.Web.ViewModels.Book.BookViewModel
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<link rel="stylesheet" href="~/css/book-details.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+@Html.AntiForgeryToken()
+
+<div class="book-detail">
+    <div class="book-detail__crumb">
+        <a asp-action="Index">الكتب</a> / @Model.Title
+    </div>
+
+    <div class="book-detail__hero">
+        <div class="book-detail__cover">
+            @if (!string.IsNullOrEmpty(Model.CoverImageUrl))
+            {
+                <img src="@Model.CoverImageUrl" alt="@Model.Title" />
+            }
+            else
+            {
+                <div class="book-detail__cover--empty">لا يوجد غلاف</div>
+            }
+        </div>
+
+        <div class="book-detail__info">
+            <h1 class="book-detail__title">@Model.Title</h1>
+            <div class="book-detail__meta">
+                <span>@Model.AuthorName</span>
+                <span class="dot">•</span>
+                <span>@Model.CategoryName</span>
+                <span class="dot">•</span>
+                <span>@Model.PublisherName</span>
+            </div>
+
+            @if (Model.PublishedYear.HasValue)
+            {
+                <div class="book-detail__badge">سنة النشر: @Model.PublishedYear</div>
+            }
+            <div class="book-detail__badge">ISBN: @Model.ISBN</div>
+
+            <p class="book-detail__desc">
+                @(string.IsNullOrWhiteSpace(Model.Description) ? "لا يوجد وصف لهذا الكتاب." : Model.Description)
+            </p>
+
+            <div class="book-detail__actions">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn-edit-book">✎ تعديل الكتاب</a>
+                <button type="button" class="btn-delete-book" onclick="deleteBook('@Model.Id', '@Model.Title')">🗑 حذف الكتاب</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="copies-panel">
+        <div class="copies-panel__header">
+            <h2>النسخ المتاحة</h2>
+            <span class="copies-panel__count">@Model.Copies.Count نسخة</span>
+        </div>
+        <form id="addCopyForm" class="copies-add-form">
+            <input type="hidden" name="bookId" value="@Model.Id" />
+            <input type="text" name="copyNumber" placeholder="رقم النسخة (مثال: C-004)" required />
+            <button type="submit" class="btn-add-copy">+ إضافة نسخة</button>
+        </form>
+
+        <div class="copies-list" id="copiesList">
+            @if (!Model.Copies.Any())
+            {
+                <p class="cat-empty">لسه مفيش نسخ مضافة لهذا الكتاب.</p>
+            }
+            else
+            {
+                @foreach (var copy in Model.Copies)
+                {
+                    <div class="copy-row" id="copy-row-@copy.Id" data-original-status="@copy.Status">
+                        <span class="copy-row__number">@copy.CopyNumber</span>
+
+                        <select class="copy-row__status status-@copy.Status.ToString().ToLower()"
+                                onchange="onStatusChange('@copy.Id', this)">
+                            <option value="Available" selected="@(copy.Status.ToString() == "Available")">متاحة</option>
+                            <option value="Borrowed" selected="@(copy.Status.ToString() == "Borrowed")">مستعارة</option>
+                            <option value="UnderMaintenance" selected="@(copy.Status.ToString() == "UnderMaintenance")">تحت الصيانة</option>
+                            <option value="Lost" selected="@(copy.Status.ToString() == "Lost")">مفقودة</option>
+                        </select>
+
+                        <button type="button" class="copy-row__save" id="save-btn-@copy.Id" style="display:none;" onclick="saveCopyStatus('@copy.Id')">
+                            حفظ
+                        </button>
+
+                        <button type="button" class="copy-row__delete" onclick="deleteCopy('@copy.Id')">حذف</button>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/modules/book/details.js"></script>
+}

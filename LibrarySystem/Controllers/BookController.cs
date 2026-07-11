@@ -1,6 +1,8 @@
 ﻿using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Enums;
+using LibrarySystem.web.ViewModels.Book;
 using LibrarySystem.Web.ViewModels.Book;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +16,7 @@ namespace LibrarySystem.Web.Controllers
       IAuthorService _authorService,
       ICategoryService _categoryService,
       IPublisherService _publisherService,
+      IGenericService<BookCopy> _bookCopyService,
       IMapper _mapper) : Controller
     {
         public async Task<IActionResult> Index()
@@ -110,6 +113,64 @@ namespace LibrarySystem.Web.Controllers
             return Json(new { success = true });
         }
 
+        public async Task<IActionResult> Details(Guid id)
+        {
+            var book = await _bookService.GetByIdAsync(id);
+            if (book == null) return NotFound();
+
+            var vm = _mapper.Map<BookViewModel>(book);
+
+            var allCopies = await _bookCopyService.GetAllAsync();
+            var bookCopies = allCopies.Where(c => c.BookId == id).ToList();
+            vm.Copies = _mapper.Map<List<BookCopyViewModel>>(bookCopies);
+
+            return View(vm);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddCopy(Guid bookId, string copyNumber)
+        {
+            if (string.IsNullOrWhiteSpace(copyNumber))
+                return Json(new { success = false, message = "رقم النسخة مطلوب" });
+
+            var allCopies = await _bookCopyService.GetAllAsync();
+            var isDuplicate = allCopies.Any(c =>
+                c.BookId == bookId &&
+                c.CopyNumber.Trim().Equals(copyNumber.Trim(), StringComparison.OrdinalIgnoreCase));
+
+            if (isDuplicate)
+                return Json(new { success = false, message = $"رقم النسخة \"{copyNumber}\" موجود بالفعل لهذا الكتاب" });
+
+            var copy = new Domain.Entities.BookCopy
+            {
+                BookId = bookId,
+                CopyNumber = copyNumber.Trim(),
+                Status = eCopyStatus.Available
+            };
+
+            var success = await _bookCopyService.CreateAsync(copy);
+            return Json(new { success });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateCopyStatusAjax(Guid id, Domain.Enums.eCopyStatus status)
+        {
+            var copy = await _bookCopyService.GetByIdAsync(id);
+            if (copy == null) return Json(new { success = false, message = "النسخة مش موجودة" });
+
+            copy.Status = status;
+            var success = await _bookCopyService.UpdateAsync(copy);
+            return Json(new { success });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteCopyAjax(Guid id)
+        {
+            var success = await _bookCopyService.DeleteAsync(id);
+            return Json(new { success });
+        }
+
         private async Task PopulateDropdownsAsync(BookViewModel vm)
         {
             var authors = await _authorService.GetAllAsync();
@@ -120,7 +181,6 @@ namespace LibrarySystem.Web.Controllers
             vm.Categories = categories.Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name });
             vm.Publishers = publishers.Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name });
         }
-
 
         // دالة مساعدة خاصة، بتحفظ أي صورة مرفوعة وترجّع مسارها
         private async Task<string?> SaveCoverImageAsync(IFormFile? file)

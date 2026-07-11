@@ -9,8 +9,8 @@ public class Reservation : BaseEntity
     public eReservationStatus Status { get; set; } = eReservationStatus.Pending;
 
     public Guid MemberId { get; set; }
-    public ApplicationUser Member { get; set; } = null!;
+    public virtual ApplicationUser Member { get; set; } = null!;
 
     public Guid BookId { get; set; }
-    public Book Book { get; set; } = null!;
+    public virtual Book Book { get; set; } = null!;
 }

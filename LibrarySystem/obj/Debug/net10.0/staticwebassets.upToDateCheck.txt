@@ -49,6 +49,7 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\d
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery\dist\jquery.min.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\admin-form.css
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Book\details.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -65,6 +66,7 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\d
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery-validation\dist\additional-methods.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Book\index.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\category-cards.css
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\book-details.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Publisher\index.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\favicon.ico
@@ -73,12 +75,14 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Categor
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 wwwroot\Modules\Author\index.js
+wwwroot\Modules\Book\details.js
 wwwroot\Modules\Book\index.js
 wwwroot\Modules\Category\index.js
 wwwroot\Modules\Publisher\index.js
 wwwroot\css\admin-form.css
 wwwroot\css\auth.css
 wwwroot\css\book-cards.css
+wwwroot\css\book-details.css
 wwwroot\css\category-cards.css
 wwwroot\css\home.css
 wwwroot\css\site-animations.css
@@ -148,4 +152,8 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\uploads\covers\4c69dd6f-5da8-4860-b4f4-592fcac32727.jpg
+wwwroot\uploads\covers\72a46a57-d96d-468e-a5dc-4bb72226b783.jpg
+wwwroot\uploads\covers\c427ab8b-6e25-48d8-b5b3-0f103a306aae.jpg
 wwwroot\uploads\covers\d1c30e2d-7483-49ba-a153-54e991e77870.jpg
+wwwroot\uploads\covers\dadd73bb-dff1-459b-ada8-441ee089977d.jpg
+wwwroot\uploads\covers\e7dff2e5-f085-4886-8ea6-017497d82b88.jpg

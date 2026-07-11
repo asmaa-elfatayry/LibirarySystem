@@ -13,5 +13,5 @@ public class Fine : BaseEntity
 
     // Foreign Key: Loan (One-to-One)
     public Guid LoanId { get; set; }
-    public Loan Loan { get; set; } = null!;
+    public virtual Loan Loan { get; set; } = null!;
 }

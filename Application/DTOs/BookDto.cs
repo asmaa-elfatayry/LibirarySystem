@@ -13,4 +13,9 @@ public class BookDto
     public string? Description { get; set; }
     public string ISBN { get; set; } = string.Empty;
     public int? PublishedYear { get; set; }
+
+
+    public string? AuthorName { get; set; }
+    public string? CategoryName { get; set; }
+    public string? PublisherName { get; set; }
 }

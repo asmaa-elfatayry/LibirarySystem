@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "i5tnqaMXuQ0=",
+  "dgSpecHash": "FMGPtOWfQag=",
   "success": true,
   "projectFilePath": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\LibrarySystem.web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MElbaz\\.nuget\\packages\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
+    "C:\\Users\\MElbaz\\.nuget\\packages\\castle.core\\5.2.1\\castle.core.5.2.1.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.9\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.9.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
@@ -24,6 +25,7 @@
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.9\\microsoft.entityframeworkcore.abstractions.10.0.9.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.9\\microsoft.entityframeworkcore.analyzers.10.0.9.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.entityframeworkcore.design\\10.0.9\\microsoft.entityframeworkcore.design.10.0.9.nupkg.sha512",
+    "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\10.0.9\\microsoft.entityframeworkcore.proxies.10.0.9.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.9\\microsoft.entityframeworkcore.relational.10.0.9.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.9\\microsoft.entityframeworkcore.sqlserver.10.0.9.nupkg.sha512",
     "C:\\Users\\MElbaz\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.9\\microsoft.extensions.dependencymodel.10.0.9.nupkg.sha512",

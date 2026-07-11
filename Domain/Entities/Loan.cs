@@ -15,11 +15,11 @@ public class Loan:BaseEntity
 
     // Foreign Key: Member
     public Guid MemberId { get; set; }
-    public ApplicationUser Member { get; set; } = null!;
+    public virtual ApplicationUser Member { get; set; } = null!;
 
     // Foreign Key: BookCopy
     public Guid BookCopyId { get; set; }
-    public BookCopy BookCopy { get; set; } = null!;
+    public virtual BookCopy BookCopy { get; set; } = null!;
 
-    public Fine? Fine { get; set; }
+    public virtual Fine? Fine { get; set; }
 }

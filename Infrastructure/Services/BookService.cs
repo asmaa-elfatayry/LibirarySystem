@@ -29,7 +29,13 @@ public class BookService : IBookService
             CategoryId = i.CategoryId,
             PublisherId = i.PublisherId,
             CoverImageUrl = i.CoverImageUrl,
-            Description = i.Description
+            Description = i.Description,
+            PublishedYear=i.PublishedYear,
+            ISBN=i.ISBN,
+            PublisherName=i.Publisher?.Name??string.Empty,
+            CategoryName=i.Category?.Name??string.Empty,
+            AuthorName=i.Author?.FullName??string.Empty
+
         }).ToList();
     }
 
@@ -44,7 +50,12 @@ public class BookService : IBookService
             CategoryId = item.CategoryId,
             PublisherId = item.PublisherId,
             CoverImageUrl = item.CoverImageUrl,
-            Description = item.Description
+            Description = item.Description,
+            ISBN=item.ISBN,
+            PublishedYear=item.PublishedYear,
+            PublisherName=item.Publisher?.Name??string.Empty,
+            CategoryName=item.Category?.Name??string.Empty,
+            AuthorName=item.Author?.FullName??string.Empty
         };
     }
 
@@ -58,7 +69,9 @@ public class BookService : IBookService
             CategoryId = dto.CategoryId,
             PublisherId = dto.PublisherId,
             CoverImageUrl = dto.CoverImageUrl,
-            Description = dto.Description
+            Description = dto.Description,
+            PublishedYear=dto.PublishedYear,
+            ISBN=dto.ISBN
         };
 
         return await _generic.CreateAsync(entity);
@@ -74,7 +87,9 @@ public class BookService : IBookService
             CategoryId = dto.CategoryId,
             PublisherId = dto.PublisherId,
             CoverImageUrl = dto.CoverImageUrl,
-            Description = dto.Description
+            Description = dto.Description,
+            PublishedYear=dto.PublishedYear,
+            ISBN=dto.ISBN
         };
 
         return await _generic.UpdateAsync(entity);

@@ -1,6 +1,4 @@
-/* ===== Modern Authentication Pages ===== */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lora:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+/* ===== Authentication Pages — aligned with site.css tokens ===== */
 
 /* ===== Auth Page Layout ===== */
 .auth-page {
@@ -9,48 +7,27 @@
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+    background: var(--bg-secondary);
+    background-image: radial-gradient(circle at 15% 20%, var(--primary-accent) 0%, transparent 45%);
     position: relative;
-    overflow: hidden;
 }
 
-/* Animated background decorations - darker */
-.auth-page::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.03) 0%, transparent 50%);
-    animation: bg-shift 15s ease-in-out infinite;
-    pointer-events: none;
-}
-
-@keyframes bg-shift {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(10px, -10px); }
-}
-
-/* ===== Auth Container Wrapper ===== */
+/* ===== Wrapper ===== */
 .auth-wrapper {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1000px;
-    z-index: 10;
-    position: relative;
+    max-width: 1080px;
 }
 
-/* Left side - Info content */
+/* ===== Left side — info panel ===== */
 .auth-info {
     flex: 1;
     display: none;
-    color: #f1f5f9;
+    color: var(--text-primary);
+    max-width: 420px;
 }
 
 @media (min-width: 992px) {
@@ -61,162 +38,126 @@
 
 .auth-info__title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #818cf8, #f87171);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+    color: var(--text-primary);
 }
 
 .auth-info__text {
     font-family: 'Lora', serif;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
-    color: #cbd5e1;
+    color: var(--text-secondary);
     margin-bottom: 2rem;
 }
 
 .auth-info__features {
     list-style: none;
-    margin-top: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .auth-info__feature {
     display: flex;
-    align-items: start;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    align-items: flex-start;
+    gap: .9rem;
+    margin-bottom: 1.2rem;
     font-family: 'Lora', serif;
-    color: #cbd5e1;
+    font-size: .95rem;
+    color: var(--text-secondary);
 }
 
-.auth-info__feature::before {
-    content: "✓";
-    color: #818cf8;
-    font-weight: 700;
-    font-size: 1.3rem;
-    flex-shrink: 0;
-}
+    .auth-info__feature::before {
+        content: "✓";
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+        line-height: 1.4;
+    }
 
-/* ===== Auth Container ===== */
+/* ===== Card frame ===== */
 .exlibris-frame {
     position: relative;
     width: 100%;
-    max-width: 420px;
-    z-index: 10;
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border: 2px solid #4f46e5;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    max-width: 400px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
     overflow: hidden;
 }
 
-[data-theme="dark"] .exlibris-frame {
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
-}
+    /* thin brand accent, matches the underline motif used on .site-nav */
+    .exlibris-frame::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
 
-/* Glow effect on frame */
-.exlibris-frame::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(99, 102, 241, 0.1) 50%, transparent 70%);
-    animation: shimmer-glow 3s infinite;
-    pointer-events: none;
-}
-
-@keyframes shimmer-glow {
-    0%, 100% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-}
-
-/* ===== Auth Card ===== */
 .exlibris-card {
-    position: relative;
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    color: #f1f5f9;
-    padding: 3.5rem 2.5rem;
+    padding: 3rem 2.25rem 2.5rem;
     text-align: center;
-    z-index: 2;
 }
 
 @media (max-width: 640px) {
     .exlibris-card {
-        padding: 2.5rem 1.5rem;
+        padding: 2.25rem 1.5rem;
     }
 }
 
-/* Header Icon */
+/* ===== Mark ===== */
 .exlibris-mark {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 1.5rem;
-    background: linear-gradient(135deg, #6366f1, #4f46e5);
-    border: 2px solid #818cf8;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 1.4rem;
+    background: var(--primary-accent);
+    border: 1px solid var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 1.8rem;
-    color: #ffffff;
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.6),
-                inset 0 0 20px rgba(255, 255, 255, 0.1);
-    animation: bounce-pulse 2.5s ease-in-out infinite;
+    font-size: 1.35rem;
+    color: var(--primary-dark);
 }
 
-@keyframes bounce-pulse {
-    0%, 100% { 
-        transform: translateY(0);
-        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.6),
-                    inset 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    50% { 
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(99, 102, 241, 0.8),
-                    inset 0 0 20px rgba(255, 255, 255, 0.2);
-    }
+[data-theme="dark"] .exlibris-mark {
+    color: var(--primary-light);
 }
 
-/* ===== Text Content ===== */
+/* ===== Text ===== */
 .exlibris-card__eyebrow {
     font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
+    font-size: .7rem;
+    letter-spacing: .18em;
     text-transform: uppercase;
-    color: #818cf8;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: .7rem;
 }
 
 .exlibris-card__title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0.6rem;
-    color: #f1f5f9;
-    background: linear-gradient(135deg, #818cf8, #f87171);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-@media (max-width: 640px) {
-    .exlibris-card__title {
-        font-size: 1.8rem;
-    }
+    line-height: 1.25;
+    margin-bottom: .5rem;
+    color: var(--text-primary);
 }
 
 .exlibris-card__subtitle {
     font-family: 'Lora', serif;
-    color: #cbd5e1;
-    font-size: 1rem;
-    margin-bottom: 2.5rem;
+    color: var(--text-secondary);
+    font-size: .95rem;
+    margin-bottom: 2.2rem;
     line-height: 1.6;
 }
 
@@ -226,61 +167,49 @@
 }
 
 .exlibris-field {
-    margin-bottom: 1.6rem;
-    text-align: right;
+    margin-bottom: 1.3rem;
 }
 
-.exlibris-field label {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #818cf8;
-    font-weight: 700;
-    margin-bottom: 0.7rem;
-}
+    .exlibris-field label {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: .74rem;
+        letter-spacing: .06em;
+        color: var(--text-tertiary);
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
 
-.exlibris-field input {
-    width: 100% !important;
-    background: #0f172a !important;
-    border: 2px solid #334155 !important;
-    border-radius: 10px !important;
-    padding: 0.9rem 1.1rem !important;
-    font-family: 'Lora', serif !important;
-    font-size: 1rem !important;
-    color: #f1f5f9 !important;
-    transition: all var(--transition-base) !important;
-    direction: rtl !important;
-    box-shadow: none !important;
-}
+    .exlibris-field input {
+        width: 100%;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: .7rem .9rem;
+        font-family: 'Lora', serif;
+        font-size: .95rem;
+        color: var(--text-primary);
+        transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
 
-.exlibris-field input::placeholder {
-    color: #94a3b8 !important;
-}
+        .exlibris-field input::placeholder {
+            color: var(--text-light);
+        }
 
-.exlibris-field input:hover {
-    border-color: #475569 !important;
-    background: #1a202c !important;
-}
+        .exlibris-field input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-accent);
+        }
 
-.exlibris-field input:focus,
-.exlibris-field input:focus-visible {
-    outline: none !important;
-    border-color: #818cf8 !important;
-    background: #1e293b !important;
-    box-shadow: 0 0 0 4px rgba(129, 140, 248, 0.25) !important;
-    transform: translateY(-2px) !important;
-}
-
-.exlibris-field .text-danger {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    color: #f87171;
-    margin-top: 0.5rem;
-    font-weight: 600;
-}
+    .exlibris-field .text-danger {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: .74rem;
+        color: var(--danger);
+        margin-top: .4rem;
+        font-weight: 500;
+    }
 
 /* ===== Checkbox ===== */
 .exlibris-check {
@@ -288,104 +217,70 @@
     align-items: center;
     justify-content: flex-start;
     font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    color: #cbd5e1;
-    margin-bottom: 2rem;
+    font-size: .85rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.8rem;
 }
 
-.exlibris-check label {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    cursor: pointer;
-    user-select: none;
-    transition: color var(--transition-fast);
-}
+    .exlibris-check label {
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+        cursor: pointer;
+    }
 
-.exlibris-check label:hover {
-    color: #818cf8;
-}
+    .exlibris-check input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        accent-color: var(--primary);
+    }
 
-.exlibris-check input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    accent-color: #818cf8;
-}
-
-/* ===== Submit Button ===== */
+/* ===== Submit ===== */
 .exlibris-submit {
     width: 100%;
-    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    background: var(--primary);
     color: #ffffff;
     border: none;
-    border-radius: 10px;
-    padding: 1.1rem 1.5rem;
+    border-radius: var(--radius-md);
+    padding: .85rem 1.2rem;
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 0.95rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .92rem;
+    letter-spacing: .02em;
     cursor: pointer;
-    transition: all var(--transition-base);
-    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
-    position: relative;
-    overflow: hidden;
+    transition: background var(--transition-fast), transform var(--transition-fast);
 }
 
-.exlibris-submit::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left var(--transition-base);
-}
+    .exlibris-submit:hover {
+        background: var(--primary-dark);
+    }
 
-.exlibris-submit:hover:not(:disabled) {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.7);
-}
+    .exlibris-submit:active {
+        transform: translateY(1px);
+    }
 
-.exlibris-submit:hover:not(:disabled)::before {
-    left: 100%;
-}
-
-.exlibris-submit:active:not(:disabled) {
-    transform: translateY(-1px);
-}
-
-.exlibris-submit:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-/* ===== Footer Link ===== */
+/* ===== Footer ===== */
 .exlibris-card__footer {
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     font-family: 'Lora', serif;
-    font-size: 0.95rem;
-    color: #cbd5e1;
+    font-size: .9rem;
+    color: var(--text-secondary);
     text-align: center;
 }
 
-.exlibris-card__footer a {
-    color: #818cf8;
-    text-decoration: none;
-    font-weight: 700;
-    border-bottom: 2px solid transparent;
-    transition: all var(--transition-fast);
-    position: relative;
-}
+    .exlibris-card__footer a {
+        color: var(--primary);
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+    }
 
-.exlibris-card__footer a:hover {
-    border-bottom-color: #818cf8;
-    color: #a5b4fc;
-}
+        .exlibris-card__footer a:hover {
+            border-bottom-color: var(--primary);
+        }
 
-/* ===== Responsive Design ===== */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
     .auth-wrapper {
         flex-direction: column;
@@ -400,85 +295,13 @@
 @media (max-width: 480px) {
     .exlibris-frame {
         max-width: 100%;
-        border-radius: 16px;
     }
 
     .exlibris-card {
-        padding: 2rem 1.2rem;
+        padding: 2rem 1.25rem;
     }
 
     .exlibris-card__title {
-        font-size: 1.5rem;
+        font-size: 1.55rem;
     }
-
-    .exlibris-card__subtitle {
-        font-size: 0.9rem;
-        margin-bottom: 1.8rem;
-    }
-
-    .exlibris-field {
-        margin-bottom: 1.2rem;
-    }
-
-    .exlibris-field input {
-        padding: 0.8rem 1rem;
-        font-size: 0.95rem;
-    }
-
-    .exlibris-submit {
-        padding: 0.9rem 1rem;
-        font-size: 0.85rem;
-    }
-
-    .auth-page {
-        padding: 1rem;
-    }
-
-    .exlibris-mark {
-        width: 50px;
-        height: 50px;
-        font-size: 1.3rem;
-    }
-}
-
-/* ===== Bootstrap Override ===== */
-/* Force dark theme on all inputs even Bootstrap's */
-.exlibris-field input,
-.exlibris-field input[type="text"],
-.exlibris-field input[type="email"],
-.exlibris-field input[type="password"] {
-    background-color: #0f172a !important;
-    color: #f1f5f9 !important;
-    border-color: #334155 !important;
-}
-
-.exlibris-field input:hover,
-.exlibris-field input[type="text"]:hover,
-.exlibris-field input[type="email"]:hover,
-.exlibris-field input[type="password"]:hover {
-    background-color: #1a202c !important;
-    border-color: #475569 !important;
-}
-
-.exlibris-field input:focus,
-.exlibris-field input[type="text"]:focus,
-.exlibris-field input[type="email"]:focus,
-.exlibris-field input[type="password"]:focus {
-    background-color: #1e293b !important;
-    border-color: #818cf8 !important;
-    box-shadow: 0 0 0 4px rgba(129, 140, 248, 0.25) !important;
-}
-
-/* Override form-control from Bootstrap */
-.form-control {
-    background-color: #0f172a !important;
-    color: #f1f5f9 !important;
-    border-color: #334155 !important;
-}
-
-.form-control:focus {
-    background-color: #1e293b !important;
-    border-color: #818cf8 !important;
-    box-shadow: 0 0 0 0.25rem rgba(129, 140, 248, 0.25) !important;
-    color: #f1f5f9 !important;
 }

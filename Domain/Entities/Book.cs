@@ -18,11 +18,11 @@ public class Book:BaseEntity
     public Guid PublisherId { get; set; }
 
     // Navigation Properties (الطرف التاني من العلاقة)
-    public Author Author { get; set; } = null!;
-    public Category Category { get; set; } = null!;
-    public Publisher Publisher { get; set; } = null!;
+    public virtual Author Author { get; set; } = null!;
+    public virtual Category Category { get; set; } = null!;
+    public virtual Publisher Publisher { get; set; } = null!;
 
-    public ICollection<BookCopy> Copies { get; set; } = new List<BookCopy>();
-    public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
+    public virtual ICollection<BookCopy> Copies { get; set; } = new List<BookCopy>();
+    public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
 
 }

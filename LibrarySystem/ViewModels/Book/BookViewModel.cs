@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using LibrarySystem.web.ViewModels.Book;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace LibrarySystem.Web.ViewModels.Book;
@@ -42,6 +43,7 @@ public class BookViewModel
     public IEnumerable<SelectListItem> Categories { get; set; } = new List<SelectListItem>();
     public IEnumerable<SelectListItem> Publishers { get; set; } = new List<SelectListItem>();
 
+    public List<BookCopyViewModel> Copies { get; set; } = new();
     // للعرض في الـ Index بس (بعد الـ Include)
     public string? AuthorName { get; set; }
     public string? CategoryName { get; set; }

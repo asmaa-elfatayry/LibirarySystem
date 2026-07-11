@@ -23,7 +23,7 @@ else
         @foreach (var category in Model)
         {
             <div class="cat-card" id="cat-card-@category.Id">
-                <span class="cat-card__tab">Category</span>
+                <div class="cat-card__mark">@category.Name.Substring(0, 1)</div>
                 <div class="cat-card__title">@category.Name</div>
                 <div class="cat-card__desc">@(string.IsNullOrWhiteSpace(category.Description) ? "بدون وصف" : category.Description)</div>
                 <div class="cat-card__actions">
@@ -41,6 +41,4 @@ else
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/modules/category/index.js"></script>
-
-
 }

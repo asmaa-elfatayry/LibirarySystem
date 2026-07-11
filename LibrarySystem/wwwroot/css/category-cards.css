@@ -1,4 +1,4 @@
-﻿/* ===== Category Index Cards ===== */
+﻿/* ===== Category Index Cards — aligned with site.css tokens ===== */
 
 .cat-header {
     display: flex;
@@ -6,82 +6,114 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px dashed var(--border-color);
+    margin-bottom: 2.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .cat-header__title {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 1.9rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
     color: var(--text-primary);
     margin: 0;
+    flex: 1;
 }
 
 .cat-header__count {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: .75rem;
-    color: var(--text-secondary);
-    letter-spacing: .05em;
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--text-tertiary);
+    background: var(--bg-tertiary);
+    padding: .35rem .8rem;
+    border-radius: var(--radius-lg);
 }
 
 .cat-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
 .cat-card {
     position: relative;
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     border: 1px solid var(--border-color);
-    border-radius: 3px;
-    padding: 1.3rem 1.2rem 1.1rem;
-    transition: box-shadow .18s ease, transform .18s ease;
+    border-radius: var(--radius-lg);
+    padding: 1.75rem 1.6rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-base), transform var(--transition-base), border-color var(--transition-base);
+    overflow: hidden;
 }
 
-    .cat-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    /* thin brand accent along the top, same motif as the auth card */
+    .cat-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+        opacity: 0;
+        transition: opacity var(--transition-base);
     }
 
-.cat-card__tab {
-    position: absolute;
-    top: -1px;
-    right: 1.1rem;
-    background: var(--brass);
-    color: #fff;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: .62rem;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    padding: .18rem .5rem;
-    border-radius: 0 0 3px 3px;
+    .cat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--primary-light);
+    }
+
+        .cat-card:hover::before {
+            opacity: 1;
+        }
+
+.cat-card__mark {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-accent);
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: 1.1rem;
+}
+
+[data-theme="dark"] .cat-card__mark {
+    color: var(--primary-light);
 }
 
 .cat-card__title {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.35rem;
     color: var(--text-primary);
-    margin: .6rem 0 .4rem;
+    margin: 0 0 .5rem;
+    line-height: 1.3;
 }
 
 .cat-card__desc {
-    font-family: 'Source Serif 4', serif;
-    font-size: .88rem;
+    font-family: 'Lora', serif;
+    font-size: .92rem;
     color: var(--text-secondary);
-    line-height: 1.55;
-    min-height: 2.6em;
-    margin-bottom: 1rem;
+    line-height: 1.65;
+    min-height: 2.9em;
+    margin-bottom: 1.4rem;
 }
 
 .cat-card__actions {
     display: flex;
-    gap: .5rem;
-    border-top: 1px dashed var(--border-color);
-    padding-top: .8rem;
+    gap: .6rem;
+    border-top: 1px solid var(--border-light);
+    padding-top: 1rem;
 }
 
 .cat-action {
@@ -90,42 +122,47 @@
     align-items: center;
     justify-content: center;
     gap: .35rem;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: .72rem;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    padding: .45rem .5rem;
-    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    padding: .55rem .6rem;
+    border-radius: var(--radius-md);
     text-decoration: none;
     border: 1px solid var(--border-color);
     background: transparent;
+    color: var(--text-secondary);
     cursor: pointer;
-    transition: border-color .18s ease, color .18s ease;
+    transition: all var(--transition-fast);
 }
 
-.cat-action--edit {
-    color: var(--text-primary);
+.cat-action--edit:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-accent);
 }
 
-    .cat-action--edit:hover {
-        border-color: var(--brass);
-        color: var(--brass);
-    }
-
-.cat-action--delete {
-    color: var(--stamp);
+.cat-action--delete:hover {
+    border-color: var(--danger);
+    background: var(--danger);
+    color: #fff;
 }
-
-    .cat-action--delete:hover {
-        border-color: var(--stamp);
-        background: var(--stamp);
-        color: #fff;
-    }
 
 .cat-empty {
     text-align: center;
-    padding: 3rem 1rem;
-    font-family: 'Source Serif 4', serif;
+    padding: 4rem 1rem;
+    font-family: 'Lora', serif;
     font-style: italic;
+    font-size: 1.05rem;
     color: var(--text-secondary);
+}
+
+@media (max-width: 480px) {
+    .cat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cat-card {
+        padding: 1.5rem 1.3rem 1.3rem;
+    }
 }

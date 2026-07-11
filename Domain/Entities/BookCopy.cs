@@ -11,8 +11,8 @@ namespace Domain.Entities
 
         // Foreign Key
         public Guid BookId { get; set; }
-        public Book Book { get; set; } = null!;
+        public virtual Book Book { get; set; } = null!;
 
-        public ICollection<Loan> Loans { get; set; } = new List<Loan>();
+        public virtual ICollection<Loan> Loans { get; set; } = new List<Loan>();
     }
 }

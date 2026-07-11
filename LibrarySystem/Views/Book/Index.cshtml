@@ -18,7 +18,7 @@
 <div class="cat-grid">
     @foreach (var book in Model)
     {
-        <div class="cat-card book-card" id="cat-card-@book.Id">
+        <div class="cat-card book-card" id="cat-card-@book.Id" onclick="goToBookDetails(event, '@book.Id')" style="cursor:pointer;">
             <span class="cat-card__tab">Book</span>
 
             <div class="book-card__cover">
