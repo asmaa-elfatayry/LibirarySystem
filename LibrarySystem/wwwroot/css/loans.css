@@ -1,0 +1,107 @@
+﻿.loan-alert {
+    padding: .8rem 1.1rem;
+    border-radius: var(--radius-md);
+    font-family: 'Inter', sans-serif;
+    font-size: .88rem;
+    margin-bottom: 1.5rem;
+}
+
+.loan-alert--success {
+    background: #1a7f4b1f;
+    color: #0f6b3a;
+}
+
+.loans-table {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.loans-table__head,
+.loans-table__row {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 1.1fr 1.1fr 1fr .9fr;
+    gap: 1rem;
+    align-items: center;
+    padding: .9rem 1.3rem;
+}
+
+.loans-table__head {
+    font-family: 'Inter', sans-serif;
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    background: var(--bg-tertiary);
+}
+
+.loans-table__row {
+    font-family: 'Inter', sans-serif;
+    font-size: .86rem;
+    color: var(--text-primary);
+    border-top: 1px solid var(--border-light);
+}
+
+    .loans-table__row small {
+        color: var(--text-tertiary);
+    }
+
+.loan-overdue {
+    color: var(--danger);
+    font-weight: 600;
+}
+
+.loan-badge {
+    display: inline-block;
+    font-size: .74rem;
+    font-weight: 700;
+    padding: .3rem .7rem;
+    border-radius: 999px;
+}
+
+.loan-badge--active {
+    background: #1a7f4b1f;
+    color: #0f6b3a;
+}
+
+.loan-badge--overdue {
+    background: #dc35461f;
+    color: var(--danger);
+}
+
+.loan-badge--returned {
+    background: var(--bg-tertiary);
+    color: var(--text-tertiary);
+}
+
+.loan-return-btn {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+    font-size: .78rem;
+    font-weight: 600;
+    padding: .4rem .8rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+    .loan-return-btn:hover {
+        background: var(--primary);
+        color: #fff;
+    }
+
+@media (max-width: 768px) {
+    .loans-table__head {
+        display: none;
+    }
+
+    .loans-table__row {
+        grid-template-columns: 1fr;
+        gap: .3rem;
+    }
+}

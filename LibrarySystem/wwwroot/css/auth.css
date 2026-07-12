@@ -1,4 +1,4 @@
-/* ===== Authentication Pages — aligned with site.css tokens ===== */
+/* ===== Authentication Pages — New Clean Design ===== */
 
 /* ===== Auth Page Layout ===== */
 .auth-page {
@@ -8,300 +8,203 @@
     justify-content: center;
     padding: 2rem 1rem;
     background: var(--bg-secondary);
-    background-image: radial-gradient(circle at 15% 20%, var(--primary-accent) 0%, transparent 45%);
     position: relative;
 }
 
 /* ===== Wrapper ===== */
 .auth-wrapper {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    max-width: 1080px;
+    max-width: 480px;
 }
 
-/* ===== Left side — info panel ===== */
-.auth-info {
-    flex: 1;
-    display: none;
-    color: var(--text-primary);
-    max-width: 420px;
-}
-
-@media (min-width: 992px) {
-    .auth-info {
-        display: block;
-    }
-}
-
-.auth-info__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 1.2rem;
-    color: var(--text-primary);
-}
-
-.auth-info__text {
-    font-family: 'Lora', serif;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-}
-
-.auth-info__features {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.auth-info__feature {
-    display: flex;
-    align-items: flex-start;
-    gap: .9rem;
-    margin-bottom: 1.2rem;
-    font-family: 'Lora', serif;
-    font-size: .95rem;
-    color: var(--text-secondary);
-}
-
-    .auth-info__feature::before {
-        content: "✓";
-        color: var(--primary);
-        font-weight: 700;
-        font-size: 1.1rem;
-        flex-shrink: 0;
-        line-height: 1.4;
-    }
-
-/* ===== Card frame ===== */
-.exlibris-frame {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
+/* ===== Card ===== */
+.auth-card {
     background: var(--bg-primary);
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.08);
     border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
-    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-    /* thin brand accent, matches the underline motif used on .site-nav */
-    .exlibris-frame::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: linear-gradient(90deg, var(--primary), var(--secondary));
+    .auth-card:hover {
+        box-shadow: 0 30px 80px rgba(99, 102, 241, 0.12);
     }
 
-.exlibris-card {
-    padding: 3rem 2.25rem 2.5rem;
+/* ===== Header ===== */
+.auth-header {
     text-align: center;
+    margin-bottom: 32px;
 }
 
-@media (max-width: 640px) {
-    .exlibris-card {
-        padding: 2.25rem 1.5rem;
-    }
+.auth-header__icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 12px;
 }
 
-/* ===== Mark ===== */
-.exlibris-mark {
-    width: 52px;
-    height: 52px;
-    margin: 0 auto 1.4rem;
-    background: var(--primary-accent);
-    border: 1px solid var(--primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Playfair Display', serif;
+.auth-header__title {
+    font-size: 28px;
     font-weight: 700;
-    font-size: 1.35rem;
-    color: var(--primary-dark);
-}
-
-[data-theme="dark"] .exlibris-mark {
-    color: var(--primary-light);
-}
-
-/* ===== Text ===== */
-.exlibris-card__eyebrow {
-    font-family: 'Inter', sans-serif;
-    font-size: .7rem;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--primary);
-    font-weight: 600;
-    margin-bottom: .7rem;
-}
-
-.exlibris-card__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
-    font-weight: 700;
-    line-height: 1.25;
-    margin-bottom: .5rem;
     color: var(--text-primary);
+    margin-bottom: 6px;
+    font-family: 'Playfair Display', serif;
 }
 
-.exlibris-card__subtitle {
-    font-family: 'Lora', serif;
+.auth-header__subtitle {
     color: var(--text-secondary);
-    font-size: .95rem;
-    margin-bottom: 2.2rem;
-    line-height: 1.6;
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Lora', serif;
 }
 
 /* ===== Form ===== */
-.exlibris-card form {
-    text-align: right;
+.auth-field {
+    margin-bottom: 20px;
 }
 
-.exlibris-field {
-    margin-bottom: 1.3rem;
-}
-
-    .exlibris-field label {
+    .auth-field label {
         display: block;
-        font-family: 'Inter', sans-serif;
-        font-size: .74rem;
-        letter-spacing: .06em;
-        color: var(--text-tertiary);
+        font-size: 13px;
         font-weight: 600;
-        margin-bottom: .5rem;
+        color: var(--text-secondary);
+        margin-bottom: 6px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 0.3px;
     }
 
-    .exlibris-field input {
+    .auth-field input {
         width: 100%;
-        background: var(--bg-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: var(--radius-md);
-        padding: .7rem .9rem;
-        font-family: 'Lora', serif;
-        font-size: .95rem;
+        padding: 14px 16px;
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        font-size: 15px;
         color: var(--text-primary);
-        transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+        background: var(--bg-secondary);
+        transition: all 0.2s ease;
+        font-family: 'Lora', serif;
     }
 
-        .exlibris-field input::placeholder {
+        .auth-field input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--bg-primary);
+            box-shadow: 0 0 0 4px var(--primary-accent);
+        }
+
+        .auth-field input::placeholder {
             color: var(--text-light);
         }
 
-        .exlibris-field input:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px var(--primary-accent);
-        }
-
-    .exlibris-field .text-danger {
+    .auth-field .text-danger {
         display: block;
-        font-family: 'Inter', sans-serif;
-        font-size: .74rem;
+        font-size: 13px;
         color: var(--danger);
-        margin-top: .4rem;
-        font-weight: 500;
+        margin-top: 6px;
+        font-family: 'Inter', sans-serif;
     }
 
 /* ===== Checkbox ===== */
-.exlibris-check {
+.auth-check {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-family: 'Inter', sans-serif;
-    font-size: .85rem;
-    color: var(--text-secondary);
-    margin-bottom: 1.8rem;
+    margin-bottom: 20px;
 }
 
-    .exlibris-check label {
+    .auth-check label {
         display: flex;
         align-items: center;
-        gap: .6rem;
+        gap: 8px;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        color: var(--text-secondary);
         cursor: pointer;
     }
 
-    .exlibris-check input[type="checkbox"] {
+    .auth-check input[type="checkbox"] {
         width: 16px;
         height: 16px;
         cursor: pointer;
         accent-color: var(--primary);
     }
 
-/* ===== Submit ===== */
-.exlibris-submit {
+/* ===== Button ===== */
+.auth-btn {
     width: 100%;
+    padding: 16px;
     background: var(--primary);
     color: #ffffff;
     border: none;
-    border-radius: var(--radius-md);
-    padding: .85rem 1.2rem;
-    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    font-size: 17px;
     font-weight: 600;
-    font-size: .92rem;
-    letter-spacing: .02em;
     cursor: pointer;
-    transition: background var(--transition-fast), transform var(--transition-fast);
+    transition: all 0.2s ease;
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
 }
 
-    .exlibris-submit:hover {
+    .auth-btn:hover {
         background: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
     }
 
-    .exlibris-submit:active {
-        transform: translateY(1px);
+    .auth-btn:active {
+        transform: translateY(0);
     }
 
 /* ===== Footer ===== */
-.exlibris-card__footer {
-    margin-top: 1.8rem;
-    font-family: 'Lora', serif;
-    font-size: .9rem;
-    color: var(--text-secondary);
+.auth-footer {
     text-align: center;
+    margin-top: 24px;
+    font-size: 15px;
+    color: var(--text-secondary);
+    font-family: 'Lora', serif;
 }
 
-    .exlibris-card__footer a {
+    .auth-footer a {
         color: var(--primary);
         font-weight: 600;
         text-decoration: none;
-        border-bottom: 1px solid transparent;
     }
 
-        .exlibris-card__footer a:hover {
-            border-bottom-color: var(--primary);
+        .auth-footer a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
         }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-    .auth-wrapper {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .auth-info {
-        display: none;
-    }
+/* ===== Validation Summary ===== */
+.auth-validation {
+    background: var(--danger-light);
+    border: 2px solid var(--danger);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    color: var(--danger);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
 }
 
-@media (max-width: 480px) {
-    .exlibris-frame {
-        max-width: 100%;
+    .auth-validation ul {
+        margin: 0;
+        padding-right: 20px;
     }
 
-    .exlibris-card {
-        padding: 2rem 1.25rem;
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .auth-card {
+        padding: 32px 24px;
     }
 
-    .exlibris-card__title {
-        font-size: 1.55rem;
+    .auth-header__title {
+        font-size: 24px;
+    }
+
+    .auth-field input {
+        padding: 12px 14px;
+        font-size: 14px;
     }
 }

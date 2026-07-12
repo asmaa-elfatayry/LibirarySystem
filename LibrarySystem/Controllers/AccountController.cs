@@ -79,7 +79,7 @@ namespace LibrarySystem.Controllers
 
                     await _userManager.AddClaimAsync(user, new Claim("FullName", user.FullName));
                 }
-                return RedirectToAction("Index", "Category");
+                return RedirectToAction("Index", "Book");
             }
 
             ModelState.AddModelError(string.Empty, "البريد الإلكتروني أو كلمة المرور غير صحيحة");

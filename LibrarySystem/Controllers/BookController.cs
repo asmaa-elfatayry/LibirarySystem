@@ -124,6 +124,8 @@ namespace LibrarySystem.Web.Controllers
             var bookCopies = allCopies.Where(c => c.BookId == id).ToList();
             vm.Copies = _mapper.Map<List<BookCopyViewModel>>(bookCopies);
 
+            vm.HasAvailableCopy = bookCopies.Any(c => c.Status == eCopyStatus.Available);
+
             return View(vm);
         }
 

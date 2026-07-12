@@ -18,60 +18,48 @@
 <body>
     <div class="auth-page">
         <div class="auth-wrapper">
-            <!-- Left Side Info -->
-            <div class="auth-info">
-                <h1 class="auth-info__title">انضم إلينا الآن</h1>
-                <p class="auth-info__text">أنشئ حسابك في مكتبتنا الرقمية واستمتع بمزايا عديدة. الوصول السريع إلى آلاف الكتب والموارد التعليمية.</p>
-                <ul class="auth-info__features">
-                    <li class="auth-info__feature">إنشاء حساب مجاني وآمن</li>
-                    <li class="auth-info__feature">وصول فوري إلى المكتبة الكاملة</li>
-                    <li class="auth-info__feature">حفظ الكتب المفضلة والملاحظات</li>
-                    <li class="auth-info__feature">دعم فني وخدمة عملاء متميزة</li>
-                </ul>
-            </div>
+            <div class="auth-card">
+                <!-- Header -->
+                <div class="auth-header">
+                    <span class="auth-header__icon">📖</span>
+                    <h1 class="auth-header__title">مرحباً بك</h1>
+                    <p class="auth-header__subtitle">أدخل بياناتك لإنشاء حساب جديد</p>
+                </div>
 
-            <!-- Right Side Register Form -->
-            <div class="exlibris-frame">
-                <div class="exlibris-card">
-                    <div class="exlibris-mark">ك</div>
+                <!-- Form -->
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="auth-validation"></div>
 
-                    <div class="exlibris-card__eyebrow">عضوية جديدة</div>
-                    <h2 class="exlibris-card__title">إنشاء حساب</h2>
-                    <p class="exlibris-card__subtitle">انضم إلى المكتبة وابدأ رحلتك مع الكتب.</p>
+                    <div class="auth-field">
+                        <label asp-for="FullName">الاسم الكامل</label>
+                        <input asp-for="FullName" placeholder="أدخل اسمك الثلاثي" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
 
-                    <form asp-action="Register" method="post">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="auth-field">
+                        <label asp-for="Email">البريد الإلكتروني</label>
+                        <input asp-for="Email" type="email" placeholder="name@example.com" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
 
-                        <div class="exlibris-field">
-                            <label asp-for="FullName"></label>
-                            <input asp-for="FullName" placeholder="أدخل اسمك الكامل" />
-                            <span asp-validation-for="FullName" class="text-danger"></span>
-                        </div>
+                    <div class="auth-field">
+                        <label asp-for="Password">كلمة المرور</label>
+                        <input asp-for="Password" type="password" placeholder="أدخل كلمة مرور قوية" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
 
-                        <div class="exlibris-field">
-                            <label asp-for="Email"></label>
-                            <input asp-for="Email" type="email" placeholder="أدخل بريدك الإلكتروني" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
+                    <div class="auth-field">
+                        <label asp-for="ConfirmPassword">تأكيد كلمة المرور</label>
+                        <input asp-for="ConfirmPassword" type="password" placeholder="أعد كتابة كلمة المرور" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
 
-                        <div class="exlibris-field">
-                            <label asp-for="Password"></label>
-                            <input asp-for="Password" type="password" placeholder="أدخل كلمة المرور" />
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
+                    <button type="submit" class="auth-btn">إنشاء الحساب</button>
+                </form>
 
-                        <div class="exlibris-field">
-                            <label asp-for="ConfirmPassword"></label>
-                            <input asp-for="ConfirmPassword" type="password" placeholder="أعد كتابة كلمة المرور" />
-                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                        </div>
-
-                        <button type="submit" class="exlibris-submit">إنشاء الحساب</button>
-                    </form>
-
-                    <p class="exlibris-card__footer">
-                        لديك حساب بالفعل؟ <a asp-controller="Account" asp-action="Login">تسجيل الدخول</a>
-                    </p>
+                <!-- Footer -->
+                <div class="auth-footer">
+                    لديك حساب؟ <a asp-controller="Account" asp-action="Login">سجل الدخول</a>
                 </div>
             </div>
         </div>

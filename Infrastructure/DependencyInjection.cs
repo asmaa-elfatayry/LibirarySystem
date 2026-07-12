@@ -23,7 +23,10 @@ public static class DependencyInjection
         services.AddScoped<IAuthorService, AuthorService>();
         services.AddScoped<IBookService, BookService>();
         services.AddScoped<IUserService, UserService>();
-
+        services.AddScoped<ILoanService, LoanService>();
+        services.AddScoped<IReservationService, ReservationService>();
+        services.AddScoped<IFineService, FineService>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         return services;
     }
 }

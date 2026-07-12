@@ -1,0 +1,76 @@
+﻿@model List<Application.DTOs.FineDto>
+
+@{
+    ViewData["Title"] = "الغرامات";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="~/css/loans.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+@Html.AntiForgeryToken()
+
+<div class="cat-header">
+    <h2 class="cat-header__title">الغرامات</h2>
+    <span class="cat-header__count">@Model.Count(f => !f.IsPaid) غير مسددة</span>
+</div>
+
+@if (!Model.Any())
+{
+    <p class="cat-empty">مفيش غرامات مسجّلة.</p>
+}
+else
+{
+    <div class="loans-table">
+        <div class="loans-table__head">
+            <span>الكتاب</span>
+            <span>العضو</span>
+            <span>القيمة</span>
+            <span>تاريخ الإصدار</span>
+            <span>الحالة</span>
+            <span></span>
+        </div>
+
+        @foreach (var f in Model)
+        {
+            <div class="loans-table__row" id="fine-row-@f.Id">
+                <span>@f.BookTitle</span>
+                <span>@f.MemberName</span>
+                <span>@f.Amount جنيه</span>
+                <span>@f.IssuedDate.ToString("dd MMM yyyy")</span>
+                <span>
+                    @if (f.IsPaid)
+                    {
+                        <span class="loan-badge loan-badge--returned">مسددة</span>
+                    }
+                    else
+                    {
+                        <span class="loan-badge loan-badge--overdue">غير مسددة</span>
+                    }
+                </span>
+                <span>
+                    @if (!f.IsPaid)
+                    {
+                        <button type="button" class="loan-return-btn" onclick="markPaid('@f.Id')">تسجيل سداد</button>
+                    }
+                </span>
+            </div>
+        }
+    </div>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function markPaid(id) {
+        fetch(`/Fine/MarkAsPaidAjax?id=${id}`, {
+        method: 'POST',
+        headers: { 'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value ?? '' }
+        })
+        .then(res => res.json())
+        .then(data => {
+        if (data.success) window.location.reload();
+        else Swal.fire('خطأ', data.message, 'error');
+        });
+        }
+    </script>
+}

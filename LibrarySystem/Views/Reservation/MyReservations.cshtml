@@ -1,0 +1,83 @@
+﻿@model List<Application.DTOs.ReservationDto>
+
+@{
+    ViewData["Title"] = "حجوزاتي";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="~/css/loans.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+@Html.AntiForgeryToken()
+
+<div class="cat-header">
+    <h2 class="cat-header__title">حجوزاتي</h2>
+    <span class="cat-header__count">@Model.Count حجز</span>
+</div>
+
+@if (!Model.Any())
+{
+    <p class="cat-empty">لسه معملتش أي حجز.</p>
+}
+else
+{
+    <div class="loans-table">
+        <div class="loans-table__head">
+            <span>الكتاب</span>
+            <span>تاريخ الحجز</span>
+            <span>الحالة</span>
+            <span></span>
+        </div>
+
+        @foreach (var r in Model)
+        {
+            <div class="loans-table__row" id="res-row-@r.Id">
+                <span>@r.BookTitle</span>
+                <span>@r.RequestDate.ToString("dd MMM yyyy")</span>
+                <span>
+                    @if (r.Status == "Pending")
+                    {
+                        <span class="loan-badge loan-badge--active">في الانتظار</span>
+                    }
+                    else if (r.Status == "Fulfilled")
+                    {
+                        <span class="loan-badge loan-badge--returned">تم التحويل لاستعارة</span>
+                    }
+                    else
+                    {
+                        <span class="loan-badge loan-badge--overdue">ملغي</span>
+                    }
+                </span>
+                <span>
+                    @if (r.Status == "Pending")
+                    {
+                        <button type="button" class="loan-return-btn" onclick="cancelReservation('@r.Id')">إلغاء</button>
+                    }
+                </span>
+            </div>
+        }
+    </div>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function cancelReservation(id) {
+        Swal.fire({
+        title: 'إلغاء الحجز؟', icon: 'warning', showCancelButton: true,
+        confirmButtonText: 'نعم', cancelButtonText: 'رجوع'
+        }).then((result) => {
+        if (!result.isConfirmed) return;
+
+        fetch(`/Reservation/CancelAjax?id=${id}`, {
+        method: 'POST',
+        headers: { 'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value ?? '' }
+        })
+        .then(res => res.json())
+        .then(data => {
+        if (data.success) window.location.reload();
+        else Swal.fire('خطأ', data.message, 'error');
+        });
+        });
+        }
+    </script>
+}

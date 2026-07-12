@@ -327,3 +327,74 @@ a:hover {
 .logout-icon-btn:hover .logout-icon {
     transform: rotate(-10deg);
 }
+
+
+/* ==========================================
+   SweetAlert2 Theme
+========================================== */
+
+.swal2-popup {
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.swal2-title {
+    color: var(--text-primary) !important;
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.swal2-html-container {
+    color: var(--text-secondary) !important;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+.swal2-actions {
+    gap: .75rem;
+}
+
+.swal2-confirm {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border-radius: var(--radius-md) !important;
+    padding: .75rem 1.5rem !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    box-shadow: var(--shadow-sm);
+}
+
+    .swal2-confirm:hover {
+        background: var(--primary-dark) !important;
+    }
+
+.swal2-cancel {
+    background: transparent !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-md) !important;
+    padding: .75rem 1.5rem !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+    .swal2-cancel:hover {
+        border-color: var(--primary) !important;
+        color: var(--primary) !important;
+    }
+
+.swal2-icon {
+    border-width: .2em !important;
+}
+
+.swal2-close {
+    color: var(--text-secondary) !important;
+}
+
+    .swal2-close:hover {
+        color: var(--text-primary) !important;
+    }

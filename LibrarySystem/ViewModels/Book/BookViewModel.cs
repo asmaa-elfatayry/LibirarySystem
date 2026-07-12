@@ -33,7 +33,7 @@ public class BookViewModel
     [Required(ErrorMessage = "اختار الناشر")]
     public Guid PublisherId { get; set; }
 
-
+    public bool HasAvailableCopy { get; set; }
 
     // الملف الجديد اللي المستخدم هيرفعه - مش بيتخزن في الداتابيز أبدًا
     public IFormFile? CoverImageFile { get; set; }

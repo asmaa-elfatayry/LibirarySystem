@@ -11,5 +11,6 @@ public enum eResultStatus
     ValidationError,
     Forbidden,
     Unauthorized,
-    Error
+    Error,
+    Conflict
 }

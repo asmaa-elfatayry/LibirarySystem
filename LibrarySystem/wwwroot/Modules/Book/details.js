@@ -143,3 +143,22 @@ document.addEventListener('DOMContentLoaded', function () {
 function getToken() {
     return document.querySelector('input[name="__RequestVerificationToken"]')?.value ?? '';
 }
+
+function reserveBook(bookId) {
+    fetch('/Reservation/CreateAjax', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'RequestVerificationToken': getToken()
+        },
+        body: `bookId=${bookId}`
+    })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                Swal.fire('تم الحجز', data.message, 'success');
+            } else {
+                Swal.fire('مقدرش أحجز', data.message, 'error');
+            }
+        });
+}

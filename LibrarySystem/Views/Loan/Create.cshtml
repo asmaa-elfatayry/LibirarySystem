@@ -1,0 +1,38 @@
+﻿@using LibrarySystem.web.ViewModels.Loan
+@model LoanViewModel
+
+@{
+    ViewData["Title"] = "تسجيل استعارة";
+}
+
+<link rel="stylesheet" href="~/css/admin-form.css" />
+
+<div class="admin-form-wrap">
+    <div class="admin-form__crumb"><a asp-action="Index">الاستعارات</a> / تسجيل جديدة</div>
+    <h2 class="admin-form__title">تسجيل استعارة جديدة</h2>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <form asp-action="Create" method="post" class="admin-form">
+        <div class="admin-field">
+            <label asp-for="MemberId"></label>
+            <select asp-for="MemberId" asp-items="Model.Members" class="form-select">
+                <option value="">-- اختار عضو --</option>
+            </select>
+            <span asp-validation-for="MemberId"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="BookId"></label>
+            <select asp-for="BookId" asp-items="Model.Books" class="form-select">
+                <option value="">-- اختار كتاب --</option>
+            </select>
+            <span asp-validation-for="BookId"></span>
+        </div>
+
+        <div class="admin-form__actions">
+            <button type="submit" class="btn-library-primary" style="border:none;">تسجيل الاستعارة</button>
+            <a asp-action="Index" class="btn-library-ghost">إلغاء</a>
+        </div>
+    </form>
+</div>

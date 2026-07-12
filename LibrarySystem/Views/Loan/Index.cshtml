@@ -1,0 +1,75 @@
+﻿@model List<Application.DTOs.LoanDto>
+
+@{
+    ViewData["Title"] = "الاستعارات";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="~/css/loans.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+@Html.AntiForgeryToken()
+
+<div class="cat-header">
+    <h2 class="cat-header__title">الاستعارات</h2>
+    <span class="cat-header__count">@Model.Count عملية</span>
+    <a asp-action="Create" class="btn-library-primary">+ تسجيل استعارة</a>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="loan-alert loan-alert--success">@TempData["Success"]</div>
+}
+
+@if (!Model.Any())
+{
+    <p class="cat-empty">لسه مفيش استعارات مسجّلة.</p>
+}
+else
+{
+    <div class="loans-table">
+        <div class="loans-table__head">
+            <span>الكتاب</span>
+            <span>العضو</span>
+            <span>تاريخ الاستعارة</span>
+            <span>موعد الإرجاع</span>
+            <span>الحالة</span>
+            <span></span>
+        </div>
+
+        @foreach (var loan in Model)
+        {
+            var isOverdue = loan.Status == "Active" && loan.DueDate < DateTime.UtcNow;
+            <div class="loans-table__row" id="loan-row-@loan.Id">
+                <span>@loan.BookTitle <small>(@loan.CopyNumber)</small></span>
+                <span>@loan.MemberName</span>
+                <span>@loan.BorrowDate.ToString("dd MMM yyyy")</span>
+                <span class="@(isOverdue ? "loan-overdue" : "")">@loan.DueDate.ToString("dd MMM yyyy")</span>
+                <span>
+                    @if (loan.Status == "Returned")
+                    {
+                        <span class="loan-badge loan-badge--returned">تم الإرجاع</span>
+                    }
+                    else if (isOverdue)
+                    {
+                        <span class="loan-badge loan-badge--overdue">متأخر</span>
+                    }
+                    else
+                    {
+                        <span class="loan-badge loan-badge--active">نشطة</span>
+                    }
+                </span>
+                <span>
+                    @if (loan.Status == "Active")
+                    {
+                        <button type="button" class="loan-return-btn" onclick="returnLoan('@loan.Id')">تسجيل إرجاع</button>
+                    }
+                </span>
+            </div>
+        }
+    </div>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/modules/loan/index.js"></script>
+}

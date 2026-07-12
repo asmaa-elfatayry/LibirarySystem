@@ -1,0 +1,55 @@
+﻿@model List<Application.DTOs.FineDto>
+
+@{
+    ViewData["Title"] = "غراماتي";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="~/css/loans.css" />
+
+<div class="cat-header">
+    <h2 class="cat-header__title">غراماتي</h2>
+    <span class="cat-header__count">@Model.Count(f => !f.IsPaid) غير مسددة</span>
+</div>
+
+@if (!Model.Any())
+{
+    <p class="cat-empty">مفيش عليك أي غرامات، تمام كده 👌</p>
+}
+else
+{
+    <div class="loans-table">
+        <div class="loans-table__head" style="grid-template-columns: 2fr 1fr 1.2fr 1fr;">
+            <span>الكتاب</span>
+            <span>القيمة</span>
+            <span>تاريخ الإصدار</span>
+            <span>الحالة</span>
+        </div>
+
+        @foreach (var f in Model)
+        {
+            <div class="loans-table__row" style="grid-template-columns: 2fr 1fr 1.2fr 1fr;">
+                <span>@f.BookTitle</span>
+                <span>@f.Amount جنيه</span>
+                <span>@f.IssuedDate.ToString("dd MMM yyyy")</span>
+                <span>
+                    @if (f.IsPaid)
+                    {
+                        <span class="loan-badge loan-badge--returned">مسددة</span>
+                    }
+                    else
+                    {
+                        <span class="loan-badge loan-badge--overdue">غير مسددة</span>
+                    }
+                </span>
+            </div>
+        }
+    </div>
+
+    @if (Model.Any(f => !f.IsPaid))
+    {
+        <p style="margin-top:1.2rem; font-family:'Inter',sans-serif; font-size:.85rem; color:var(--text-tertiary);">
+            لسداد الغرامات، توجّه لمكتب أمين المكتبة.
+        </p>
+    }
+}
