@@ -1,0 +1,30 @@
+﻿.error-page {
+    max-width: 480px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.error-page__code {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1;
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+}
+
+.error-page__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin-bottom: .75rem;
+}
+
+.error-page__desc {
+    font-family: 'Lora', serif;
+    font-size: .95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}

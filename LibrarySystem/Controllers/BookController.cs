@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LibrarySystem.Web.Controllers
 {
-    [Authorize(Roles = "Admin,Librarian")]
+    [Authorize]
     public class BookController(
       IBookService _bookService,
       IAuthorService _authorService,

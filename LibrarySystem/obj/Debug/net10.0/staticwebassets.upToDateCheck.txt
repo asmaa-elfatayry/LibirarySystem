@@ -10,12 +10,14 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery-vali
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\site.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\site-extended.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\error-pages.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\js\theme.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\loans.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Author\index.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\User\index.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -29,6 +31,7 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\d
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\images\Bibliophile-rafiki.svg
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery\dist\jquery.slim.min.js
@@ -66,6 +69,7 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\d
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\home.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\images\Feeling sorry-rafiki.svg
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Book\index.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\category-cards.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\book-details.css
@@ -74,6 +78,7 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\d
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\favicon.ico
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Category\index.js
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\images\Bibliophile-amico.svg
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 wwwroot\Modules\Author\index.js
@@ -81,18 +86,23 @@ wwwroot\Modules\Book\details.js
 wwwroot\Modules\Book\index.js
 wwwroot\Modules\Category\index.js
 wwwroot\Modules\Publisher\index.js
+wwwroot\Modules\User\index.js
 wwwroot\Modules\loan\index.js
 wwwroot\css\admin-form.css
 wwwroot\css\auth.css
 wwwroot\css\book-cards.css
 wwwroot\css\book-details.css
 wwwroot\css\category-cards.css
+wwwroot\css\error-pages.css
 wwwroot\css\home.css
 wwwroot\css\loans.css
 wwwroot\css\site-animations.css
 wwwroot\css\site-extended.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\Bibliophile-amico.svg
+wwwroot\images\Bibliophile-rafiki.svg
+wwwroot\images\Feeling sorry-rafiki.svg
 wwwroot\js\site.js
 wwwroot\js\theme.js
 wwwroot\lib\bootstrap\LICENSE

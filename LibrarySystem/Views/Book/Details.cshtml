@@ -46,8 +46,11 @@
             </p>
 
             <div class="book-detail__actions">
-                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn-edit-book">✎ تعديل الكتاب</a>
-                <button type="button" class="btn-delete-book" onclick="deleteBook('@Model.Id', '@Model.Title')">🗑 حذف الكتاب</button>
+                @if (User.IsInRole("Admin") || User.IsInRole("Librarian"))
+                {
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn-edit-book">✎ تعديل الكتاب</a>
+                    <button type="button" class="btn-delete-book" onclick="deleteBook('@Model.Id', '@Model.Title')">🗑 حذف الكتاب</button>
+                }
                 @if (!Model.HasAvailableCopy)
                 {
                     <button type="button" class="btn-reserve" onclick="reserveBook('@Model.Id')">
@@ -55,7 +58,7 @@
                     </button>
                 }
             </div>
-          
+
         </div>
     </div>
 

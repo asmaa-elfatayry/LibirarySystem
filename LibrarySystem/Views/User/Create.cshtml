@@ -1,0 +1,48 @@
+﻿@using LibrarySystem.web.ViewModels.User
+@model CreateUserViewModel
+
+@{
+    ViewData["Title"] = "إضافة موظف";
+}
+
+<link rel="stylesheet" href="~/css/admin-form.css" />
+
+<div class="admin-form-wrap">
+    <div class="admin-form__crumb"><a asp-action="Index">المستخدمين</a> / إضافة</div>
+    <h2 class="admin-form__title">إضافة موظف جديد</h2>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <form asp-action="Create" method="post" class="admin-form">
+        <div class="admin-field">
+            <label asp-for="FullName"></label>
+            <input asp-for="FullName" />
+            <span asp-validation-for="FullName"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+
+        <div class="admin-field">
+            <label asp-for="Role"></label>
+            <select asp-for="Role" class="form-select">
+                <option value="Librarian">Librarian</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="admin-form__actions">
+            <button type="submit" class="btn-library-primary" style="border:none;">إنشاء الحساب</button>
+            <a asp-action="Index" class="btn-library-ghost">إلغاء</a>
+        </div>
+    </form>
+</div>

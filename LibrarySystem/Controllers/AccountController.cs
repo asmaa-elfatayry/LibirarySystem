@@ -94,5 +94,8 @@ namespace LibrarySystem.Controllers
             return RedirectToAction("Login");
         }
 
+        [HttpGet]
+        public IActionResult AccessDenied() => View();
+
     }
 }

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "غير مصرح";
+}
+
+<link rel="stylesheet" href="~/css/error-pages.css" />
+
+<div class="error-page">
+    <img src="~/images/Bibliophile-rafiki.svg" />
+    <div class="error-page__code">403</div>
+    <h1 class="error-page__title">غير مصرح لك بالدخول هنا</h1>
+    <p class="error-page__desc">ليس لديك صلاحية للوصول إلى هذه الصفحة باستخدام الحساب الحالي. إذا كنت تعتقد أن ذلك حدث بالخطأ، يُرجى التواصل مع مسؤول النظام.</p>
+    <a asp-controller="Home" asp-action="Index" class="btn-library-primary">الرجوع للرئيسية</a>
+</div>

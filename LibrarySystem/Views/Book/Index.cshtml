@@ -12,7 +12,10 @@
 <div class="cat-header">
     <h2 class="cat-header__title">الكتب</h2>
     <span class="cat-header__count">@Model.Count كتاب مسجّل</span>
-    <a asp-action="Create" class="btn-library-primary">+ إضافة كتاب</a>
+    @if (User.IsInRole("Admin") || User.IsInRole("Librarian"))
+    {
+        <a asp-action="Create" class="btn-library-primary">+ إضافة كتاب</a>
+    }
 </div>
 
 <div class="cat-grid">
@@ -42,7 +45,10 @@
                     <span class="book-card__publisher">@book.PublisherName</span>
                     <span class="book-card__isbn">@book.ISBN</span>
                 </div>
-
+                @if (User.IsInRole("Admin") || User.IsInRole("Librarian"))
+                {
+                   
+              
                 <div class="cat-card__actions">
                     <a asp-action="Edit" asp-route-id="@book.Id" class="cat-action cat-action--edit">تعديل</a>
                     <button type="button" class="cat-action cat-action--delete"
@@ -50,6 +56,7 @@
                         حذف
                     </button>
                 </div>
+                  }
             </div>
         </div>
     }

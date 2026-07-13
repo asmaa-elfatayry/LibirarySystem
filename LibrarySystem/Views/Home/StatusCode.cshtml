@@ -1,0 +1,19 @@
+﻿@{
+    var code = (int)ViewBag.StatusCode;
+    var (title, desc) = code switch
+    {
+        404 => ("الصفحة مش موجودة", "الرابط اللي دخلت عليه مش موجود أو اتشال."),
+        403 => ("غير مصرح لك", "معندكش صلاحية توصل للصفحة دي."),
+        _ => ("حصل خطأ", "حصلت مشكلة غير متوقعة، حاول تاني.")
+    };
+    ViewData["Title"] = title;
+}
+
+<link rel="stylesheet" href="~/css/error-pages.css" />
+
+<div class="error-page">
+    <div class="error-page__code">@code</div>
+    <h1 class="error-page__title">@title</h1>
+    <p class="error-page__desc">@desc</p>
+    <a asp-controller="Home" asp-action="Index" class="btn-library-primary">الرجوع للرئيسية</a>
+</div>

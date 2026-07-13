@@ -29,5 +29,12 @@ namespace LibrarySystem.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [AllowAnonymous]
+        public IActionResult StatusCode(int code)
+        {
+            ViewBag.StatusCode = code;
+            return View();
+        }
     }
 }

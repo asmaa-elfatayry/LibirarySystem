@@ -1,0 +1,58 @@
+﻿@using LibrarySystem.web.ViewModels.User
+@model List<UserListItemViewModel>
+
+@{
+    ViewData["Title"] = "إدارة المستخدمين";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="~/css/loans.css" />
+<link rel="stylesheet" href="~/css/book-details.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+@Html.AntiForgeryToken()
+
+<div class="cat-header">
+    <h2 class="cat-header__title">إدارة المستخدمين</h2>
+    <span class="cat-header__count">@Model.Count مستخدم</span>
+    <a asp-action="Create" class="btn-library-primary">+ إضافة موظف</a>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="loan-alert loan-alert--success">@TempData["Success"]</div>
+}
+
+<div class="loans-table">
+    <div class="loans-table__head" style="grid-template-columns: 2fr 2fr 1fr 1.3fr;">
+        <span>الاسم</span>
+        <span>البريد الإلكتروني</span>
+        <span>الدور</span>
+        <span></span>
+    </div>
+
+    @foreach (var user in Model)
+    {
+        <div class="loans-table__row" id="user-row-@user.Id" data-original-role="@user.CurrentRole"
+             style="grid-template-columns: 2fr 2fr 1fr 1.3fr;">
+            <span>@user.FullName</span>
+            <span>@user.Email</span>
+            <span>
+                <select class="copy-row__status status-@user.CurrentRole.ToLower()" onchange="onRoleChange('@user.Id', this)">
+                    <option value="Admin" selected="@(user.CurrentRole == "Admin")">Admin</option>
+                    <option value="Librarian" selected="@(user.CurrentRole == "Librarian")">Librarian</option>
+                    <option value="Member" selected="@(user.CurrentRole == "Member")">Member</option>
+                </select>
+            </span>
+            <span>
+                <button type="button" class="copy-row__save" id="save-role-@user.Id" style="display:none;" onclick="saveRole('@user.Id')">
+                    حفظ
+                </button>
+            </span>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/modules/user/index.js"></script>
+}
