@@ -18,6 +18,8 @@ public class Result<T> : Result
             Message = message
         };
 
+    public static Result<T> SuccessWithData(T data, string message = "")
+     => new() { IsSuccess = true, Message = message, Data = data };
     public static Result<T> Failure(eResultStatus status, string message) =>
         new()
         {

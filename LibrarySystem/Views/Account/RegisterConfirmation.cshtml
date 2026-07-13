@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "تأكيد البريد الإلكتروني مطلوب";
+}
+
+<link rel="stylesheet" href="~/css/error-pages.css" />
+
+<div class="error-page">
+    <div class="error-page__code">✉</div>
+    <h1 class="error-page__title">يرجى مراجعة بريدك الإلكتروني</h1>
+    <p class="error-page__desc">
+        تم إرسال رابط تأكيد إلى عنوان بريدك الإلكتروني المسجَّل. يُرجى فتح البريد الوارد والنقر على الرابط لتفعيل حسابك وإتمام عملية تسجيل الدخول.
+    </p>
+    <a asp-action="Login" class="btn-library-primary">العودة إلى صفحة تسجيل الدخول</a>
+</div>

@@ -42,7 +42,8 @@ public static class DataSeeder
                 Email = adminEmail,
                 FullName = "System Admin",
                 EmailConfirmed = true,
-                MembershipDate = DateTime.UtcNow
+                MembershipDate = DateTime.UtcNow,
+                
             };
 
             var result = await userManager.CreateAsync(adminUser, adminPassword);

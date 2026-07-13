@@ -17,7 +17,7 @@ public class UserService : IUserService
         _userManager = userManager;
     }
 
-    public async Task<Result> RegisterAsync(string email, string password, string fullName)
+    public async Task<Result<ApplicationUser>> RegisterAsync(string email, string password, string fullName)
     {
         var user = new ApplicationUser
         {
@@ -25,15 +25,18 @@ public class UserService : IUserService
             Email = email,
             FullName = fullName,
             MembershipDate = DateTime.UtcNow
+            // لاحظ: EmailConfirmed بتفضل false افتراضيًا (القيمة الأصلية في IdentityUser)
         };
 
         var result = await _userManager.CreateAsync(user, password);
 
         if (!result.Succeeded)
-            return Result.Failure(Domain.Enums.eResultStatus.ValidationError, string.Join("; ", result.Errors.Select(e => e.Description)));
+            return Result<ApplicationUser>.Failure(
+                Domain.Enums.eResultStatus.ValidationError,
+                string.Join("; ", result.Errors.Select(e => e.Description)));
 
         await _userManager.AddToRoleAsync(user, "Member");
 
-        return Result.Success("User registered successfully.");
+        return Result<ApplicationUser>.SuccessWithData(user, "تم إنشاء الحساب بنجاح");
     }
 }

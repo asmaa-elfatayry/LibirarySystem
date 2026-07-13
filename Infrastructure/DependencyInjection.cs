@@ -27,6 +27,8 @@ public static class DependencyInjection
         services.AddScoped<IReservationService, ReservationService>();
         services.AddScoped<IFineService, FineService>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IEmailSender, SmtpEmailSender>();
+
         return services;
     }
 }
