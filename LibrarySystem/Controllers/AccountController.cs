@@ -230,5 +230,9 @@ public class AccountController(
     public IActionResult ResetPasswordConfirmation() => View();
 
 
+    [HttpGet]
+    public IActionResult AccessDenied() => View();
+
+
 
 }

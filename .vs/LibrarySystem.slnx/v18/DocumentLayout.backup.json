@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\wwwroot\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,24 +11,40 @@
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\confirmemailsuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\confirmemailsuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\wwwroot\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -579,17 +579,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAEgAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T09:10:27.157Z",
               "EditorCaption": ""
@@ -597,63 +597,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "auth.css",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
-              "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\auth.css",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
-              "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\auth.css",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAQwNUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-09T15:02:04.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-13T09:11:28.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ResetPasswordConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-13T09:12:08.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "ForgotPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml*",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T09:11:03.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AccountController.cs*",
-              "RelativeToolTip": "LibrarySystem\\Controllers\\AccountController.cs*",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAAAYwMQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T18:54:21.697Z",
@@ -661,26 +622,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "ConfirmEmailSuccess.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowCwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T09:03:20.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ConfirmEmailFailed.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowCwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T09:03:44.853Z",
               "EditorCaption": ""
@@ -691,9 +652,9 @@
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\AccessDenied.cshtml*",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\AccessDenied.cshtml*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowC8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T08:17:54.326Z",
               "EditorCaption": ""
@@ -701,6 +662,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "RegisterConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml*",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T09:02:48.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml*",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml*",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAowFsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T09:11:28.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T09:12:08.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "theme.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\js\\theme.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\js\\theme.js",
@@ -714,14 +714,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "RegisterConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-13T09:02:48.33Z",
+              "Title": "auth.css",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
+              "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\auth.css",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
+              "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\auth.css",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAQwNUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-09T15:02:04.866Z",
               "EditorCaption": ""
             },
             {
