@@ -64,12 +64,7 @@ public class AccountController(
                             </a>
                         </p>
 
-                        <p>إذا لم يعمل الزر، يمكنك نسخ الرابط التالي ولصقه في المتصفح:</p>
-
-                        <p>
-                            <a href='{confirmLink}'>{confirmLink}</a>
-                        </p>
-
+                    
                         <hr style='border:none; border-top:1px solid #ddd; margin:30px 0;' />
 
                         <p style='font-size:14px; color:#666;'>
@@ -148,6 +143,91 @@ public class AccountController(
         await _signInManager.SignOutAsync();
         return RedirectToAction("Login");
     }
+
+
+    [HttpGet]
+    public IActionResult ForgotPassword() => View();
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+    {
+        if (!ModelState.IsValid) return View(model);
+
+        var user = await _userManager.FindByEmailAsync(model.Email);
+
+        // لاحظ: بنرجّع نفس الرسالة سواء الإيميل موجود أو لأ - هنشرح ليه تحت
+        if (user != null && await _userManager.IsEmailConfirmedAsync(user))
+        {
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            var resetLink = Url.Action(
+                "ResetPassword", "Account",
+                new { userId = user.Id, token },
+                protocol: HttpContext.Request.Scheme);
+
+            await _emailSender.SendEmailAsync(
+                user.Email!,
+                "إعادة تعيين كلمة المرور - LibrarySystem",
+                $@"
+                    <div style='font-family: Arial, sans-serif; color:#333;'>
+                        <h3>مرحبًا {user.FullName} 👋</h3>
+
+                        <p>لقد تلقينا طلبًا لإعادة تعيين كلمة المرور الخاصة بحسابك.</p>
+
+                        <p>
+                            اضغط على الرابط التالي لإعادة تعيين كلمة المرور:
+                        </p>
+
+                        <p>
+                            <a href='{resetLink}'>إعادة تعيين كلمة المرور</a>
+                        </p>
+
+                        <p style='color:#666; font-size:14px;'>
+                            إذا لم تطلب هذا الإجراء، يمكنك تجاهل هذه الرسالة.
+                        </p>
+
+                        <p>
+                            مع تحيات فريق <strong>LibrarySystem</strong>
+                        </p>
+                    </div>");
+
+         
+        }
+        return RedirectToAction(nameof(ForgotPasswordConfirmation));
+    }
+
+    public IActionResult ForgotPasswordConfirmation() => View();
+
+    [HttpGet]
+    public IActionResult ResetPassword(Guid userId, string token)
+    {
+        var model = new ResetPasswordViewModel { UserId = userId, Token = token };
+        return View(model);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+    {
+        if (!ModelState.IsValid) return View(model);
+
+        var user = await _userManager.FindByIdAsync(model.UserId.ToString());
+        if (user == null)
+            return RedirectToAction(nameof(ResetPasswordConfirmation));
+
+        var result = await _userManager.ResetPasswordAsync(user, model.Token, model.NewPassword);
+
+        if (result.Succeeded)
+            return RedirectToAction(nameof(ResetPasswordConfirmation));
+
+        foreach (var error in result.Errors)
+            ModelState.AddModelError(string.Empty, error.Description);
+
+        return View(model);
+    }
+
+    public IActionResult ResetPasswordConfirmation() => View();
 
 
 

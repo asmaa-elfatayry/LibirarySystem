@@ -208,3 +208,7 @@
         font-size: 14px;
     }
 }
+
+.validation-summary-valid {
+    display: none;
+}

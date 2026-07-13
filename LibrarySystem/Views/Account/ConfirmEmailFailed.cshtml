@@ -1,12 +1,45 @@
 ﻿@{
     ViewData["Title"] = "فشل التأكيد";
+    Layout = null;
 }
 
-<link rel="stylesheet" href="~/css/error-pages.css" />
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<div class="error-page">
-    <div class="error-page__code">✕</div>
-    <h1 class="error-page__title">تعذّر تأكيد البريد الإلكتروني</h1>
-    <p class="error-page__desc">قد يكون الرابط منتهي الصلاحية أو غير صالح. يُرجى إعادة التسجيل، أو التواصل مع فريق الدعم في حال استمرار المشكلة.</p>
-    <a asp-action="Register" class="btn-library-primary">إنشاء حساب جديد</a>
-</div>
+    <title>@ViewData["Title"] - LibrarySystem</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site-extended.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site-animations.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LibrarySystem.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/error-pages.css" />
+</head>
+
+<body>
+
+    <div class="error-page">
+
+        <div class="error-page__code">✕</div>
+
+        <h1 class="error-page__title">
+            تعذّر تأكيد البريد الإلكتروني
+        </h1>
+
+        <p class="error-page__desc">
+            نأسف، لم نتمكن من تأكيد بريدك الإلكتروني.
+            قد يكون رابط التأكيد غير صالح أو انتهت صلاحيته.
+            يُرجى محاولة إنشاء حساب جديد أو التواصل مع الدعم إذا استمرت المشكلة.
+        </p>
+
+        <a asp-action="Register" class="btn-library-primary">
+            إنشاء حساب جديد
+        </a>
+
+    </div>
+
+</body>
+</html>

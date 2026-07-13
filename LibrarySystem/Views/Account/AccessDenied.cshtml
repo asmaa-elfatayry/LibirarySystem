@@ -1,13 +1,48 @@
 ﻿@{
     ViewData["Title"] = "غير مصرح";
+    Layout = null;
 }
 
-<link rel="stylesheet" href="~/css/error-pages.css" />
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<div class="error-page">
-    <img src="~/images/Bibliophile-rafiki.svg" />
-    <div class="error-page__code">403</div>
-    <h1 class="error-page__title">غير مصرح لك بالدخول هنا</h1>
-    <p class="error-page__desc">ليس لديك صلاحية للوصول إلى هذه الصفحة باستخدام الحساب الحالي. إذا كنت تعتقد أن ذلك حدث بالخطأ، يُرجى التواصل مع مسؤول النظام.</p>
-    <a asp-controller="Home" asp-action="Index" class="btn-library-primary">الرجوع للرئيسية</a>
-</div>
+    <title>@ViewData["Title"] - LibrarySystem</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site-extended.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site-animations.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LibrarySystem.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/error-pages.css" />
+</head>
+
+<body>
+
+    <div class="error-page">
+
+        <img src="~/images/Bibliophile-rafiki.svg" alt="Access denied" />
+
+        <div class="error-page__code">403</div>
+
+        <h1 class="error-page__title">
+            غير مصرح لك بالوصول
+        </h1>
+
+        <p class="error-page__desc">
+            عذرًا، لا يملك حسابك الحالي الصلاحيات اللازمة للوصول إلى هذه الصفحة.
+            إذا كنت تعتقد أن هذا حدث بالخطأ، يُرجى التواصل مع مسؤول النظام.
+        </p>
+
+        <a asp-controller="Home"
+           asp-action="Index"
+           class="btn-library-primary">
+            العودة إلى الصفحة الرئيسية
+        </a>
+
+    </div>
+
+</body>
+</html>

@@ -41,12 +41,15 @@
                         <input asp-for="Password" type="password" placeholder="أدخل كلمة المرور" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
-
+                    <p class="library-card__footer">
+                        <a asp-action="ForgotPassword">نسيت كلمة المرور؟</a>
+                    </p>
                     <div class="auth-check">
                         <label asp-for="RememberMe">
                             <input asp-for="RememberMe" />
                             <span>تذكرني</span>
                         </label>
+                   
                     </div>
 
                     <button type="submit" class="auth-btn">تسجيل الدخول</button>

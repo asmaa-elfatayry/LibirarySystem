@@ -1,5 +1,5 @@
 ﻿(function () {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     applyTheme(savedTheme);
 
     document.addEventListener('DOMContentLoaded', function () {
