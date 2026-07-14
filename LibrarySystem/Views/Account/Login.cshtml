@@ -55,6 +55,13 @@
                     <button type="submit" class="auth-btn">تسجيل الدخول</button>
                 </form>
 
+                <form asp-action="ExternalLogin" asp-controller="Account" method="post" class="auth-oauth-form">
+                    <input type="hidden" name="provider" value="Google" />
+                    <button type="submit" class="auth-btn-google">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="18" />
+                        تسجيل الدخول بحساب Google
+                    </button>
+                </form>
                 <!-- Footer -->
                 <div class="auth-footer">
                     ليس لديك حساب؟ <a asp-controller="Account" asp-action="Register">إنشاء حساب جديد</a>

@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,32 +55,12 @@
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\confirmemailsuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\confirmemailfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\wwwroot\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\viewmodels\\account\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\seed\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -101,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\application\\interfaces\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -579,50 +579,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-13T09:10:27.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ForgotPasswordConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml*",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml*",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowCsAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-13T09:11:03.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AccountController.cs",
               "RelativeToolTip": "LibrarySystem\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAYwMQAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAowDEBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T18:54:21.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\appsettings.json",
+              "RelativeDocumentMoniker": "LibrarySystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\appsettings.json",
+              "RelativeToolTip": "LibrarySystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-08T12:54:22.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Program.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
+              "RelativeToolTip": "LibrarySystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T12:56:54.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowD8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T18:59:37.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "auth.css",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
+              "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\auth.css",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
+              "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\auth.css",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAQwO0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-09T15:02:04.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ConfirmEmailSuccess.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
@@ -635,38 +661,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "ConfirmEmailFailed.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAowCwAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T09:03:44.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ForgotPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T09:11:03.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T09:12:08.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T09:10:27.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\AccessDenied.cshtml*",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\AccessDenied.cshtml*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAowC8AAAAHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T08:17:54.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "RegisterConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml*",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml*",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAAAowCsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T09:02:48.33Z",
@@ -674,12 +739,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml*",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml*",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
               "ViewState": "AgIAAD0AAAAAAAAAAAAowFsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T09:11:28.877Z",
@@ -687,20 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ResetPasswordConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowCsAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-13T09:12:08.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "theme.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\js\\theme.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\js\\theme.js",
@@ -713,46 +765,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "auth.css",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
-              "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\auth.css",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
-              "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\auth.css",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAQwNUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-09T15:02:04.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAIBJwIcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T07:17:19.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowC0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T18:59:37.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ForgotPasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Account\\ForgotPasswordViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Account\\ForgotPasswordViewModel.cs",
@@ -765,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ResetPasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Account\\ResetPasswordViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Account\\ResetPasswordViewModel.cs",
@@ -778,7 +804,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\UserService.cs",
@@ -791,33 +817,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\DependencyInjection.cs",
               "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T08:15:26.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
-              "RelativeDocumentMoniker": "LibrarySystem\\Program.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
-              "RelativeToolTip": "LibrarySystem\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:56:54.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "DataSeeder.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Seed\\DataSeeder.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Seed\\DataSeeder.cs",
@@ -830,7 +843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Result.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Common\\Result.cs",
               "RelativeDocumentMoniker": "Application\\Common\\Result.cs",
@@ -843,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\DependencyInjection.cs",
@@ -856,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IUserService.cs",
@@ -869,20 +882,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "SmtpEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\SmtpEmailSender.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\SmtpEmailSender.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\SmtpEmailSender.cs",
               "RelativeToolTip": "Infrastructure\\Services\\SmtpEmailSender.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-13T08:50:55.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Settings\\EmailSettings.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Settings\\EmailSettings.cs",
@@ -895,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IEmailSender.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IEmailSender.cs",
@@ -916,7 +929,8 @@
               "RelativeToolTip": "LibrarySystem\\Controllers\\FineController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T08:15:37.741Z"
+              "WhenOpened": "2026-07-12T08:15:37.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -952,22 +966,9 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Fine\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Fine\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Fine\\Index.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAIBJwBIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T08:16:12.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\appsettings.json",
-              "RelativeDocumentMoniker": "LibrarySystem\\appsettings.json",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\appsettings.json",
-              "RelativeToolTip": "LibrarySystem\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-08T12:54:22.189Z",
               "EditorCaption": ""
             },
             {
@@ -990,7 +991,7 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Fine\\MyFines.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Fine\\MyFines.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Fine\\MyFines.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwBAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T08:18:37.527Z",
               "EditorCaption": ""
@@ -1003,7 +1004,7 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Reservation\\MyReservations.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Reservation\\MyReservations.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Reservation\\MyReservations.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T08:02:42.469Z",
               "EditorCaption": ""
@@ -1016,7 +1017,7 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Book\\Details.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Details.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Book\\Details.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAIBJwDAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-10T12:42:58.007Z",
               "EditorCaption": ""
@@ -1080,7 +1081,7 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Book\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Book\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAIBJwC8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-09T07:55:15.321Z",
               "EditorCaption": ""
@@ -1132,7 +1133,7 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\User\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\User\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAIBJwAEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T08:09:03.007Z",
               "EditorCaption": ""
@@ -1173,7 +1174,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\book-details.css",
               "ViewState": "AgIAAEoAAAAAAAAAAAAQwGMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-10T12:55:45.724Z"
+              "WhenOpened": "2026-07-10T12:55:45.724Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1183,9 +1185,10 @@
               "RelativeDocumentMoniker": "Infrastructure\\Services\\ReservationService.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\ReservationService.cs",
               "RelativeToolTip": "Infrastructure\\Services\\ReservationService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAwB8AAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwB8AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:55:52.946Z"
+              "WhenOpened": "2026-07-12T07:55:52.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1197,7 +1200,8 @@
               "RelativeToolTip": "Application\\DTOs\\FineDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T08:09:05.792Z"
+              "WhenOpened": "2026-07-12T08:09:05.792Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1209,7 +1213,8 @@
               "RelativeToolTip": "Application\\Interfaces\\IFineService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T08:09:37.119Z"
+              "WhenOpened": "2026-07-12T08:09:37.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1221,7 +1226,8 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\UnitOfWork.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:07:22.823Z"
+              "WhenOpened": "2026-07-12T07:07:22.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1231,9 +1237,10 @@
               "RelativeDocumentMoniker": "Infrastructure\\Services\\LoanService.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\LoanService.cs",
               "RelativeToolTip": "Infrastructure\\Services\\LoanService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCMAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:10:28.304Z"
+              "WhenOpened": "2026-07-12T07:10:28.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1245,7 +1252,8 @@
               "RelativeToolTip": "Infrastructure\\Services\\FineService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T08:10:29.53Z"
+              "WhenOpened": "2026-07-12T08:10:29.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1257,7 +1265,8 @@
               "RelativeToolTip": "Domain\\Interfaces\\IUnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:06:24.08Z"
+              "WhenOpened": "2026-07-12T07:06:24.08Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1269,7 +1278,8 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\GenericRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAiwCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T18:49:21.755Z"
+              "WhenOpened": "2026-07-08T18:49:21.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1281,7 +1291,8 @@
               "RelativeToolTip": "LibrarySystem\\Controllers\\ReservationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T08:00:02.806Z"
+              "WhenOpened": "2026-07-12T08:00:02.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1293,7 +1304,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Book\\BookViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:48:37.365Z"
+              "WhenOpened": "2026-07-09T07:48:37.365Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1303,9 +1315,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\AuthorController.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AuthorController.cs",
               "RelativeToolTip": "LibrarySystem\\Controllers\\AuthorController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAIBJwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:29:55.434Z"
+              "WhenOpened": "2026-07-09T07:29:55.434Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1315,9 +1328,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\Book\\details.js",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Book\\details.js",
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Book\\details.js",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAKMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAIBJwKMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-10T12:52:36.735Z"
+              "WhenOpened": "2026-07-10T12:52:36.735Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1329,7 +1343,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAABkAAAAAAAAAAAAowCkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T19:45:28.113Z"
+              "WhenOpened": "2026-07-08T19:45:28.113Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1341,7 +1356,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T18:59:56.332Z"
+              "WhenOpened": "2026-07-08T18:59:56.332Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1353,7 +1369,8 @@
               "RelativeToolTip": "Application\\DTOs\\ReservationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:54:45.207Z"
+              "WhenOpened": "2026-07-12T07:54:45.207Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1365,7 +1382,8 @@
               "RelativeToolTip": "Application\\Interfaces\\IReservationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:55:17.591Z"
+              "WhenOpened": "2026-07-12T07:55:17.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1377,7 +1395,8 @@
               "RelativeToolTip": "Infrastructure\\Services\\PublisherService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:37:15.133Z"
+              "WhenOpened": "2026-07-09T14:37:15.133Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1387,9 +1406,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Loan\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Loan\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAIBJwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-12T07:14:51.942Z"
+              "WhenOpened": "2026-07-12T07:14:51.942Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1401,7 +1421,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\admin-form.css",
               "ViewState": "AgIAAHYAAAAAAAAAAAAQwJAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-09T07:25:56.232Z"
+              "WhenOpened": "2026-07-09T07:25:56.232Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1413,7 +1434,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Loan\\Create.cshtml",
               "ViewState": "AgIAAAcAAAAAAAAAAAAowCIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-12T07:15:16.718Z"
+              "WhenOpened": "2026-07-12T07:15:16.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1425,7 +1447,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAHABAAAAAAAAAAAUwI8BAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-08T19:01:50.662Z"
+              "WhenOpened": "2026-07-08T19:01:50.662Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1437,7 +1460,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\home.css",
               "ViewState": "AgIAAHsAAAAAAAAAAAAQwIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-08T19:47:19.234Z"
+              "WhenOpened": "2026-07-08T19:47:19.234Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1449,7 +1473,8 @@
               "RelativeToolTip": "LibrarySystem\\Controllers\\LoanController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:13:34.525Z"
+              "WhenOpened": "2026-07-12T07:13:34.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1461,7 +1486,8 @@
               "RelativeToolTip": "Domain\\Enums\\eResultStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:02:40.547Z"
+              "WhenOpened": "2026-07-09T14:02:40.547Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1473,7 +1499,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\loan\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-12T07:16:37.311Z"
+              "WhenOpened": "2026-07-12T07:16:37.311Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1485,7 +1512,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\loans.css",
               "ViewState": "AgIAAEkAAAAAAAAAAAAUwGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-12T07:17:56.858Z"
+              "WhenOpened": "2026-07-12T07:17:56.858Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1497,7 +1525,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Loan\\LoanViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:13:03.864Z"
+              "WhenOpened": "2026-07-12T07:13:03.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1509,7 +1538,8 @@
               "RelativeToolTip": "Application\\Interfaces\\ILoanService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:09:52.475Z"
+              "WhenOpened": "2026-07-12T07:09:52.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1521,7 +1551,8 @@
               "RelativeToolTip": "Application\\DTOs\\LoanDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:09:09.322Z"
+              "WhenOpened": "2026-07-12T07:09:09.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1533,7 +1564,8 @@
               "RelativeToolTip": "Domain\\Entities\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:42:35.762Z"
+              "WhenOpened": "2026-07-08T12:42:35.762Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1545,7 +1577,8 @@
               "RelativeToolTip": "LibrarySystem\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAUwBIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T19:25:48.67Z"
+              "WhenOpened": "2026-07-08T19:25:48.67Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1555,9 +1588,10 @@
               "RelativeDocumentMoniker": "Domain\\Entities\\Book.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Book.cs",
               "RelativeToolTip": "Domain\\Entities\\Book.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBkAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA8wBkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:35:51.633Z"
+              "WhenOpened": "2026-07-08T12:35:51.633Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1569,7 +1603,8 @@
               "RelativeToolTip": "Domain\\Entities\\Loan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:41:09.685Z"
+              "WhenOpened": "2026-07-08T12:41:09.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1581,7 +1616,8 @@
               "RelativeToolTip": "Domain\\Entities\\Reservation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:44:51.958Z"
+              "WhenOpened": "2026-07-08T12:44:51.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1593,7 +1629,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\category-cards.css",
               "ViewState": "AgIAAIkAAAAAAAAAAAAUwKgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-09T07:17:52.781Z"
+              "WhenOpened": "2026-07-09T07:17:52.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1605,7 +1642,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\book-cards.css",
               "ViewState": "AgIAAGQAAAAAAAAAAAAQwIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-09T08:08:58.411Z"
+              "WhenOpened": "2026-07-09T08:08:58.411Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1617,7 +1655,8 @@
               "RelativeToolTip": "Domain\\Entities\\BookCopy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:38:44.379Z"
+              "WhenOpened": "2026-07-08T12:38:44.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1629,7 +1668,8 @@
               "RelativeToolTip": "Domain\\Entities\\Fine.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:44:16.107Z"
+              "WhenOpened": "2026-07-08T12:44:16.107Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1641,7 +1681,8 @@
               "RelativeToolTip": "Domain\\Entities\\Author.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:35:08.919Z"
+              "WhenOpened": "2026-07-08T12:35:08.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1653,7 +1694,8 @@
               "RelativeToolTip": "Domain\\Entities\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:31:01.283Z"
+              "WhenOpened": "2026-07-08T12:31:01.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1665,7 +1707,8 @@
               "RelativeToolTip": "Domain\\Entities\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:47:53.314Z"
+              "WhenOpened": "2026-07-08T12:47:53.314Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1677,7 +1720,8 @@
               "RelativeToolTip": "Domain\\Entities\\Publisher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:38:07.687Z"
+              "WhenOpened": "2026-07-08T12:38:07.687Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1689,7 +1733,8 @@
               "RelativeToolTip": "Infrastructure\\Services\\BookService.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAmwDkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T16:21:58.192Z"
+              "WhenOpened": "2026-07-11T16:21:58.192Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1699,9 +1744,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Book\\Edit.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Edit.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Book\\Edit.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAACQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAIBJwCQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:56:18.566Z"
+              "WhenOpened": "2026-07-09T07:56:18.566Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1713,7 +1759,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Book\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-09T13:48:06.902Z"
+              "WhenOpened": "2026-07-09T13:48:06.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1725,7 +1772,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Book\\BookCopyViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T12:39:51.674Z"
+              "WhenOpened": "2026-07-10T12:39:51.674Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1737,7 +1785,8 @@
               "RelativeToolTip": "Application\\Interfaces\\IBookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:31:43.757Z"
+              "WhenOpened": "2026-07-09T14:31:43.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1749,7 +1798,8 @@
               "RelativeToolTip": "LibrarySystem\\Mapper\\MappingProfile.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAgwCUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:12:39.618Z"
+              "WhenOpened": "2026-07-09T07:12:39.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1761,7 +1811,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Book\\Create.cshtml",
               "ViewState": "AgIAACUAAAAAAAAAAAAqwEYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:55:40.35Z"
+              "WhenOpened": "2026-07-09T07:55:40.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1773,7 +1824,8 @@
               "RelativeToolTip": "Application\\DTOs\\BookDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:31:39.265Z"
+              "WhenOpened": "2026-07-09T14:31:39.265Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1785,7 +1837,8 @@
               "RelativeToolTip": "Application\\Interfaces\\IGenericService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T19:24:34.83Z"
+              "WhenOpened": "2026-07-08T19:24:34.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1797,7 +1850,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Category\\Index.cshtml",
               "ViewState": "AgIAABAAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T19:32:36.893Z"
+              "WhenOpened": "2026-07-08T19:32:36.893Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1809,7 +1863,8 @@
               "RelativeToolTip": "Infrastructure\\Services\\AuthorService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:37:27.617Z"
+              "WhenOpened": "2026-07-09T14:37:27.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1821,7 +1876,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\site-extended.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAL0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-09T14:47:11.348Z"
+              "WhenOpened": "2026-07-09T14:47:11.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1833,7 +1889,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\css\\site-animations.css",
               "ViewState": "AgIAAAMBAAAAAAAAAAAYwCMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-09T14:47:58.535Z"
+              "WhenOpened": "2026-07-09T14:47:58.535Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1845,7 +1902,8 @@
               "RelativeToolTip": "Application\\DTOs\\AuthorDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:31:10.228Z"
+              "WhenOpened": "2026-07-09T14:31:10.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1857,7 +1915,8 @@
               "RelativeToolTip": "Application\\DTOs\\CategoryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:30:30.452Z"
+              "WhenOpened": "2026-07-09T14:30:30.452Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1869,7 +1928,8 @@
               "RelativeToolTip": "Application\\Interfaces\\IAuthorService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:31:19.507Z"
+              "WhenOpened": "2026-07-09T14:31:19.507Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1881,7 +1941,8 @@
               "RelativeToolTip": "Application\\Interfaces\\ICategoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:30:35.754Z"
+              "WhenOpened": "2026-07-09T14:30:35.754Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1893,7 +1954,8 @@
               "RelativeToolTip": "Application\\DTOs\\PublisherDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:30:48.334Z"
+              "WhenOpened": "2026-07-09T14:30:48.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1905,7 +1967,8 @@
               "RelativeToolTip": "Application\\Interfaces\\IPublisherService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T14:30:56.773Z"
+              "WhenOpened": "2026-07-09T14:30:56.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1917,7 +1980,8 @@
               "RelativeToolTip": "LibrarySystem\\Controllers\\PublisherController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:30:10.083Z"
+              "WhenOpened": "2026-07-09T07:30:10.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1929,7 +1993,8 @@
               "RelativeToolTip": "Infrastructure\\Services\\GenericService.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAkwE4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T19:23:32.428Z"
+              "WhenOpened": "2026-07-08T19:23:32.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1941,7 +2006,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Publisher\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:37:41.805Z"
+              "WhenOpened": "2026-07-09T07:37:41.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1951,9 +2017,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Author\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Author\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Author\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAIBJwDAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAIBZwDAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:34:43.722Z"
+              "WhenOpened": "2026-07-09T07:34:43.722Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1965,7 +2032,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T13:54:58.944Z"
+              "WhenOpened": "2026-07-09T13:54:58.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1977,7 +2045,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Author\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:35:08.355Z"
+              "WhenOpened": "2026-07-09T07:35:08.355Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1989,7 +2058,8 @@
               "RelativeToolTip": "Domain\\Interfaces\\IGenericRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T18:47:37.671Z"
+              "WhenOpened": "2026-07-08T18:47:37.671Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2001,7 +2071,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Author\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-09T13:50:23.59Z"
+              "WhenOpened": "2026-07-09T13:50:23.59Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2011,9 +2082,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Publisher\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Publisher\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Publisher\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAIBJwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAIBZwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:36:41.556Z"
+              "WhenOpened": "2026-07-09T07:36:41.556Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2025,7 +2097,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Publisher\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-09T13:49:17.678Z"
+              "WhenOpened": "2026-07-09T13:49:17.678Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2035,9 +2108,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Publisher\\Create.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Publisher\\Create.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Publisher\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAIBJwAAAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBZwAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:37:16.171Z"
+              "WhenOpened": "2026-07-09T07:37:16.171Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2049,7 +2123,8 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\95e119f8b58ccca4369b832e345df54204258352e0327554720401dc862b81c4\\_ValidationScriptsPartial_cshtml.g.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T13:46:49.553Z"
+              "WhenOpened": "2026-07-09T13:46:49.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2061,7 +2136,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T13:46:55.988Z"
+              "WhenOpened": "2026-07-09T13:46:55.988Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2073,7 +2149,8 @@
               "RelativeToolTip": "LibrarySystem\\GlobalUsings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T08:14:38.425Z"
+              "WhenOpened": "2026-07-09T08:14:38.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2085,7 +2162,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Account\\RegisterViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T18:56:20.678Z"
+              "WhenOpened": "2026-07-08T18:56:20.678Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2095,9 +2173,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Category\\Edit.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Category\\Edit.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T19:35:08.99Z"
+              "WhenOpened": "2026-07-08T19:35:08.99Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2109,7 +2188,8 @@
               "RelativeToolTip": "Application\\GlobalUsings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T08:14:18.076Z"
+              "WhenOpened": "2026-07-09T08:14:18.076Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2121,7 +2201,8 @@
               "RelativeToolTip": "Infrastructure\\GlobalUsings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T08:14:28.623Z"
+              "WhenOpened": "2026-07-09T08:14:28.623Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2133,7 +2214,8 @@
               "RelativeToolTip": "Domain\\GlobalUsings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T08:14:07.291Z"
+              "WhenOpened": "2026-07-09T08:14:07.291Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2145,7 +2227,8 @@
               "RelativeToolTip": "LibrarySystem\\Views\\Category\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T19:34:20.797Z"
+              "WhenOpened": "2026-07-08T19:34:20.797Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2157,7 +2240,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Category\\CategoryViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:42:21.459Z"
+              "WhenOpened": "2026-07-09T07:42:21.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2167,9 +2251,10 @@
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Author\\Edit.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Author\\Edit.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Author\\Edit.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAAAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBZwAAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-09T07:36:00.521Z"
+              "WhenOpened": "2026-07-09T07:36:00.521Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2181,7 +2266,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Account\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T18:53:24.174Z"
+              "WhenOpened": "2026-07-08T18:53:24.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2193,7 +2279,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Publisher\\PublisherViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:29:10.209Z"
+              "WhenOpened": "2026-07-09T07:29:10.209Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2205,7 +2292,8 @@
               "RelativeToolTip": "LibrarySystem\\ViewModels\\Author\\AuthorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:28:43.435Z"
+              "WhenOpened": "2026-07-09T07:28:43.435Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2217,7 +2305,8 @@
               "RelativeToolTip": "Infrastructure\\Migrations\\20260708194343_handleDelete.cs",
               "ViewState": "AgIAAO0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T19:43:44.014Z"
+              "WhenOpened": "2026-07-08T19:43:44.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2229,7 +2318,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Category\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-09T07:19:23.361Z"
+              "WhenOpened": "2026-07-09T07:19:23.361Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2241,7 +2331,8 @@
               "RelativeToolTip": "Infrastructure\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAowE8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:51:43.305Z"
+              "WhenOpened": "2026-07-08T12:51:43.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2253,7 +2344,8 @@
               "RelativeToolTip": "LibrarySystem\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAowAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-08T19:36:38.195Z"
+              "WhenOpened": "2026-07-08T19:36:38.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2265,7 +2357,8 @@
               "RelativeToolTip": "Infrastructure\\Migrations\\20260708131237_InitialCreate.cs",
               "ViewState": "AgIAAPABAAAAAAAAAAAowBECAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:14:22.066Z"
+              "WhenOpened": "2026-07-08T13:14:22.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2277,7 +2370,8 @@
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-08T13:13:28.256Z"
+              "WhenOpened": "2026-07-08T13:13:28.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2289,7 +2383,8 @@
               "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-08T13:03:12.912Z"
+              "WhenOpened": "2026-07-08T13:03:12.912Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2301,7 +2396,8 @@
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAIBZwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-08T12:51:23.402Z"
+              "WhenOpened": "2026-07-08T12:51:23.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2313,7 +2409,8 @@
               "RelativeToolTip": "Domain\\Enums\\eCopyStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:46:21.331Z"
+              "WhenOpened": "2026-07-08T12:46:21.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2325,7 +2422,8 @@
               "RelativeToolTip": "Domain\\Enums\\eReservationStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:45:13.609Z"
+              "WhenOpened": "2026-07-08T12:45:13.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2337,7 +2435,8 @@
               "RelativeToolTip": "Domain\\Enums\\eLoanStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T12:41:54.142Z"
+              "WhenOpened": "2026-07-08T12:41:54.142Z",
+              "EditorCaption": ""
             }
           ]
         }

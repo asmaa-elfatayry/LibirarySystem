@@ -233,6 +233,78 @@ public class AccountController(
     [HttpGet]
     public IActionResult AccessDenied() => View();
 
+    #region external login 
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult ExternalLogin(string provider)
+    {
+        var redirectUrl = Url.Action(nameof(ExternalLoginCallback), "Account");
+        var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
+        return Challenge(properties, provider);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> ExternalLoginCallback()
+    {
+        var info = await _signInManager.GetExternalLoginInfoAsync();
+        if (info == null)
+        {
+            TempData["Error"] = "حصلت مشكلة أثناء تسجيل الدخول بجوجل";
+            return RedirectToAction(nameof(Login));
+        }
+
+        // الخطوة 1: هل الحساب ده سجّل بجوجل قبل كده؟
+        var signInResult = await _signInManager.ExternalLoginSignInAsync(
+            info.LoginProvider, info.ProviderKey, isPersistent: false);
+
+        if (signInResult.Succeeded)
+            return RedirectToAction("Index", "Home");
+
+        // الخطوة 2: لو أول مرة، نجيب الإيميل من Google ونشوف لو عنده حساب أصلاً بنفس الإيميل
+        var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+        var fullName = info.Principal.FindFirstValue(ClaimTypes.Name) ?? email ?? "مستخدم جديد";
+
+        if (string.IsNullOrEmpty(email))
+        {
+            TempData["Error"] = "مقدرناش نجيب بريدك الإلكتروني من جوجل";
+            return RedirectToAction(nameof(Login));
+        }
+
+        var existingUser = await _userManager.FindByEmailAsync(email);
+
+        if (existingUser != null)
+        {
+            // المستخدم عنده حساب بالإيميل بتاعه أصلاً (سجّل عادي قبل كده) - نربط جوجل بيه
+            await _userManager.AddLoginAsync(existingUser, info);
+            await _signInManager.SignInAsync(existingUser, isPersistent: false);
+            return RedirectToAction("Index", "Home");
+        }
+
+        // الخطوة 3: مستخدم جديد تمامًا - نعمله حساب
+        var newUser = new ApplicationUser
+        {
+            UserName = email,
+            Email = email,
+            FullName = fullName,
+            EmailConfirmed = true,   // جوجل أصلاً أكّد الإيميل ده، فمينفعش نطلب تأكيد تاني
+            MembershipDate = DateTime.UtcNow
+        };
+
+        var createResult = await _userManager.CreateAsync(newUser);
+        if (!createResult.Succeeded)
+        {
+            TempData["Error"] = "مقدرناش ننشئ حساب جديد";
+            return RedirectToAction(nameof(Login));
+        }
+
+        await _userManager.AddToRoleAsync(newUser, "Member");
+        await _userManager.AddLoginAsync(newUser, info);
+        await _signInManager.SignInAsync(newUser, isPersistent: false);
+
+        return RedirectToAction("Index", "Home");
+    }
+    #endregion
 
 
 }

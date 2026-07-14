@@ -5,16 +5,18 @@ using System.Diagnostics;
 
 namespace LibrarySystem.Controllers
 {
-    public class HomeController(IGenericService<Category> _categoryService, IGenericService<Book> _bookService) : Controller
+    public class HomeController(IGenericService<Category> _categoryService, IGenericService<Book> _bookService, UserManager<ApplicationUser> _userManager) : Controller
     {
         public async Task<IActionResult> Index()
         {
             var books = await _bookService.GetAllAsync();
             var categories = await _categoryService.GetAllAsync();
+            var activeUsersCount = _userManager.Users.Count();
             var vm = new HomeVM()
             {
                 BookCount=books.Count(),
-                CategoriesCount=categories.Count()
+                CategoriesCount=categories.Count(),
+                ActiveUsersCount=activeUsersCount
             };
             return View(vm);
         }
