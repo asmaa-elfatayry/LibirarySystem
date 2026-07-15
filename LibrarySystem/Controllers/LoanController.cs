@@ -23,6 +23,14 @@ public class LoanController(
         return View(vm);
     }
 
+    [Authorize] 
+    public async Task<IActionResult> MyLoans()
+    {
+        var userId = Guid.Parse(_userManager.GetUserId(User)!);
+        var loans = await _loanService.GetActiveLoansForMemberAsync(userId);
+        return View(loans);
+    }
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(LoanViewModel vm)

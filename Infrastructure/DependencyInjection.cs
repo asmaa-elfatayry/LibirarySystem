@@ -28,7 +28,7 @@ public static class DependencyInjection
         services.AddScoped<IFineService, FineService>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IEmailSender, SmtpEmailSender>();
-
+        services.AddScoped<Infrastructure.Jobs.DueDateReminderJob>();
         return services;
     }
 }

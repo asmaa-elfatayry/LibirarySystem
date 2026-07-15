@@ -1,5 +1,7 @@
 
 
+using Hangfire;
+using Infrastructure.HangfireFilter;
 using Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,15 +30,23 @@ builder.Services.AddAuthentication()
         options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"]!;
     });
 
+builder.Services.AddHangfire(config => config
+    .SetDataCompatibilityLevel(CompatibilityLevel.Version_180)
+    .UseSimpleAssemblyNameTypeSerializer()
+    .UseRecommendedSerializerSettings()
+    .UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 builder.Services.AddInfrastructureServices();
 builder.Services.AddWebServices();
 
 builder.Services.Configure<Infrastructure.Settings.EmailSettings>(
     builder.Configuration.GetSection("EmailSettings"));
 
-
+builder.Services.AddHangfireServer();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -51,6 +61,19 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseHangfireDashboard("/hangfire", new DashboardOptions
+{
+    Authorization = new[] { new HangfireAdminAuthFilter() }
+});
+
+// hangfire
+RecurringJob.AddOrUpdate<Infrastructure.Jobs.DueDateReminderJob>(
+    "due-date-reminders",
+    job => job.SendDueDateRemindersAsync(),
+    Cron.Daily(9)); // الساعة 9 صباحًا كل يوم
+
+
 
 app.MapStaticAssets();
 

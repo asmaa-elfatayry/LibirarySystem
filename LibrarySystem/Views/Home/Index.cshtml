@@ -1,6 +1,8 @@
 ﻿@model LibrarySystem.web.ViewModels.Home.HomeVM
+
 @{
     ViewData["Title"] = "الرئيسية";
+    var isStaff = User.IsInRole("Admin") || User.IsInRole("Librarian");
 }
 
 <link rel="stylesheet" href="~/css/home.css" />
@@ -16,7 +18,7 @@
     <div class="home-hero__actions">
         @if (User.Identity != null && User.Identity.IsAuthenticated)
         {
-            <a asp-controller="Category" asp-action="Index" class="btn-library-primary">تصفح التصنيفات</a>
+            <a asp-controller="Book" asp-action="Index" class="btn-library-primary">تصفح الكتب</a>
         }
         else
         {
@@ -27,23 +29,57 @@
 </section>
 
 <div class="catalog">
-    <a asp-controller="Category" asp-action="Index" class="catalog-drawer">
-        <span class="catalog-drawer__label">Drawer 01</span>
-        <div class="catalog-drawer__title">التصنيفات</div>
-        <div class="catalog-drawer__desc">تصفح أقسام المكتبة المختلفة وابحث عن اهتمامك.</div>
-    </a>
-
     <a asp-controller="Book" asp-action="Index" class="catalog-drawer">
-        <span class="catalog-drawer__label">Drawer 02</span>
+        <span class="catalog-drawer__label">Drawer 01</span>
         <div class="catalog-drawer__title">الكتب</div>
         <div class="catalog-drawer__desc">كل الكتب المتاحة، بالمؤلف والناشر والنسخ المتوفرة.</div>
     </a>
 
-    <a asp-controller="Loan" asp-action="Index" class="catalog-drawer">
-        <span class="catalog-drawer__label">Drawer 03</span>
-        <div class="catalog-drawer__title">استعاراتي</div>
-        <div class="catalog-drawer__desc">تابع الكتب المستعارة، والمواعيد المستحقة.</div>
-    </a>
+    @if (User.Identity != null && User.Identity.IsAuthenticated)
+    {
+        @if (isStaff)
+        {
+            <a asp-controller="Dashboard" asp-action="Index" class="catalog-drawer">
+                <span class="catalog-drawer__label">Drawer 02</span>
+                <div class="catalog-drawer__title">لوحة التحكم</div>
+                <div class="catalog-drawer__desc">إحصائيات حية عن الكتب والاستعارات والأعضاء.</div>
+            </a>
+
+            <a asp-controller="Loan" asp-action="Index" class="catalog-drawer">
+                <span class="catalog-drawer__label">Drawer 03</span>
+                <div class="catalog-drawer__title">الاستعارات</div>
+                <div class="catalog-drawer__desc">تسجيل استعارة جديدة، ومتابعة كل الاستعارات النشطة.</div>
+            </a>
+        }
+        else
+        {
+            <a asp-controller="Loan" asp-action="MyLoans" class="catalog-drawer">
+                <span class="catalog-drawer__label">Drawer 02</span>
+                <div class="catalog-drawer__title">استعاراتي</div>
+                <div class="catalog-drawer__desc">تابع الكتب المستعارة، والمواعيد المستحقة.</div>
+            </a>
+
+            <a asp-controller="Reservation" asp-action="MyReservations" class="catalog-drawer">
+                <span class="catalog-drawer__label">Drawer 03</span>
+                <div class="catalog-drawer__title">حجوزاتي</div>
+                <div class="catalog-drawer__desc">تابع حالة الكتب المحجوزة بانتظار توفرها.</div>
+            </a>
+        }
+    }
+    else
+    {
+        <a asp-controller="Category" asp-action="Index" class="catalog-drawer">
+            <span class="catalog-drawer__label">Drawer 02</span>
+            <div class="catalog-drawer__title">التصنيفات</div>
+            <div class="catalog-drawer__desc">تصفح أقسام المكتبة المختلفة وابحث عن اهتمامك.</div>
+        </a>
+
+        <a asp-controller="Account" asp-action="Register" class="catalog-drawer">
+            <span class="catalog-drawer__label">Drawer 03</span>
+            <div class="catalog-drawer__title">اعمل بطاقتك</div>
+            <div class="catalog-drawer__desc">سجّل حساب مجانًا وابدأ تستعير وتحجز فورًا.</div>
+        </a>
+    }
 </div>
 
 <div class="home-stats">

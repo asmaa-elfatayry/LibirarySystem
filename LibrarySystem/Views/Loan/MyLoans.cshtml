@@ -1,0 +1,49 @@
+﻿@model List<Application.DTOs.LoanDto>
+
+@{
+    ViewData["Title"] = "استعاراتي";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+<link rel="stylesheet" href="~/css/loans.css" />
+
+<div class="cat-header">
+    <h2 class="cat-header__title">استعاراتي</h2>
+    <span class="cat-header__count">@Model.Count استعارة نشطة</span>
+</div>
+
+@if (!Model.Any())
+{
+    <p class="cat-empty">مفيش عندك استعارات نشطة دلوقتي.</p>
+}
+else
+{
+    <div class="loans-table">
+        <div class="loans-table__head" style="grid-template-columns: 2fr 1.3fr 1.3fr 1fr;">
+            <span>الكتاب</span>
+            <span>تاريخ الاستعارة</span>
+            <span>موعد الإرجاع</span>
+            <span>الحالة</span>
+        </div>
+
+        @foreach (var loan in Model)
+        {
+            var isOverdue = loan.DueDate < DateTime.UtcNow;
+            <div class="loans-table__row" style="grid-template-columns: 2fr 1.3fr 1.3fr 1fr;">
+                <span>@loan.BookTitle <small>(@loan.CopyNumber)</small></span>
+                <span>@loan.BorrowDate.ToString("dd MMM yyyy")</span>
+                <span class="@(isOverdue ? "loan-overdue" : "")">@loan.DueDate.ToString("dd MMM yyyy")</span>
+                <span>
+                    @if (isOverdue)
+                    {
+                        <span class="loan-badge loan-badge--overdue">متأخر</span>
+                    }
+                    else
+                    {
+                        <span class="loan-badge loan-badge--active">نشطة</span>
+                    }
+                </span>
+            </div>
+        }
+    </div>
+}

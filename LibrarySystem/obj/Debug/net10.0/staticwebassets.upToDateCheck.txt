@@ -56,6 +56,7 @@ C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery\dist
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\admin-form.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\Modules\Book\details.js
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\css\dashboard.css
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\MElbaz\source\repos\LibrarySystem\LibrarySystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -93,6 +94,7 @@ wwwroot\css\auth.css
 wwwroot\css\book-cards.css
 wwwroot\css\book-details.css
 wwwroot\css\category-cards.css
+wwwroot\css\dashboard.css
 wwwroot\css\error-pages.css
 wwwroot\css\home.css
 wwwroot\css\loans.css

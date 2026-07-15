@@ -1,0 +1,64 @@
+﻿.dash-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.dash-stat {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 1.4rem 1.3rem;
+    text-align: center;
+}
+
+.dash-stat__value {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: .3rem;
+}
+
+.dash-stat__label {
+    font-family: 'Inter', sans-serif;
+    font-size: .78rem;
+    color: var(--text-tertiary);
+}
+
+.dash-stat--warning .dash-stat__value {
+    color: #b8860b;
+}
+
+.dash-stat--danger .dash-stat__value {
+    color: var(--danger);
+}
+
+.dash-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.dash-chart-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 1.5rem;
+}
+
+    .dash-chart-card h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--text-primary);
+        margin-bottom: 1.2rem;
+    }
+
+    .dash-chart-card canvas {
+        max-height: 280px;
+    }

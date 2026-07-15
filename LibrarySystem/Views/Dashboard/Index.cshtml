@@ -1,0 +1,125 @@
+﻿@using LibrarySystem.web.ViewModels.Dashboard
+@model DashboardViewModel
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "لوحة التحكم";
+}
+
+<link rel="stylesheet" href="~/css/dashboard.css" />
+
+<div class="cat-header">
+    <h2 class="cat-header__title">لوحة التحكم</h2>
+</div>
+
+<div class="dash-stats">
+    <div class="dash-stat">
+        <span class="dash-stat__value">@Model.TotalBooks</span>
+        <span class="dash-stat__label">كتاب مسجّل</span>
+    </div>
+    <div class="dash-stat">
+        <span class="dash-stat__value">@Model.TotalMembers</span>
+        <span class="dash-stat__label">عضو مسجّل</span>
+    </div>
+    <div class="dash-stat">
+        <span class="dash-stat__value">@Model.ActiveLoans</span>
+        <span class="dash-stat__label">استعارة نشطة</span>
+    </div>
+    <div class="dash-stat dash-stat--warning">
+        <span class="dash-stat__value">@Model.OverdueLoans</span>
+        <span class="dash-stat__label">استعارة متأخرة</span>
+    </div>
+    <div class="dash-stat">
+        <span class="dash-stat__value">@Model.PendingReservations</span>
+        <span class="dash-stat__label">حجز في الانتظار</span>
+    </div>
+    <div class="dash-stat dash-stat--danger">
+        <span class="dash-stat__value">@Model.UnpaidFinesTotal جنيه</span>
+        <span class="dash-stat__label">غرامات غير مسددة</span>
+    </div>
+</div>
+
+<div class="dash-charts">
+    <div class="dash-chart-card">
+        <h3>الاستعارات - آخر 14 يوم</h3>
+        <canvas id="loansTimelineChart"></canvas>
+    </div>
+
+    <div class="dash-chart-card">
+        <h3>أكتر 5 كتب استعارة</h3>
+        <canvas id="topBooksChart"></canvas>
+    </div>
+
+    <div class="dash-chart-card">
+        <h3>توزيع الكتب حسب التصنيف</h3>
+        <canvas id="categoryChart"></canvas>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <script>
+        const timelineLabels = @Html.Raw(JsonSerializer.Serialize(Model.LoansTimelineLabels));
+        const timelineCounts = @Html.Raw(JsonSerializer.Serialize(Model.LoansTimelineCounts));
+
+        const topBooksLabels = @Html.Raw(JsonSerializer.Serialize(Model.TopBooksLabels));
+        const topBooksCounts = @Html.Raw(JsonSerializer.Serialize(Model.TopBooksCounts));
+
+        const categoryLabels = @Html.Raw(JsonSerializer.Serialize(Model.CategoryLabels));
+        const categoryCounts = @Html.Raw(JsonSerializer.Serialize(Model.CategoryCounts));
+
+        const rootStyles = getComputedStyle(document.documentElement);
+        const primaryColor = rootStyles.getPropertyValue('--primary').trim();
+        const textColor = rootStyles.getPropertyValue('--text-secondary').trim();
+
+        new Chart(document.getElementById('loansTimelineChart'), {
+        type: 'line',
+        data: {
+        labels: timelineLabels,
+        datasets: [{
+        label: 'عدد الاستعارات',
+        data: timelineCounts,
+        borderColor: primaryColor,
+        backgroundColor: primaryColor + '22',
+        fill: true,
+        tension: 0.3
+        }]
+        },
+        options: {
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+        }
+        });
+
+        new Chart(document.getElementById('topBooksChart'), {
+        type: 'bar',
+        data: {
+        labels: topBooksLabels,
+        datasets: [{
+        label: 'عدد الاستعارات',
+        data: topBooksCounts,
+        backgroundColor: primaryColor
+        }]
+        },
+        options: {
+        indexAxis: 'y',
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } } }
+        }
+        });
+
+        new Chart(document.getElementById('categoryChart'), {
+        type: 'doughnut',
+        data: {
+        labels: categoryLabels,
+        datasets: [{
+        data: categoryCounts,
+        backgroundColor: ['#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981', '#3b82f6', '#ef4444']
+        }]
+        },
+        options: {
+        plugins: { legend: { position: 'bottom', labels: { color: textColor } } }
+        }
+        });
+    </script>
+}
