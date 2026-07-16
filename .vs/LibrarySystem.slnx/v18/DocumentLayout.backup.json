@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,20 +67,12 @@
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|solutionrelative:librarysystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87CDD771-586A-38E4-6351-2A021A55835C}|LibrarySystem\\LibrarySystem.web.csproj|c:\\users\\melbaz\\source\\repos\\librarysystem\\librarysystem\\viewmodels\\home\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -607,121 +615,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DueDateReminderJob.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Jobs\\DueDateReminderJob.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Jobs\\DueDateReminderJob.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Jobs\\DueDateReminderJob.cs*",
-              "RelativeToolTip": "Infrastructure\\Jobs\\DueDateReminderJob.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T12:11:10.676Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Report\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Report\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Report\\Index.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Report\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-16T22:48:13.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HangfireAdminAuthFilter.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs*",
-              "RelativeToolTip": "Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\ReportController.cs*",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\ReportController.cs*",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAowHwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T12:09:05.206Z",
+              "WhenOpened": "2026-07-16T22:47:06.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\DependencyInjection.cs*",
-              "RelativeToolTip": "Infrastructure\\DependencyInjection.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwB4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T08:15:26.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Program.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Program.cs",
               "RelativeToolTip": "LibrarySystem\\Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowDwAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T12:56:54.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
-              "RelativeToolTip": "LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T11:51:58.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "HomeVM.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
-              "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
-              "RelativeToolTip": "LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T13:54:58.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyLoans.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T12:03:31.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "LibrarySystem\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T19:45:28.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAE8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T07:17:19.52Z",
               "EditorCaption": ""
@@ -729,45 +685,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "LibrarySystem\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Title": "HangfireAdminAuthFilter.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs",
+              "RelativeToolTip": "Infrastructure\\HangfireFilter\\HangfireAdminAuthFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T19:45:25.755Z",
+              "WhenOpened": "2026-07-15T12:09:05.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoanController.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\LoanController.cs",
-              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\LoanController.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\LoanController.cs",
-              "RelativeToolTip": "LibrarySystem\\Controllers\\LoanController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwBoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T07:13:34.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "LibrarySystem\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T11:53:32.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\appsettings.json",
               "RelativeDocumentMoniker": "LibrarySystem\\appsettings.json",
@@ -780,20 +710,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
+              "RelativeToolTip": "LibrarySystem\\ViewModels\\Dashboard\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T11:51:58.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
+              "RelativeToolTip": "LibrarySystem\\ViewModels\\Home\\HomeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T13:54:58.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyLoans.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Loan\\MyLoans.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAABRwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-15T12:03:31.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LibrarySystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAIBJwGEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T19:45:28.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DueDateReminderJob.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Jobs\\DueDateReminderJob.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Jobs\\DueDateReminderJob.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Jobs\\DueDateReminderJob.cs",
+              "RelativeToolTip": "Infrastructure\\Jobs\\DueDateReminderJob.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T12:11:10.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T19:45:25.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "LoanController.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\LoanController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\LoanController.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\LoanController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\LoanController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wBoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T07:13:34.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "LibrarySystem\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T11:53:32.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AccountController.cs",
               "RelativeToolTip": "LibrarySystem\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAIA7wHAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAlwHAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T18:54:21.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\Login.cshtml",
@@ -806,7 +840,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "home.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\home.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\home.css",
@@ -819,20 +853,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Dashboard\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAIBJwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-15T11:54:50.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "dashboard.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\dashboard.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\dashboard.css",
@@ -845,7 +879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "auth.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\auth.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\auth.css",
@@ -858,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ConfirmEmailSuccess.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ConfirmEmailSuccess.cshtml",
@@ -871,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ConfirmEmailFailed.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ConfirmEmailFailed.cshtml",
@@ -884,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ForgotPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
@@ -897,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ResetPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPasswordConfirmation.cshtml",
@@ -910,7 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ForgotPassword.cshtml",
@@ -923,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\AccessDenied.cshtml",
@@ -936,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "RegisterConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\RegisterConfirmation.cshtml",
@@ -949,7 +983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\ResetPassword.cshtml",
@@ -962,7 +996,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "theme.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\js\\theme.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\js\\theme.js",
@@ -975,7 +1009,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "ForgotPasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Account\\ForgotPasswordViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Account\\ForgotPasswordViewModel.cs",
@@ -988,7 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "ResetPasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Account\\ResetPasswordViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Account\\ResetPasswordViewModel.cs",
@@ -1001,7 +1035,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\UserService.cs",
@@ -1014,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "DataSeeder.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Seed\\DataSeeder.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Seed\\DataSeeder.cs",
@@ -1027,7 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Result.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Common\\Result.cs",
               "RelativeDocumentMoniker": "Application\\Common\\Result.cs",
@@ -1040,7 +1074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\DependencyInjection.cs",
@@ -1053,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IUserService.cs",
@@ -1066,7 +1100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "SmtpEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\SmtpEmailSender.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\SmtpEmailSender.cs",
@@ -1079,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Settings\\EmailSettings.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Settings\\EmailSettings.cs",
@@ -1092,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "IEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IEmailSender.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IEmailSender.cs",
@@ -1105,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "FineController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\FineController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\FineController.cs",
@@ -1118,7 +1152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\BookController.cs",
@@ -1131,20 +1165,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Fine\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Fine\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Fine\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Fine\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAIBZwBIAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAACBjwBIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T08:16:12.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "plan-styles-darklight-theme.md [Preview]",
               "DocumentMoniker": "C:\\Users\\MElbaz\\.copilot\\plans\\plan-styles-darklight-theme.md",
               "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-styles-darklight-theme.md",
@@ -1156,46 +1190,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "MyFines.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Fine\\MyFines.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Fine\\MyFines.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Fine\\MyFines.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Fine\\MyFines.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAIBZwBAAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAACBjwBAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T08:18:37.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "MyReservations.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Reservation\\MyReservations.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Reservation\\MyReservations.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Reservation\\MyReservations.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Reservation\\MyReservations.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBZwBIAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAACBjwBIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T08:02:42.469Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Details.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Book\\Details.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Details.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Book\\Details.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAIBZwDAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAACBjwDAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-10T12:42:58.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "error-pages.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\error-pages.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\error-pages.css",
@@ -1208,7 +1242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "plan-refactor-controllers-to-clean-architecture.md [Preview]",
               "DocumentMoniker": "C:\\Users\\MElbaz\\.copilot\\plans\\plan-refactor-controllers-to-clean-architecture.md",
               "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-refactor-controllers-to-clean-architecture.md",
@@ -1220,7 +1254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "StatusCode.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Home\\StatusCode.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Home\\StatusCode.cshtml",
@@ -1233,7 +1267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Shared\\Error.cshtml",
@@ -1246,20 +1280,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Book\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Book\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAIBZwC8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAACBjwC8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-09T07:55:15.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "UserListItemViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\User\\UserListItemViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\User\\UserListItemViewModel.cs",
@@ -1272,7 +1306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "CreateUserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\User\\CreateUserViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\User\\CreateUserViewModel.cs",
@@ -1285,7 +1319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\UserController.cs",
@@ -1298,20 +1332,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\User\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\User\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAIBZwAEAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAACBjwAEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-13T08:09:03.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\User\\index.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\User\\index.js",
@@ -1324,7 +1358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\User\\Create.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\User\\Create.cshtml",
@@ -1337,7 +1371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "book-details.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\book-details.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\book-details.css",
@@ -1350,20 +1384,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "ReservationService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\ReservationService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\ReservationService.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\ReservationService.cs",
               "RelativeToolTip": "Infrastructure\\Services\\ReservationService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA8wB8AAABcAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwB8AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-12T07:55:52.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "FineDto.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\DTOs\\FineDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\FineDto.cs",
@@ -1376,7 +1410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "IFineService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IFineService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IFineService.cs",
@@ -1389,7 +1423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Repositories\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UnitOfWork.cs",
@@ -1402,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "LoanService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\LoanService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\LoanService.cs",
@@ -1415,7 +1449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "FineService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\FineService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\FineService.cs",
@@ -1428,7 +1462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Interfaces\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUnitOfWork.cs",
@@ -1441,7 +1475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GenericRepository.cs",
@@ -1454,7 +1488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "ReservationController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\ReservationController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\ReservationController.cs",
@@ -1467,7 +1501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "BookViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Book\\BookViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Book\\BookViewModel.cs",
@@ -1480,20 +1514,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "AuthorController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\AuthorController.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\AuthorController.cs",
               "RelativeToolTip": "LibrarySystem\\Controllers\\AuthorController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAIBZwEwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAMBkwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T07:29:55.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "details.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Book\\details.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\Book\\details.js",
@@ -1506,7 +1540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 74,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Account\\Register.cshtml",
@@ -1519,7 +1553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "ReservationDto.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\DTOs\\ReservationDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ReservationDto.cs",
@@ -1532,7 +1566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "IReservationService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IReservationService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IReservationService.cs",
@@ -1545,7 +1579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "PublisherService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\PublisherService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\PublisherService.cs",
@@ -1558,20 +1592,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Loan\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Loan\\Index.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAIBZwAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAACBjwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T07:14:51.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "admin-form.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\admin-form.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\admin-form.css",
@@ -1584,7 +1618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Loan\\Create.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Loan\\Create.cshtml",
@@ -1597,7 +1631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\site.css",
@@ -1610,7 +1644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "eResultStatus.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Enums\\eResultStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\eResultStatus.cs",
@@ -1623,7 +1657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\loan\\index.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\loan\\index.js",
@@ -1636,7 +1670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "loans.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\loans.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\loans.css",
@@ -1649,7 +1683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "LoanViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Loan\\LoanViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Loan\\LoanViewModel.cs",
@@ -1662,7 +1696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "ILoanService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\ILoanService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\ILoanService.cs",
@@ -1675,7 +1709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "LoanDto.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\DTOs\\LoanDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\LoanDto.cs",
@@ -1688,7 +1722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\ApplicationUser.cs",
@@ -1701,7 +1735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\CategoryController.cs",
@@ -1714,20 +1748,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Book.cs",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Book.cs",
               "RelativeToolTip": "Domain\\Entities\\Book.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA4wBkAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA0wBkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T12:35:51.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "Loan.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Loan.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Loan.cs",
@@ -1740,7 +1774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Reservation.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Reservation.cs",
@@ -1753,7 +1787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "category-cards.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\category-cards.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\category-cards.css",
@@ -1766,7 +1800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "book-cards.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\book-cards.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\book-cards.css",
@@ -1779,7 +1813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "BookCopy.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\BookCopy.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\BookCopy.cs",
@@ -1792,7 +1826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "Fine.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Fine.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Fine.cs",
@@ -1805,7 +1839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Author.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Author.cs",
@@ -1818,7 +1852,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\BaseEntity.cs",
@@ -1831,7 +1865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Category.cs",
@@ -1844,7 +1878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "Publisher.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Entities\\Publisher.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Publisher.cs",
@@ -1857,7 +1891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\BookService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\BookService.cs",
@@ -1870,20 +1904,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 104,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Edit.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Book\\Edit.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Edit.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Book\\Edit.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAIBZwCQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAACBjwCQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-09T07:56:18.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 103,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Book\\index.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\Book\\index.js",
@@ -1896,7 +1930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 106,
               "Title": "BookCopyViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Book\\BookCopyViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Book\\BookCopyViewModel.cs",
@@ -1909,7 +1943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "IBookService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IBookService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IBookService.cs",
@@ -1922,7 +1956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Mapper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Mapper\\MappingProfile.cs",
@@ -1935,7 +1969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 102,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Book\\Create.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Book\\Create.cshtml",
@@ -1948,7 +1982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "BookDto.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\DTOs\\BookDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\BookDto.cs",
@@ -1961,7 +1995,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 105,
               "Title": "IGenericService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IGenericService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IGenericService.cs",
@@ -1974,7 +2008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 107,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Category\\Index.cshtml",
@@ -1987,7 +2021,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 110,
               "Title": "AuthorService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\AuthorService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\AuthorService.cs",
@@ -2000,7 +2034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 109,
               "Title": "site-extended.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\site-extended.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\site-extended.css",
@@ -2013,7 +2047,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 108,
               "Title": "site-animations.css",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\css\\site-animations.css",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\css\\site-animations.css",
@@ -2026,7 +2060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 112,
               "Title": "AuthorDto.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\DTOs\\AuthorDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\AuthorDto.cs",
@@ -2039,7 +2073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 111,
               "Title": "CategoryDto.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\DTOs\\CategoryDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\CategoryDto.cs",
@@ -2052,7 +2086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 151,
               "Title": "IAuthorService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IAuthorService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IAuthorService.cs",
@@ -2065,7 +2099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 148,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\ICategoryService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\ICategoryService.cs",
@@ -2078,7 +2112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 149,
               "Title": "PublisherDto.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\DTOs\\PublisherDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\PublisherDto.cs",
@@ -2091,7 +2125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 150,
               "Title": "IPublisherService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Interfaces\\IPublisherService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IPublisherService.cs",
@@ -2104,7 +2138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 113,
               "Title": "PublisherController.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Controllers\\PublisherController.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\Controllers\\PublisherController.cs",
@@ -2117,7 +2151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 114,
               "Title": "GenericService.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Services\\GenericService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\GenericService.cs",
@@ -2130,7 +2164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 121,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Publisher\\Edit.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Publisher\\Edit.cshtml",
@@ -2143,20 +2177,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 117,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Author\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Author\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Author\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Author\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAACBjwDAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAIBpwDAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-09T07:34:43.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 116,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Author\\Create.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Author\\Create.cshtml",
@@ -2169,7 +2203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 115,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Interfaces\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IGenericRepository.cs",
@@ -2182,59 +2216,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 120,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Author\\index.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\Author\\index.js",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Author\\index.js",
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Author\\index.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-07-09T13:50:23.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 118,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Publisher\\Index.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Publisher\\Index.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Publisher\\Index.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Publisher\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAACBjwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAIBpwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-09T07:36:41.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 119,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Publisher\\index.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\Publisher\\index.js",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Publisher\\index.js",
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Publisher\\index.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-07-09T13:49:17.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 122,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Publisher\\Create.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Publisher\\Create.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Publisher\\Create.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Publisher\\Create.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAACBjwAAAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBpwAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-09T07:37:16.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 124,
               "Title": "_ValidationScriptsPartial_cshtml.g.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\AppData\\Local\\Temp\\.vsdbgsrc\\95e119f8b58ccca4369b832e345df54204258352e0327554720401dc862b81c4\\_ValidationScriptsPartial_cshtml.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\95e119f8b58ccca4369b832e345df54204258352e0327554720401dc862b81c4\\_ValidationScriptsPartial_cshtml.g.cs",
@@ -2247,7 +2281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 125,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -2260,7 +2294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 139,
               "Title": "GlobalUsings.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\GlobalUsings.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\GlobalUsings.cs",
@@ -2273,7 +2307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 126,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Account\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Account\\RegisterViewModel.cs",
@@ -2286,20 +2320,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 123,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Category\\Edit.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Category\\Edit.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Category\\Edit.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAACBjwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBpwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-08T19:35:08.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 128,
               "Title": "GlobalUsings.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\GlobalUsings.cs",
               "RelativeDocumentMoniker": "Application\\GlobalUsings.cs",
@@ -2312,7 +2346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 129,
               "Title": "GlobalUsings.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\GlobalUsings.cs",
               "RelativeDocumentMoniker": "Infrastructure\\GlobalUsings.cs",
@@ -2325,7 +2359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 127,
               "Title": "GlobalUsings.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\GlobalUsings.cs",
               "RelativeDocumentMoniker": "Domain\\GlobalUsings.cs",
@@ -2338,7 +2372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 140,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Category\\Create.cshtml",
@@ -2351,7 +2385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 141,
               "Title": "CategoryViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Category\\CategoryViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Category\\CategoryViewModel.cs",
@@ -2364,20 +2398,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 142,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Author\\Edit.cshtml",
               "RelativeDocumentMoniker": "LibrarySystem\\Views\\Author\\Edit.cshtml",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\Views\\Author\\Edit.cshtml",
               "RelativeToolTip": "LibrarySystem\\Views\\Author\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAACBjwAAAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBpwAAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-09T07:36:00.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 143,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Account\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Account\\LoginViewModel.cs",
@@ -2390,7 +2424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 144,
               "Title": "PublisherViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Publisher\\PublisherViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Publisher\\PublisherViewModel.cs",
@@ -2403,7 +2437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 145,
               "Title": "AuthorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\ViewModels\\Author\\AuthorViewModel.cs",
               "RelativeDocumentMoniker": "LibrarySystem\\ViewModels\\Author\\AuthorViewModel.cs",
@@ -2416,7 +2450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 138,
               "Title": "20260708194343_handleDelete.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Migrations\\20260708194343_handleDelete.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20260708194343_handleDelete.cs",
@@ -2429,20 +2463,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 146,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Category\\index.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\Modules\\Category\\index.js",
               "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\Modules\\Category\\index.js",
               "RelativeToolTip": "LibrarySystem\\wwwroot\\Modules\\Category\\index.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-07-09T07:19:23.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 130,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\AppDbContext.cs",
@@ -2455,7 +2489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 147,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\LibrarySystem\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "LibrarySystem\\wwwroot\\js\\site.js",
@@ -2468,7 +2502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 131,
               "Title": "20260708131237_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Migrations\\20260708131237_InitialCreate.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20260708131237_InitialCreate.cs",
@@ -2481,7 +2515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 133,
               "Title": "Application.csproj",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
@@ -2494,12 +2528,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 134,
               "Title": "Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Infrastructure.csproj",
               "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Infrastructure.csproj*",
-              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj*",
+              "ToolTip": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-07-08T13:03:12.912Z",
@@ -2507,7 +2541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 132,
               "Title": "Domain.csproj",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "Domain\\Domain.csproj",
@@ -2520,7 +2554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 135,
               "Title": "eCopyStatus.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Enums\\eCopyStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\eCopyStatus.cs",
@@ -2533,7 +2567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 136,
               "Title": "eReservationStatus.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Enums\\eReservationStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\eReservationStatus.cs",
@@ -2546,7 +2580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 137,
               "Title": "eLoanStatus.cs",
               "DocumentMoniker": "C:\\Users\\MElbaz\\source\\repos\\LibrarySystem\\Domain\\Enums\\eLoanStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\eLoanStatus.cs",

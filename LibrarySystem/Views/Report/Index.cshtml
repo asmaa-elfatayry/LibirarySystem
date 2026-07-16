@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "التقارير";
+}
+
+<link rel="stylesheet" href="~/css/category-cards.css" />
+
+<div class="cat-header">
+    <h2 class="cat-header__title">التقارير</h2>
+</div>
+
+<div class="cat-grid">
+    <div class="cat-card">
+        <div class="cat-card__title">تقرير الكتب</div>
+        <div class="cat-card__desc">تصدير قائمة كاملة بكل الكتب المسجّلة في النظام.</div>
+        <div class="cat-card__actions">
+            <a asp-action="ExportBooksExcel" class="cat-action cat-action--edit">Excel</a>
+            <a asp-action="ExportBooksPdf" class="cat-action cat-action--edit">PDF</a>
+        </div>
+    </div>
+
+    <div class="cat-card">
+        <div class="cat-card__title">تقرير الاستعارات</div>
+        <div class="cat-card__desc">تصدير سجل كامل بكل عمليات الاستعارة والإرجاع.</div>
+        <div class="cat-card__actions">
+            <a asp-action="ExportLoansExcel" class="cat-action cat-action--edit">Excel</a>
+        </div>
+    </div>
+</div>

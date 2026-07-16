@@ -72,6 +72,12 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Fine" asp-action="MyFines">غراماتي</a>
                         </li>
+                        @if (User.IsInRole("Admin") || User.IsInRole("Librarian"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Report" asp-action="Index">التقارير</a>
+                            </li>
+                        }
                     </ul>
 
                     <ul class="navbar-nav ms-auto align-items-sm-center">

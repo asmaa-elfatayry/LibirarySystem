@@ -3,9 +3,17 @@
 using Hangfire;
 using Infrastructure.HangfireFilter;
 using Infrastructure.Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
+QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
