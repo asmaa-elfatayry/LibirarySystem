@@ -188,11 +188,8 @@ On first run, the app seeds:
 ---
 
 ## 📌 Roadmap / Not Yet Implemented
-
-- [ ] Facebook OAuth login
 - [ ] Localization (Arabic/English toggle)
-- [ ] Unit tests for `LoanService` / `ReservationService`
-- [ ] Full accessibility & responsive polish pass
+
 
 ---
 
