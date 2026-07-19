@@ -131,7 +131,7 @@ Chart colors are read dynamically from CSS custom properties, so they stay in sy
 
 | Layer | Technology |
 |---|---|
-| Framework | ASP.NET Core MVC (.NET 8) |
+| Framework | ASP.NET Core MVC (.NET 10) |
 | ORM | Entity Framework Core |
 | Database | SQL Server |
 | Auth | ASP.NET Core Identity + Google OAuth |
@@ -147,7 +147,7 @@ Chart colors are read dynamically from CSS custom properties, so they stay in sy
 ## 🚀 Getting Started
 
 ### Prerequisites
-- .NET 8 SDK
+- .NET 10 SDK
 - SQL Server (LocalDB or full instance)
 
 ### Setup
